@@ -5,10 +5,8 @@ import Btn from '@bbc/igm-btn';
 import Dropdown from '@bbc/igm-dropdown-select'
 
 function onClick() {
-  console.log('onclick');
-  var element = document.getElementsByClassName("css-xp4uvy select__single-value");
-  console.log(element[0].innerHTML);
-
+  var element = document.getElementsByClassName("css-xp4uvy select__single-value")[0].innerHTML;
+  return element;
 }
 
 class App extends Component {
