@@ -7,8 +7,7 @@
   height: 40vmin;
 }
 
-.App-header {
-  background-color: #282c34;
+/* .App-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -16,10 +15,24 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+.Button {
+  float: right;
+}
+
+.Dropdown {
+  float: left;
+  width: 150px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.gel-icon {
+  height:15px;
+  width:20px;
 }
 
 @keyframes App-logo-spin {
