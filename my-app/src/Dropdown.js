@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
-import Btn from '@bbc/igm-btn';
 import Dropdown from '@bbc/igm-dropdown-select'
 
-function onClick() {
-  console.log('onclick');
-  console.log(Dropdown.getOptionValue());
-}
-
-class App extends Component {
+class RoomSelect extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,22 +11,20 @@ class App extends Component {
     }
   };
   render() {
-    const values = this.props;
-    const { didSearchFail } = this.state;
+    const {
+      name, options, isSearchable, isDisabled, isLoading, placeholder, isRtl
+    } = this.props;
     return (
-      <div className="Dropdown">
+      <div className="Dropdown" >
         <Dropdown
-          options={[
-            { value: 'Marie Curie', label: 'Marie Curie', description: '' },
-            { value: 'Che Guevara', label: 'Che Guevara', description: '' },
-            { value: 'Luther', label: 'Luther', description: '' },
-          ]}
-          isSearchable
+          name={name}
+          options={options}
+          isSearchable={isSearchable}
           // isClearable
-          isDisabled={false}
-          isLoading={false}
-          placeholder="Search for room"
-          isRtl={false}
+          isDisabled={isDisabled}
+          isLoading={isLoading}
+          placeholder={placeholder}
+          isRtl={isRtl}
           getOptionValue={option => option.value}
         />
       </div>
@@ -40,7 +32,17 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
+RoomSelect.propTypes = {
   name: PropTypes.string.isRequired,
+  options: PropTypes.arrayOf(PropTypes.shape({
+    value: PropTypes.string.isRequired,
+    label: PropTypes.string,
+    description: PropTypes.string,
+  })).isRequired,
+  isSearchable: PropTypes.bool.isRequired,
+  isDisabled: PropTypes.bool.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  isRtl: PropTypes.bool.isRequired,
 };
-export default App;
+export default RoomSelect;
