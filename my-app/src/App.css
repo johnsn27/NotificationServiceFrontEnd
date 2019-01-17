@@ -1,29 +1,37 @@
-.App {
+.StickyBar {
+  display: flex;
+}
+
+.StickyBarContents {
+  width: 100%;
+}
+.StickyBarContentsTitle {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-/* .App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-.Button {
-  float: right;
-}
-
-.Dropdown {
+.leftSide {
   float: left;
-  width: 150px;
+  margin-top: 62px;
+}
+
+.Rooms {
+  float: left;
+}
+
+.RoomsButtons {
+  float: left;
+  width: 120px;
+  border-style: solid;
+}
+
+.MySection {
+  float: left;
+}
+
+.MySectionButtons {
+  float: left;
+  width: 120px;
+  border-style: solid;
 }
 
 .App-link {

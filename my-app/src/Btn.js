@@ -21,7 +21,6 @@ class Button extends Component {
           className={className}
           onClick={onClick}
         >
-          <span>Watch Room</span>
         </Btn>
       </div>
     );
