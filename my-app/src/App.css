@@ -1,3 +1,7 @@
+:root {
+  --image-size: 200px;
+}
+
 .StickyBar {
   display: flex;
 }
@@ -5,32 +9,112 @@
 .StickyBarContents {
   width: 100%;
 }
+
 .StickyBarContentsTitle {
   text-align: center;
 }
 
+.pageContent {
+  width: 100%;
+  height: 100%;
+}
+
+.pageContentBelowSticky {
+  margin-top: 62px;
+  width: 100%;
+}
 .leftSide {
   float: left;
-  margin-top: 62px;
+  margin-left: 5px;
+  width: 10%;
+}
+
+.rightSide {
+  float: left;
+  margin-left: 10px;
+  width:85%;
+}
+.imageContent {
+  width: 100%;
+}
+
+.image {
+  width:100%;
+}
+
+.imageCaptionText {
+  text-align: center;
+}
+
+.watchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textarea {
+  width: 80%;
+}
+
+.roomDetailsContents {
+  display: flex;
+  border-style: solid;
+  width: 100%;
+  height: 100%;
+}
+
+.roomDetailsContentsLeft {
+  width: 20%;
+}
+
+.roomDetailsContentsRight {
+  width: 80%;
+}
+
+.textbox {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+.label {
+  width:20%;
 }
 
 .Rooms {
+  float: left;
+  width: 100%;
+}
+
+.RoomsTitle {
   float: left;
 }
 
 .RoomsButtons {
   float: left;
-  width: 120px;
+  width: 100%;
   border-style: solid;
 }
 
 .MySection {
   float: left;
+  display: row;
+  width: 100%;
+}
+
+.MySectionTitle {
+  float: left;
 }
 
 .MySectionButtons {
   float: left;
-  width: 120px;
+  width: 100%;
   border-style: solid;
 }
 
