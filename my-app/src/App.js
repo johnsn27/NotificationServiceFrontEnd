@@ -21,7 +21,7 @@ class App extends Component {
           <StickyBar id="ViewRoom" className="StickyBar">
             <div className="StickyBarContents">
               <div className="StickyBarContentsTitle">
-                View Room
+                <h2>View Room</h2>
               </div>
             </div>
           </StickyBar>
@@ -119,6 +119,7 @@ class App extends Component {
                         <p>Click for full picture</p>
                       </div>
                     </div>
+                    <div className="buttonCollection">
                     <div className="watchButton">
                       <Btn
                         type="primary"
@@ -138,99 +139,102 @@ class App extends Component {
                       >
                         <span>Book</span>
                       </Btn>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="roomDetailsContentsRight">
-                  <div className="textbox">
-                    <div className="label">
-                      <p>RoomId:</p>
-                    </div>
-                    {/* <div className="textarea"> */}
-                    <textarea className="textarea " rows="2">
-                       
+                  <div className="roomDetailsContentsRightInner">
+                    <div className="textbox">
+                      <div className="label">
+                        <p>RoomId:</p>
+                      </div>
+                      {/* <div className="textarea"> */}
+                      <textarea className="textarea " rows="2">
+
                       </textarea>
-                    {/* </div> */}
-                  </div>
-                  <div className="textbox">
-                    <div className="label">
-                      <p>Room Name:</p>
+                      {/* </div> */}
                     </div>
-                    {/* <div className="textarea"> */}
-                    <textarea className="textarea " rows="2">
-                       
+                    <div className="textbox">
+                      <div className="label">
+                        <p>Room Name:</p>
+                      </div>
+                      {/* <div className="textarea"> */}
+                      <textarea className="textarea " rows="2">
+
                       </textarea>
-                    {/* </div> */}
-                  </div>
-                  <div className="textbox">
-                    <div className="label">
-                      <p>Area Code:</p>
+                      {/* </div> */}
                     </div>
-                    {/* <div className="textarea"> */}
-                    <textarea className="textarea " rows="2">
-                       
+                    <div className="textbox">
+                      <div className="label">
+                        <p>Area Code:</p>
+                      </div>
+                      {/* <div className="textarea"> */}
+                      <textarea className="textarea " rows="2">
+
                       </textarea>
-                    {/* </div> */}
-                  </div>
-                  <div className="textbox">
-                    <div className="label">
-                      <p>Capacity:</p>
+                      {/* </div> */}
                     </div>
-                    {/* <div className="textarea"> */}
-                    <textarea className="textarea " rows="2">
-                       
+                    <div className="textbox">
+                      <div className="label">
+                        <p>Capacity:</p>
+                      </div>
+                      {/* <div className="textarea"> */}
+                      <textarea className="textarea " rows="2">
+
                       </textarea>
-                    {/* </div> */}
-                  </div>
-                  <div className="textbox">
-                    <div className="label">
-                      <p>Screen:</p>
+                      {/* </div> */}
                     </div>
-                    {/* <div className="textarea"> */}
-                    <textarea className="textarea " rows="2">
-                       
+                    <div className="textbox">
+                      <div className="label">
+                        <p>Screen:</p>
+                      </div>
+                      {/* <div className="textarea"> */}
+                      <textarea className="textarea " rows="2">
+
                       </textarea>
-                    {/* </div> */}
-                  </div>
-                  <div className="textbox">
-                    <div className="label">
-                      <p>DVD:</p>
+                      {/* </div> */}
                     </div>
-                    {/* <div className="textarea"> */}
-                    <textarea className="textarea " rows="2">
-                       
+                    <div className="textbox">
+                      <div className="label">
+                        <p>DVD:</p>
+                      </div>
+                      {/* <div className="textarea"> */}
+                      <textarea className="textarea " rows="2">
+
                       </textarea>
-                    {/* </div> */}
-                  </div>
-                  <div className="textbox">
-                    <div className="label">
-                      <p>VCU:</p>
+                      {/* </div> */}
                     </div>
-                    {/* <div className="textarea"> */}
-                    <textarea className="textarea " rows="2">
-                       
+                    <div className="textbox">
+                      <div className="label">
+                        <p>VCU:</p>
+                      </div>
+                      {/* <div className="textarea"> */}
+                      <textarea className="textarea " rows="2">
+
                       </textarea>
-                    {/* </div> */}
-                  </div>
-                  <div className="textbox">
-                    <div className="label">
-                      <p>Whiteboard:</p>
+                      {/* </div> */}
                     </div>
-                    {/* <div className="textarea"> */}
-                    <textarea className="textarea " rows="2">
-                       
+                    <div className="textbox">
+                      <div className="label">
+                        <p>Whiteboard:</p>
+                      </div>
+                      {/* <div className="textarea"> */}
+                      <textarea className="textarea " rows="2">
+
                       </textarea>
-                    {/* </div> */}
-                  </div>
-                  <div className="textbox">
-                    <div className="label">
-                      <p>Wheelchair support</p>
+                      {/* </div> */}
                     </div>
-                    {/* <div className="textarea"> */}
-                    <textarea className="textarea " rows="2">
-                       
+                    <div className="textbox">
+                      <div className="label">
+                        <p>Wheelchair support</p>
+                      </div>
+                      {/* <div className="textarea"> */}
+                      <textarea className="textarea " rows="2">
+
                       </textarea>
-                    {/* </div> */}
+                      {/* </div> */}
+                    </div>
                   </div>
                 </div>
               </div>
