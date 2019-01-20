@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <div
+      className="    "
+    >
+      <button
+        className="igm-btn igm-btn--link Button"
+        disabled={false}
+        tab-index="1"
+        type="button"
+      >
+        <span>
+          Watch Room
+        </span>
+      </button>
+    </div>
+  </header>
+</div>
+`;
