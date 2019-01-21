@@ -30,18 +30,25 @@ h1 {
 .pageContentBelowSticky {
   margin-top: 62px;
   width: 100%;
+  min-width: 600px;
   height: 474px;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .igm-btn {
   width: 100%;
   height: 100%;
+  background-color: white !important;
+  border-radius: 100% !important;
+  color: black !important;
 }
 
 .leftSide {
   float: left;
   margin-left: 5px;
-  width: 10%;
+  width: 15%;
   height: 100%;
   justify-content: space-evenly;
   flex-direction: column;
@@ -51,7 +58,7 @@ h1 {
 
 .rightSide {
   float: right;
-  width:85%;
+  width: 75%;
 }
 .imageContent {
   width: 100%;
@@ -69,27 +76,38 @@ h1 {
 }
 
 .buttonCollection {
+  justify-content: center;
+  display: flex;
   height: 20%;
   position: relative;
 }
 
 .mySectionButton {
   width: 94%;
-  height: 29.3%;
+  height: 24.75%;
   margin: 3%;
+  background-color: white !important;
+  border-style: solid;
+  border-radius: 25px !important;
 }
 
 .roomsButton {
   width: 94%;
-  height: 29.3%;
-  margin: 2%;
+  height: 24.75%;
+  margin: 3%;
+  background-color: white !important;
+  border-style: solid;
+  border-radius: 25px !important;
 }
 
 .watchButton {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 45%;
+  height: 40%;
+  width: 55%;
+  border-style: solid;
+  border-radius: 25px !important;
 }
 
 .bookButton {
@@ -97,13 +115,16 @@ h1 {
   justify-content: space-between;
   flex-direction: column;
   position: absolute;
-  width: 100%;
-  height: 45%;
+  width: 55%;
+  height: 40%;
   bottom: 0px;
+  border-style: solid;
+  border-radius: 25px !important;
 }
 
 .textarea {
   width: 80%;
+  margin: 2px;
 }
 
 .roomDetailsContents {
@@ -172,8 +193,6 @@ h1 {
   float: left;
   width: 100%;
   height: 100%;
-  display: flex;
-  display: inline;
 }
 
 .buttonBorder {
