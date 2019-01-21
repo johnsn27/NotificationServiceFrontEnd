@@ -21,7 +21,7 @@ class App extends Component {
           <StickyBar id="ViewRoom" className="StickyBar">
             <div className="StickyBarContents">
               <div className="StickyBarContentsTitle">
-                <h2>View Room</h2>
+                <h1>View Room</h1>
               </div>
             </div>
           </StickyBar>
@@ -32,7 +32,8 @@ class App extends Component {
                   My Section:
               </div>
                 <div className="MySectionButtons">
-                  <div>
+                  <div className="buttonBorder">
+                  <div className="mySectionButton">
                     <Btn
                       type="primary"
                       tab-index="1"
@@ -42,7 +43,7 @@ class App extends Component {
                       <span>My Account</span>
                     </Btn>
                   </div>
-                  <div>
+                  <div className="mySectionButton">
                     <Btn
                       type="primary"
                       tab-index="1"
@@ -52,7 +53,7 @@ class App extends Component {
                       <span>My Bookings</span>
                     </Btn>
                   </div>
-                  <div>
+                  <div className="mySectionButton">
                     <Btn
                       type="primary"
                       tab-index="1"
@@ -64,13 +65,15 @@ class App extends Component {
                   </div>
                 </div>
               </div>
+              </div>
 
-              <div className="Room">
+              <div className="Rooms">
                 <div className="RoomsTitle">
-                  Rooms:
+                  <span>Rooms:</span>
               </div>
                 <div className="RoomsButtons">
-                  <div>
+                <div className="buttonBorder">
+                <div className="roomsButton">
                     <Btn
                       type="primary"
                       tab-index="1"
@@ -80,7 +83,7 @@ class App extends Component {
                       <span>Book a Room</span>
                     </Btn>
                   </div>
-                  <div>
+                  <div className="roomsButton">
                     <Btn
                       type="primary"
                       tab-index="1"
@@ -90,7 +93,7 @@ class App extends Component {
                       <span>Search a Room</span>
                     </Btn>
                   </div>
-                  <div>
+                  <div className="roomsButton">
                     <Btn
                       type="primary"
                       tab-index="1"
@@ -100,6 +103,7 @@ class App extends Component {
                       <span>Meeting Rooms</span>
                     </Btn>
                   </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -227,7 +231,7 @@ class App extends Component {
                     </div>
                     <div className="textbox">
                       <div className="label">
-                        <p>Wheelchair support</p>
+                        <p>Wheelchair Support</p>
                       </div>
                       {/* <div className="textarea"> */}
                       <textarea className="textarea " rows="2">

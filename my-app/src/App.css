@@ -2,7 +2,11 @@
   --image-size: 200px;
 }
 
-h2 {
+html {
+  height:100%;
+}
+
+h1 {
   margin:0;
 }
 
@@ -20,12 +24,13 @@ h2 {
 
 .pageContent {
   width: 100%;
-  height: 100%;
+  height: fit-content;
 }
 
 .pageContentBelowSticky {
   margin-top: 62px;
   width: 100%;
+  height: 474px;
 }
 
 .igm-btn {
@@ -37,6 +42,11 @@ h2 {
   float: left;
   margin-left: 5px;
   width: 10%;
+  height: 100%;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
 }
 
 .rightSide {
@@ -61,6 +71,18 @@ h2 {
 .buttonCollection {
   height: 20%;
   position: relative;
+}
+
+.mySectionButton {
+  width: 94%;
+  height: 29.3%;
+  margin: 3%;
+}
+
+.roomsButton {
+  width: 94%;
+  height: 29.3%;
+  margin: 2%;
 }
 
 .watchButton {
@@ -90,6 +112,8 @@ h2 {
   width: 98%;
   height: 100%;
   margin-right: 5px;
+  float: left;
+  /* min-width: 1000px; */
 }
 
 .roomDetailsContentsLeft {
@@ -119,6 +143,8 @@ h2 {
 .Rooms {
   float: left;
   width: 100%;
+  height: 45%;
+  position: relative;
 }
 
 .RoomsTitle {
@@ -128,13 +154,14 @@ h2 {
 .RoomsButtons {
   float: left;
   width: 100%;
-  border-style: solid;
+  height: 100%;
 }
 
 .MySection {
   float: left;
-  display: row;
   width: 100%;
+  height: 45%;
+  margin-bottom: 55px;
 }
 
 .MySectionTitle {
@@ -144,7 +171,15 @@ h2 {
 .MySectionButtons {
   float: left;
   width: 100%;
+  height: 100%;
+  display: flex;
+  display: inline;
+}
+
+.buttonBorder {
+  height: 85%;
   border-style: solid;
+  min-width: 106px;
 }
 
 .App-link {
