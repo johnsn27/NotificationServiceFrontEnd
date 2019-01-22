@@ -33,77 +33,77 @@ class App extends Component {
               </div>
                 <div className="MySectionButtons">
                   <div className="buttonBorder">
-                  <div className="mySectionButton">
-                    <Btn
-                      type="primary"
-                      tab-index="1"
-                      className="Button"
-                      onClick={onClick}
-                    >
-                      <span>My Account</span>
-                    </Btn>
-                  </div>
-                  <div className="mySectionButton">
-                    <Btn
-                      type="primary"
-                      tab-index="1"
-                      className="Button"
-                      onClick={onClick}
-                    >
-                      <span>My Bookings</span>
-                    </Btn>
-                  </div>
-                  <div className="mySectionButton">
-                    <Btn
-                      type="primary"
-                      tab-index="1"
-                      className="Button"
-                      onClick={onClick}
-                    >
-                      <span>My Watched Rooms</span>
-                    </Btn>
+                    <div className="mySectionButton">
+                      <Btn
+                        type="primary"
+                        tab-index="1"
+                        className="Button"
+                        onClick={onClick}
+                      >
+                        <span>My Account</span>
+                      </Btn>
+                    </div>
+                    <div className="mySectionButton">
+                      <Btn
+                        type="primary"
+                        tab-index="1"
+                        className="Button"
+                        onClick={onClick}
+                      >
+                        <span>My Bookings</span>
+                      </Btn>
+                    </div>
+                    <div className="mySectionButton">
+                      <Btn
+                        type="primary"
+                        tab-index="1"
+                        className="Button"
+                        onClick={onClick}
+                      >
+                        <span>My Watched Rooms</span>
+                      </Btn>
+                    </div>
                   </div>
                 </div>
-              </div>
               </div>
 
               <div className="Rooms">
                 <div className="RoomsTitle">
                   <span>Rooms:</span>
-              </div>
-                <div className="RoomsButtons">
-                <div className="buttonBorder">
-                <div className="roomsButton">
-                    <Btn
-                      type="primary"
-                      tab-index="1"
-                      className="Button"
-                      onClick={onClick}
-                    >
-                      <span>Book a Room</span>
-                    </Btn>
-                  </div>
-                  <div className="roomsButton">
-                    <Btn
-                      type="primary"
-                      tab-index="1"
-                      className="Button"
-                      onClick={onClick}
-                    >
-                      <span>Search a Room</span>
-                    </Btn>
-                  </div>
-                  <div className="roomsButton">
-                    <Btn
-                      type="primary"
-                      tab-index="1"
-                      className="Button"
-                      onClick={onClick}
-                    >
-                      <span>Meeting Rooms</span>
-                    </Btn>
-                  </div>
                 </div>
+                <div className="RoomsButtons">
+                  <div className="buttonBorder">
+                    <div className="roomsButton">
+                      <Btn
+                        type="primary"
+                        tab-index="1"
+                        className="Button"
+                        onClick={onClick}
+                      >
+                        <span>Book a Room</span>
+                      </Btn>
+                    </div>
+                    <div className="roomsButton">
+                      <Btn
+                        type="primary"
+                        tab-index="1"
+                        className="Button"
+                        onClick={onClick}
+                      >
+                        <span>Search a Room</span>
+                      </Btn>
+                    </div>
+                    <div className="roomsButton">
+                      <Btn
+                        type="primary"
+                        tab-index="1"
+                        className="Button"
+                        onClick={onClick}
+                      >
+                        <span>Meeting Rooms</span>
+                      </Btn>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -124,25 +124,25 @@ class App extends Component {
                       </div>
                     </div>
                     <div className="buttonCollection">
-                    <div className="watchButton">
-                      <Btn
-                        type="primary"
-                        tab-index="1"
-                        className="Button"
-                        onClick={onClick}
-                      >
-                        <span>Watch</span>
-                      </Btn>
-                    </div>
-                    <div className="bookButton">
-                      <Btn
-                        type="primary"
-                        tab-index="1"
-                        className="Button"
-                        onClick={onClick}
-                      >
-                        <span>Book</span>
-                      </Btn>
+                      <div className="watchButton">
+                        <Btn
+                          type="primary"
+                          tab-index="1"
+                          className="Button"
+                          onClick={onClick}
+                        >
+                          <span>Watch</span>
+                        </Btn>
+                      </div>
+                      <div className="bookButton">
+                        <Btn
+                          type="primary"
+                          tab-index="1"
+                          className="Button"
+                          onClick={onClick}
+                        >
+                          <span>Book</span>
+                        </Btn>
                       </div>
                     </div>
                   </div>
@@ -154,7 +154,6 @@ class App extends Component {
                         <p>RoomId:</p>
                       </div>
                       <textarea className="textarea " rows="2">
-
                       </textarea>
                     </div>
                     <div className="textbox">
@@ -162,7 +161,6 @@ class App extends Component {
                         <p>Room Name:</p>
                       </div>
                       <textarea className="textarea " rows="2">
-
                       </textarea>
                     </div>
                     <div className="textbox">
@@ -170,7 +168,6 @@ class App extends Component {
                         <p>Area Code:</p>
                       </div>
                       <textarea className="textarea " rows="2">
-
                       </textarea>
                     </div>
                     <div className="textbox">
@@ -178,7 +175,6 @@ class App extends Component {
                         <p>Capacity:</p>
                       </div>
                       <textarea className="textarea " rows="2">
-
                       </textarea>
                     </div>
                     <div className="textbox">
@@ -186,7 +182,6 @@ class App extends Component {
                         <p>Screen:</p>
                       </div>
                       <textarea className="textarea " rows="2">
-
                       </textarea>
                     </div>
                     <div className="textbox">
@@ -194,7 +189,6 @@ class App extends Component {
                         <p>DVD:</p>
                       </div>
                       <textarea className="textarea " rows="2">
-
                       </textarea>
                     </div>
                     <div className="textbox">
@@ -202,7 +196,6 @@ class App extends Component {
                         <p>VCU:</p>
                       </div>
                       <textarea className="textarea " rows="2">
-
                       </textarea>
                     </div>
                     <div className="textbox">
@@ -210,7 +203,6 @@ class App extends Component {
                         <p>Whiteboard:</p>
                       </div>
                       <textarea className="textarea " rows="2">
-
                       </textarea>
                     </div>
                     <div className="textbox">
@@ -218,7 +210,6 @@ class App extends Component {
                         <p>Wheelchair Support:</p>
                       </div>
                       <textarea className="textarea " rows="2">
-
                       </textarea>
                     </div>
                   </div>
