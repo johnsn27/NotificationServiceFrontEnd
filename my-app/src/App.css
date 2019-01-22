@@ -69,6 +69,7 @@ h1 {
 .image {
   width:100%;
   height: 40%;
+  margin: 2px;
 }
 
 .imageCaptionText {
@@ -84,7 +85,7 @@ h1 {
 }
 
 .mySectionButton {
-  width: 94%;
+  width: 92%;
   height: 24.75%;
   margin: 3%;
   background-color: white !important;
@@ -93,7 +94,7 @@ h1 {
 }
 
 .roomsButton {
-  width: 94%;
+  width: 92%;
   height: 24.75%;
   margin: 3%;
   background-color: white !important;
@@ -106,7 +107,7 @@ h1 {
   justify-content: space-between;
   flex-direction: column;
   height: 40%;
-  width: 55%;
+  width: 70%;
   border-style: solid;
   border-radius: 10px;
 }
@@ -116,7 +117,7 @@ h1 {
   justify-content: space-between;
   flex-direction: column;
   position: absolute;
-  width: 55%;
+  width: 70%;
   height: 40%;
   bottom: 0px;
   border-style: solid;
@@ -124,7 +125,7 @@ h1 {
 }
 
 .textarea {
-  width: 80%;
+  width: 70%;
   margin: 2px;
 }
 
@@ -171,6 +172,8 @@ h1 {
 
 .RoomsTitle {
   float: left;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .RoomsButtons {
@@ -183,11 +186,13 @@ h1 {
   float: left;
   width: 100%;
   height: 45%;
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .MySectionTitle {
   float: left;
+  font-size: 20px;
+  margin-bottom: 5px
 }
 
 .MySectionButtons {
@@ -199,7 +204,7 @@ h1 {
 .buttonBorder {
   height: 85%;
   border-style: solid;
-  min-width: 106px;
+  min-width: 108px;
 }
 
 .App-link {

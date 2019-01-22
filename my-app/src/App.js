@@ -153,91 +153,73 @@ class App extends Component {
                       <div className="label">
                         <p>RoomId:</p>
                       </div>
-                      {/* <div className="textarea"> */}
                       <textarea className="textarea " rows="2">
 
                       </textarea>
-                      {/* </div> */}
                     </div>
                     <div className="textbox">
                       <div className="label">
                         <p>Room Name:</p>
                       </div>
-                      {/* <div className="textarea"> */}
                       <textarea className="textarea " rows="2">
 
                       </textarea>
-                      {/* </div> */}
                     </div>
                     <div className="textbox">
                       <div className="label">
                         <p>Area Code:</p>
                       </div>
-                      {/* <div className="textarea"> */}
                       <textarea className="textarea " rows="2">
 
                       </textarea>
-                      {/* </div> */}
                     </div>
                     <div className="textbox">
                       <div className="label">
                         <p>Capacity:</p>
                       </div>
-                      {/* <div className="textarea"> */}
                       <textarea className="textarea " rows="2">
 
                       </textarea>
-                      {/* </div> */}
                     </div>
                     <div className="textbox">
                       <div className="label">
                         <p>Screen:</p>
                       </div>
-                      {/* <div className="textarea"> */}
                       <textarea className="textarea " rows="2">
 
                       </textarea>
-                      {/* </div> */}
                     </div>
                     <div className="textbox">
                       <div className="label">
                         <p>DVD:</p>
                       </div>
-                      {/* <div className="textarea"> */}
                       <textarea className="textarea " rows="2">
 
                       </textarea>
-                      {/* </div> */}
                     </div>
                     <div className="textbox">
                       <div className="label">
                         <p>VCU:</p>
                       </div>
-                      {/* <div className="textarea"> */}
                       <textarea className="textarea " rows="2">
 
                       </textarea>
-                      {/* </div> */}
                     </div>
                     <div className="textbox">
                       <div className="label">
                         <p>Whiteboard:</p>
                       </div>
-                      {/* <div className="textarea"> */}
                       <textarea className="textarea " rows="2">
 
                       </textarea>
-                      {/* </div> */}
                     </div>
                     <div className="textbox">
                       <div className="label">
-                        <p>Wheelchair Support</p>
+                        <p>Wheelchair Support:</p>
                       </div>
-                      {/* <div className="textarea"> */}
                       <textarea className="textarea " rows="2">
 
                       </textarea>
-                      {/* </div> */}
                     </div>
                   </div>
                 </div>
