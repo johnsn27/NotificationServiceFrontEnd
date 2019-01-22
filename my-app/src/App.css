@@ -36,7 +36,15 @@ h1 {
   height: 474px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+}
 
+.horizontal {
+  width: 100%;
+}
+
+.backClear {
+  text-align: center;
 }
 
 .igm-btn {
