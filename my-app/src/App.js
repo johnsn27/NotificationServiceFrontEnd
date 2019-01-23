@@ -218,26 +218,28 @@ class App extends Component {
                 </div>
               </div>
             </div>
-            <div className="backClearButtons">
-              <div className="backButton">
-                <Btn
-                  type="primary"
-                  tab-index="1"
-                  className="Button"
-                  onClick={onClick}
-                >
-                  <span>Back</span>
-                </Btn>
-              </div>
-              <div className="clearButton">
-                <Btn
-                  type="primary"
-                  tab-index="1"
-                  className="Button"
-                  onClick={onClick}
-                >
-                  <span>Clear</span>
-                </Btn>
+            <div className="backClearButtonsContainer">
+              <div className="backClearButtons">
+                <div className="backButton">
+                  <Btn
+                    type="primary"
+                    tab-index="1"
+                    className="Button"
+                    onClick={onClick}
+                  >
+                    <span>Back</span>
+                  </Btn>
+                </div>
+                <div className="clearButton">
+                  <Btn
+                    type="primary"
+                    tab-index="1"
+                    className="Button"
+                    onClick={onClick}
+                  >
+                    <span>Clear</span>
+                  </Btn>
+                </div>
               </div>
             </div>
           </div>
