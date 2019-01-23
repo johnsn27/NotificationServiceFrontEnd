@@ -904,6 +904,14 @@
     classnames "^2.2.5"
     react-select "^2.1.2"
 
+"@bbc/igm-sticky-bar@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@bbc/igm-sticky-bar/-/igm-sticky-bar-4.1.0.tgz#4b28f81df3184c7ddadf4e8dd365e0259bf2afaa"
+  integrity sha512-wisuIO/NJmIeIEAkaq4ndmy5o2NPnaKdger5REG43OJ42aQaXheL5U06jimqkMS7wYrZ79fSFGmysgtInllg3g==
+  dependencies:
+    "@bbc/igm-base" "^1.1.0"
+    classnames "^2.2.5"
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"

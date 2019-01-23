@@ -1,25 +1,286 @@
-.App {
+:root {
+  --image-size: 200px;
+  --title-font-size: 20px;
+  --text-font-size: 18px;
+}
+
+html {
+  height:100%;
+}
+
+h1 {
+  margin:0;
+}
+
+
+.StickyBar {
+  display: flex;
+}
+
+.StickyBarContents {
+  width: 100%;
+}
+
+.StickyBarContentsTitle {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.pageContent {
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pageContentBelowSticky {
+  margin-top: 62px;
+  width: 100%;
+  min-width: 600px;
+  height: 474px;
   display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.horizontal {
+  width: 100%;
+  align-content: center;
+}
+
+.backClearButtonsContainer {
+  height: 53px;
+}
+
+.backClearButtons {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin-left: 35%;
+  margin-top: 1%;
+}
+
+.backButton {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.clearButton {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+  margin-left: 2%;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.igm-btn {
+  width: 100%;
+  height: 100%;
+  background-color: white !important;
+  border-radius: 100%;
+  color: black !important;
+  font-size: var(--text-font-size) !important;
+  text-align: center !important;
+}
+
+.leftSide {
+  float: left;
+  margin-left: 10%;
+  width: 20%;
+  height: 100%;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  min-width: 330px;
+}
+
+.rightSide {
+  float: left;
+  margin-left: 2%;
+  width: 68%;
+  height: fit-content;
+}
+
+.rightSideTitle {
+  font-size: var(--title-font-size);
+  font-weight: bold;
+}
+
+.imageContent {
+  margin: 6%;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width:100%;
+  height: 40%;
+}
+
+.imageCaptionText {
+  text-align: center;
+  height: 20%;
+  font-size: var(--text-font-size);
+}
+
+.buttonCollection {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  height: 20%;
+  position: relative;
+}
+
+.mySectionButton {
+  width: 75%;
+  height: 24.75%;
+  min-height: 47px;
+  min-width: 150px;
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-style: solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roomsButton {
+  width: 75%;
+  height: 24.75%;
+  min-height: 47px;
+  min-width: 150px;
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-style: solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watchButton {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 40%;
+  width: 80%;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.bookButton {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  width: 80%;
+  height: 40%;
+  bottom: 0px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.textarea {
+  width: 50%;
+  margin: 2px;
+}
+
+.roomDetailsContents {
+  display: flex;
+  border-style: solid;
+  width: 80%;
+  height: 90%;
+  float: left;
+  /* min-width: 1000px; */
+}
+
+.roomDetailsContentsLeft {
+  width: 30%;
+}
+
+.roomDetailsContentsRight {
+  width: 70%;
+}
+
+.roomDetailsContentsRightInner {
+  float: left;
+  width: 100%;
+  margin-left: 5%;
+}
+
+.textbox {
+  display: flex;
+  text-align: center;
+  float: right;
+  width: 80%;
+}
+
+.label {
+  width:40%;
+  text-align: left;
+  font-size: var(--text-font-size)
+}
+
+.Rooms {
+  float: left;
+  width: 100%;
+  height: 45%;
+  position: relative;
+}
+
+.RoomsTitle {
+  float: left;
+  font-size: var(--title-font-size);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.RoomsButtons {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.MySection {
+  float: left;
+  width: 100%;
+  height: 75%;
+  margin-bottom: 77px;
+}
+
+.MySectionTitle {
+  float: left;
+  font-size: var(--title-font-size);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.MySectionButtons {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.buttonBorder {
+  height: 100%;
+  border-style: solid;
+  min-width: 108px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.gel-icon {
+  height:15px;
+  width:20px;
 }
 
 @keyframes App-logo-spin {
