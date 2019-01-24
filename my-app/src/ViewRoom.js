@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './ViewRoom.css';
 import Btn from '@bbc/igm-btn';
 import '@bbc/igm-btn/dist/Btn.css';
 import StickyBar from '@bbc/igm-sticky-bar'
