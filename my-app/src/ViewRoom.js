@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import './ViewRoom.css';
+import Btn from '@bbc/igm-btn';
+import '@bbc/igm-btn/dist/Btn.css';
+import CustomStickyBar from './CustomStickyBar';
 import './App.css';
 import Btn from '@bbc/igm-btn';
 import '@bbc/igm-btn/dist/Btn.css';
@@ -17,13 +21,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header"></header>
         <div className="pageContent">
-          <StickyBar id="ViewRoom" className="StickyBar">
-            <div className="StickyBarContents">
-              <div className="StickyBarContentsTitle">
-                <h1>View Room</h1>
-              </div>
-            </div>
-          </StickyBar>
+          <CustomStickyBar id="ViewRoom" className="StickyBar" text="ViewRoom"></CustomStickyBar>
           <div className="pageContentBelowSticky">
             <div className="horizontal">
               <div className="leftSide">
