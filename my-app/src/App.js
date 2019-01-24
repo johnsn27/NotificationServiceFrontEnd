@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './App.css';
 import Btn from '@bbc/igm-btn';
 import '@bbc/igm-btn/dist/Btn.css';
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';
 import ViewRoom from './ViewRoom';
-
-
 
 class App extends Component {
   constructor(props) {

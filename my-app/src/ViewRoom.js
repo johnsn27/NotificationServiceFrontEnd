@@ -3,6 +3,10 @@ import './ViewRoom.css';
 import Btn from '@bbc/igm-btn';
 import '@bbc/igm-btn/dist/Btn.css';
 import CustomStickyBar from './CustomStickyBar';
+import './App.css';
+import Btn from '@bbc/igm-btn';
+import '@bbc/igm-btn/dist/Btn.css';
+import StickyBar from '@bbc/igm-sticky-bar'
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';
 
 function onClick() {
