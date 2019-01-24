@@ -15,7 +15,7 @@ function onClick() {
 }
 
 
-class ViewRoom extends Component {
+class SearchRoom extends Component {
   constructor(props) {
     super();
     this.toggleBack = this.toggleBack.bind(this);
@@ -40,7 +40,7 @@ class ViewRoom extends Component {
               </div>
               <div className="rightSide">
                 <div className="rightSideTitle">
-                  Studio 1 06 E M1
+                  Fill in details below
             </div>
                 <div className="roomDetailsContents">
                   <div className="roomDetailsContentsLeft">
@@ -157,7 +157,7 @@ class ViewRoom extends Component {
                     className="Button"
                     onClick={this.toggleBack}
                   >
-                    <span>Back</span>
+                    <span>Search</span>
                   </Btn>
                 </div>
                 <div className="clearButton">
@@ -178,12 +178,12 @@ class ViewRoom extends Component {
   }
 }
 
-ViewRoom.propTypes = {
+SearchRoom.propTypes = {
   DisplayBack: PropTypes.bool,
 };
 
-ViewRoom.defaultProps = {
+SearchRoom.defaultProps = {
   DisplayBack: false,
 }
 
-export default ViewRoom;
+export default SearchRoom;

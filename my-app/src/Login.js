@@ -5,7 +5,7 @@ import '@bbc/igm-btn/dist/Btn.css';
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';
 import ViewRoom from './ViewRoom';
 
-class App extends Component {
+class Login extends Component {
   constructor(props) {
     super();
     this.toggleViewRoom = this.toggleViewRoom.bind(this);
@@ -35,12 +35,12 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
+Login.propTypes = {
   DisplayViewRoom: PropTypes.bool,
 };
 
-App.defaultProps = {
+Login.defaultProps = {
   DisplayViewRoom: false,
 }
 
-export default App;
+export default Login;
