@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './ViewRoom.css';
 import Btn from '@bbc/igm-btn';
 import '@bbc/igm-btn/dist/Btn.css';
-import CustomStickyBar from './CustomStickyBar';
+import CustomStickyBar from './CustomStickyBar/CustomStickyBar.js';
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';
+import App from './App';
+import LeftSideBar from './LeftSideBar/LeftSideBar';
 
 function onClick() {
   var element = document.getElementsByClassName("css-xp4uvy select__single-value")[0].innerHTML;
@@ -11,95 +14,29 @@ function onClick() {
   return element;
 }
 
-class App extends Component {
+
+class ViewRoom extends Component {
+  constructor(props) {
+    super();
+    this.toggleBack = this.toggleBack.bind(this);
+    this.state = { DisplayLogin: props.DisplayLogin };
+  }
+
+  toggleBack() {
+    this.setState({ DisplayLogin: !this.state.DisplayLogin });
+  }
+
   render() {
-    return (
-      <div className="App">
+    return this.state.DisplayLogin
+      ? <App />
+      : <div className="App">
         <header className="App-header"></header>
         <div className="pageContent">
           <CustomStickyBar id="ViewRoom" className="StickyBar" text="ViewRoom"></CustomStickyBar>
           <div className="pageContentBelowSticky">
             <div className="horizontal">
               <div className="leftSide">
-                <div className="MySection">
-                  <div className="MySectionTitle">
-                    My Section:
-              </div>
-                  <div className="MySectionButtons">
-                    <div className="buttonBorder">
-                      <div className="mySectionButton">
-                        <Btn
-                          type="primary"
-                          tab-index="1"
-                          className="Button"
-                          onClick={onClick}
-                        >
-                          <span>My Account</span>
-                        </Btn>
-                      </div>
-                      <div className="mySectionButton">
-                        <Btn
-                          type="primary"
-                          tab-index="1"
-                          className="Button"
-                          onClick={onClick}
-                        >
-                          <span>My Bookings</span>
-                        </Btn>
-                      </div>
-                      <div className="mySectionButton">
-                        <Btn
-                          type="primary"
-                          tab-index="1"
-                          className="Button"
-                          onClick={onClick}
-                        >
-                          <span>My Watched Rooms</span>
-                        </Btn>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="Rooms">
-                  <div className="RoomsTitle">
-                    <span>Rooms:</span>
-                  </div>
-                  <div className="RoomsButtons">
-                    <div className="buttonBorder">
-                      <div className="roomsButton">
-                        <Btn
-                          type="primary"
-                          tab-index="1"
-                          className="Button"
-                          onClick={onClick}
-                        >
-                          <span>Book a Room</span>
-                        </Btn>
-                      </div>
-                      <div className="roomsButton">
-                        <Btn
-                          type="primary"
-                          tab-index="1"
-                          className="Button"
-                          onClick={onClick}
-                        >
-                          <span>Search a Room</span>
-                        </Btn>
-                      </div>
-                      <div className="roomsButton">
-                        <Btn
-                          type="primary"
-                          tab-index="1"
-                          className="Button"
-                          onClick={onClick}
-                        >
-                          <span>Meeting Rooms</span>
-                        </Btn>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <LeftSideBar />
               </div>
               <div className="rightSide">
                 <div className="rightSideTitle">
@@ -218,7 +155,7 @@ class App extends Component {
                     type="primary"
                     tab-index="1"
                     className="Button"
-                    onClick={onClick}
+                    onClick={this.toggleBack}
                   >
                     <span>Back</span>
                   </Btn>
@@ -238,8 +175,15 @@ class App extends Component {
           </div>
         </div>
       </div >
-    );
   }
 }
 
-export default App;
+ViewRoom.propTypes = {
+  DisplayBack: PropTypes.bool,
+};
+
+ViewRoom.defaultProps = {
+  DisplayBack: false,
+}
+
+export default ViewRoom;

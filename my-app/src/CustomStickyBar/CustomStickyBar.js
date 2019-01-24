@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import './ViewRoom.css';
+import React from 'react';
 import PropTypes from 'prop-types';
 import StickyBar from '@bbc/igm-sticky-bar'
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';

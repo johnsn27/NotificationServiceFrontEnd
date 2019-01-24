@@ -5,8 +5,6 @@ import '@bbc/igm-btn/dist/Btn.css';
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';
 import ViewRoom from './ViewRoom';
 
-
-
 class App extends Component {
   constructor(props) {
     super();
