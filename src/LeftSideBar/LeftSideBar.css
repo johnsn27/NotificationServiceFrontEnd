@@ -1,0 +1,85 @@
+:root {
+  --image-size: 200px;
+  --title-font-size: 20px;
+  --text-font-size: 18px;
+}
+
+html {
+  height:100%;
+}
+
+.mySectionButton {
+  width: 75%;
+  height: 24.75%;
+  min-height: 47px;
+  min-width: 150px;
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-style: solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roomsButton {
+  width: 75%;
+  height: 24.75%;
+  min-height: 47px;
+  min-width: 150px;
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-style: solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Rooms {
+  float: left;
+  width: 100%;
+  height: 45%;
+  position: relative;
+}
+
+.RoomsTitle {
+  float: left;
+  font-size: var(--title-font-size);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.RoomsButtons {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.MySection {
+  float: left;
+  width: 100%;
+  height: 75%;
+  margin-bottom: 77px;
+}
+
+.MySectionTitle {
+  float: left;
+  font-size: var(--title-font-size);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.MySectionButtons {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.buttonBorder {
+  height: 100%;
+  border-style: solid;
+  min-width: 108px;
+}

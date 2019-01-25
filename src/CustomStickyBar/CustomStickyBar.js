@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import StickyBar from '@bbc/igm-sticky-bar'
+import './CustomStickyBar.css'
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';
 
 function CustomStickyBar({ id, className, text }) {
