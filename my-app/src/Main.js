@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Main.css';
-import '@bbc/igm-btn/dist/Btn.css';
 import CustomStickyBar from './CustomStickyBar/CustomStickyBar.js';
-import '@bbc/igm-sticky-bar/dist/StickyBar.css';
-import Login from './Login';
 import LeftSideBar from './LeftSideBar/LeftSideBar';
 import ViewRoom from './ViewRoom';
 import BackClear from './BackClear';
@@ -36,16 +33,15 @@ class Test extends Component {
     if (this.state.DisplaySearchRoom) {
       rightSide = <SearchRoom />
     }
-    return this.state.DisplayLogin
-      ? <Login />
-      : <div className="App">
+    return (
+      <div className="App">
         <header className="App-header"></header>
         <div className="pageContent">
           <CustomStickyBar id="ViewRoom" className="StickyBar" text="View Room"></CustomStickyBar>
           <div className="pageContentBelowSticky">
             <div className="horizontal">
               <div className="leftSide">
-                <LeftSideBar search={this.search.bind(this)}/>
+                <LeftSideBar search={this.search.bind(this)} />
               </div>
               <div className="rightSide">
                 {rightSide}
@@ -57,6 +53,7 @@ class Test extends Component {
           </div>
         </div>
       </div>
+    );
   }
 }
 
