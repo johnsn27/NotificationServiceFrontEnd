@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './ViewRoom.css';
+import './Test.css';
 import '@bbc/igm-btn/dist/Btn.css';
 import CustomStickyBar from './CustomStickyBar/CustomStickyBar.js';
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';
@@ -34,11 +35,11 @@ class Test extends Component {
                 <LeftSideBar />
               </div>
               <div className="rightSide">
-              <ViewRoom />
+                <ViewRoom />
               </div>
-              <div className="backClearButtonsContainer">
+            </div>
+            <div className="backClearButtonsContainer">
               <BackClear />
-              </div>
             </div>
           </div>
         </div>
