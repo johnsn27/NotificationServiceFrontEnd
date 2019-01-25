@@ -8,13 +8,6 @@ html {
   height:100%;
 }
 
-.buttonCollection {
-  justify-content: center;
-  display: flex;
-  height: 20%;
-  position: relative;
-}
-
 .mySectionButton {
   width: 75%;
   height: 24.75%;

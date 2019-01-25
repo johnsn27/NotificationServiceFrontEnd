@@ -1,3 +1,41 @@
 .backClearButtonsContainer {
   height: 53px;
 }
+
+.pageContent {
+  width: 100%;
+  height: 100%;
+}
+
+.pageContentBelowSticky {
+  margin-top: 62px;
+  width: 100%;
+  min-width: 600px;
+  height: 474px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.horizontal {
+  width: 100%;
+  align-content: center;
+}
+
+.leftSide {
+  float: left;
+  margin-left: 10%;
+  width: 20%;
+  height: 100%;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  min-width: 330px;
+}
+
+.rightSide {
+  float: left;
+  margin-left: 2%;
+  width: 68%;
+  height: fit-content;
+}

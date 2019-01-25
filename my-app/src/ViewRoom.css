@@ -12,68 +12,6 @@ h1 {
   margin:0;
 }
 
-
-.StickyBar {
-  display: flex;
-}
-
-.StickyBarContents {
-  width: 100%;
-}
-
-.StickyBarContentsTitle {
-  text-align: center;
-}
-
-.pageContent {
-  width: 100%;
-  height: 100%;
-}
-
-.pageContentBelowSticky {
-  margin-top: 62px;
-  width: 100%;
-  min-width: 600px;
-  height: 474px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.horizontal {
-  width: 100%;
-  align-content: center;
-}
-
-.backClearButtons {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  margin-left: 35%;
-  margin-top: 1%;
-}
-
-.backButton {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 100%;
-  width: 20%;
-  border-style: solid;
-  border-radius: 10px;
-}
-
-.clearButton {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 100%;
-  width: 20%;
-  margin-left: 2%;
-  border-style: solid;
-  border-radius: 10px;
-}
-
 .igm-btn {
   width: 100%;
   height: 100%;
@@ -84,25 +22,8 @@ h1 {
   text-align: center !important;
 }
 
-.leftSide {
-  float: left;
-  margin-left: 10%;
-  width: 20%;
-  height: 100%;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  min-width: 330px;
-}
-
-.rightSide {
-  float: left;
-  margin-left: 2%;
-  width: 68%;
-  height: fit-content;
-}
-
-.rightSideTitle {
+/* change the name of this to be more specific */
+.rightSideTitle { 
   font-size: var(--title-font-size);
   font-weight: bold;
 }
@@ -129,36 +50,6 @@ h1 {
   display: flex;
   height: 20%;
   position: relative;
-}
-
-.mySectionButton {
-  width: 75%;
-  height: 24.75%;
-  min-height: 47px;
-  min-width: 150px;
-  margin-left: 10%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  border-style: solid;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.roomsButton {
-  width: 75%;
-  height: 24.75%;
-  min-height: 47px;
-  min-width: 150px;
-  margin-left: 10%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  border-style: solid;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .watchButton {
@@ -222,10 +113,4 @@ h1 {
   width:40%;
   text-align: left;
   font-size: var(--text-font-size)
-}
-
-.buttonBorder {
-  height: 100%;
-  border-style: solid;
-  min-width: 108px;
 }

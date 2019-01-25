@@ -1,0 +1,30 @@
+
+.backClearButtons {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-left: 35%;
+    margin-top: 1%;
+  }
+
+
+.backButton {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    border-style: solid;
+    border-radius: 10px;
+  }
+  
+  .clearButton {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    margin-left: 2%;
+    border-style: solid;
+    border-radius: 10px;
+  }
