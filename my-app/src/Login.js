@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Btn from '@bbc/igm-btn';
 import '@bbc/igm-btn/dist/Btn.css';
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';
-import Test from './Test';
+import Main from './Main';
 
 class Login extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class Login extends Component {
 
   render() {
     return this.state.DisplayViewRoom
-      ? <Test />
+      ? <Main />
       : <div className="App">
         <header className="App-header"></header>
         <div className="loginButton">

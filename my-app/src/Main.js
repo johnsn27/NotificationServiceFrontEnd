@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './Test.css';
+import './Main.css';
 import '@bbc/igm-btn/dist/Btn.css';
 import CustomStickyBar from './CustomStickyBar/CustomStickyBar.js';
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';
