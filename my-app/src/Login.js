@@ -4,6 +4,7 @@ import Btn from '@bbc/igm-btn';
 import '@bbc/igm-btn/dist/Btn.css';
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';
 import ViewRoom from './ViewRoom';
+import Test from './Test';
 
 class Login extends Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class Login extends Component {
 
   render() {
     return this.state.DisplayViewRoom
-      ? <ViewRoom />
+      ? <Test />
       : <div className="App">
         <header className="App-header"></header>
         <div className="loginButton">

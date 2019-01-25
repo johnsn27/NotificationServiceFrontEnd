@@ -7,13 +7,13 @@ import CustomStickyBar from './CustomStickyBar/CustomStickyBar.js';
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';
 import Login from './Login';
 import LeftSideBar from './LeftSideBar/LeftSideBar';
+import ViewRoom from './ViewRoom';
 
 function onClick() {
   var element = document.getElementsByClassName("css-xp4uvy select__single-value")[0].innerHTML;
   console.log(element);
   return element;
 }
-
 
 class SearchRoom extends Component {
   constructor(props) {
@@ -27,9 +27,8 @@ class SearchRoom extends Component {
   }
 
   render() {
-    return this.state.DisplayLogin
-      ? <Login />
-      : <div className="App">
+    return (
+      <div className="App">
         <header className="App-header"></header>
         <div className="pageContent">
           <CustomStickyBar id="ViewRoom" className="StickyBar" text="View Room"></CustomStickyBar>
@@ -175,6 +174,7 @@ class SearchRoom extends Component {
           </div>
         </div>
       </div >
+    );
   }
 }
 
