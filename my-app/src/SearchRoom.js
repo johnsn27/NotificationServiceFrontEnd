@@ -5,9 +5,7 @@ import Btn from '@bbc/igm-btn';
 import '@bbc/igm-btn/dist/Btn.css';
 import CustomStickyBar from './CustomStickyBar/CustomStickyBar.js';
 import '@bbc/igm-sticky-bar/dist/StickyBar.css';
-import Login from './Login';
 import LeftSideBar from './LeftSideBar/LeftSideBar';
-import ViewRoom from './ViewRoom';
 
 function onClick() {
   var element = document.getElementsByClassName("css-xp4uvy select__single-value")[0].innerHTML;

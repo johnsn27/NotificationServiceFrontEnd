@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import LeftSideBarButton from './LeftSideBarButtons/LeftSideBarButton.js';
 import './LeftSideBar.css';
-import SearchRoom from '../SearchRoom.js';
 
 function onClick() {
   console.log('Left Side Bar Clicked');
