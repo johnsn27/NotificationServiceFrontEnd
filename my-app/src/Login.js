@@ -20,7 +20,7 @@ class Login extends Component {
       ? <Main />
       : <div className="App">
         <header className="App-header"></header>
-        <div className="loginButton">
+        <div className="LoginButton">
           <Btn
             type="primary"
             tab-index="1"

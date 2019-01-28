@@ -1,4 +1,4 @@
-.backClearButtonsContainer {
+.BackClearButtonsContainer {
   height: 53px;
 }
 
@@ -17,12 +17,12 @@
   flex-direction: column;
 }
 
-.horizontal {
+.LeftRightContent {
   width: 100%;
   align-content: center;
 }
 
-.leftSide {
+.LeftSide {
   float: left;
   margin-left: 10%;
   width: 20%;
@@ -33,7 +33,7 @@
   min-width: 330px;
 }
 
-.rightSide {
+.RightSide {
   float: left;
   margin-left: 2%;
   width: 68%;

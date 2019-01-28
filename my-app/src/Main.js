@@ -29,9 +29,9 @@ class Test extends Component {
   }
 
   render() {
-    let rightSide = <ViewRoom />
+    let RightSide = <ViewRoom />
     if (this.state.DisplaySearchRoom) {
-      rightSide = <SearchRoom />
+      RightSide = <SearchRoom />
     }
     return (
       <div className="App">
@@ -39,15 +39,15 @@ class Test extends Component {
         <div className="pageContent">
           <CustomStickyBar id="ViewRoom" className="StickyBar" text="View Room"></CustomStickyBar>
           <div className="pageContentBelowSticky">
-            <div className="horizontal">
-              <div className="leftSide">
+            <div className="LeftRightContent">
+              <div className="LeftSide">
                 <LeftSideBar search={this.search.bind(this)} />
               </div>
-              <div className="rightSide">
-                {rightSide}
+              <div className="RightSide">
+                {RightSide}
               </div>
             </div>
-            <div className="backClearButtonsContainer">
+            <div className="BackClearButtonsContainer">
               <BackClear />
             </div>
           </div>
