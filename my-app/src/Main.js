@@ -36,9 +36,9 @@ class Test extends Component {
     return (
       <div className="App">
         <header className="App-header"></header>
-        <div className="pageContent">
+        <div className="PageContent">
           <CustomStickyBar id="ViewRoom" className="StickyBar" text="View Room"></CustomStickyBar>
-          <div className="pageContentBelowSticky">
+          <div className="PageContentBelowSticky">
             <div className="LeftRightContent">
               <div className="LeftSide">
                 <LeftSideBar search={this.search.bind(this)} />
