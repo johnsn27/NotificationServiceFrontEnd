@@ -1,13 +1,13 @@
-.backClearButtonsContainer {
+.BackClearButtonsContainer {
   height: 53px;
 }
 
-.pageContent {
+.PageContent {
   width: 100%;
   height: 100%;
 }
 
-.pageContentBelowSticky {
+.PageContentBelowSticky {
   margin-top: 62px;
   width: 100%;
   min-width: 600px;
@@ -17,12 +17,12 @@
   flex-direction: column;
 }
 
-.horizontal {
+.LeftRightContent {
   width: 100%;
   align-content: center;
 }
 
-.leftSide {
+.LeftSide {
   float: left;
   margin-left: 10%;
   width: 20%;
@@ -33,7 +33,7 @@
   min-width: 330px;
 }
 
-.rightSide {
+.RightSide {
   float: left;
   margin-left: 2%;
   width: 68%;

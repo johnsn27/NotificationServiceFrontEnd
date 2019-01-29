@@ -1,5 +1,5 @@
 
-.backClearButtons {
+.BackClearButtons {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -8,7 +8,7 @@
   }
 
 
-.backButton {
+.BackButton {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -18,7 +18,7 @@
     border-radius: 10px;
   }
   
-  .clearButton {
+  .ClearButton {
     display: flex;
     justify-content: space-between;
     flex-direction: column;

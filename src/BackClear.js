@@ -23,8 +23,8 @@ class BackClear extends Component {
 
   render() {
     return (
-      <div className="backClearButtons">
-        <div className="backButton">
+      <div className="BackClearButtons">
+        <div className="BackButton">
           <Btn
             type="primary"
             tab-index="1"
@@ -34,7 +34,7 @@ class BackClear extends Component {
             <span>Back</span>
           </Btn>
         </div>
-        <div className="clearButton">
+        <div className="ClearButton">
           <Btn
             type="primary"
             tab-index="1"
