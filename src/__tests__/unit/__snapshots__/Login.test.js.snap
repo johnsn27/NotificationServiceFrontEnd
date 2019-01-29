@@ -24,7 +24,7 @@ ShallowWrapper {
           className="App-header"
         />,
         <div
-          className="loginButton"
+          className="LoginButton"
         >
           <Btn
             className="Button"
@@ -72,7 +72,7 @@ ShallowWrapper {
               Login
             </span>
           </Btn>,
-          "className": "loginButton",
+          "className": "LoginButton",
         },
         "ref": null,
         "rendered": Object {
@@ -120,7 +120,7 @@ ShallowWrapper {
             className="App-header"
           />,
           <div
-            className="loginButton"
+            className="LoginButton"
           >
             <Btn
               className="Button"
@@ -168,7 +168,7 @@ ShallowWrapper {
                 Login
               </span>
             </Btn>,
-            "className": "loginButton",
+            "className": "LoginButton",
           },
           "ref": null,
           "rendered": Object {
