@@ -67,7 +67,7 @@ class ViewRoom extends Component {
             <div className="ViewRoomContentsRightInner">
               <div className="textbox">
                 <div className="label">
-                  <p>RoomId:</p>
+                  <p>Room ID:</p>
                 </div>
                 <textarea className="textarea" rows="2">
                 </textarea>

@@ -33,7 +33,7 @@ function onClick() {
           <div className="MySection">
             <div className="MySectionTitle">
               My Section:
-        </div>
+            </div>
             <div className="MySectionButtons">
               <div className="buttonBorder">
                 <div className="mySectionButton">
