@@ -23,32 +23,32 @@ h1 {
 }
 
 /* change the name of this to be more specific */
-.ViewRoomTitle {
+.view-room-title {
   font-size: var(--title-font-size);
   font-weight: bold;
   padding-bottom: 10px;
   padding-top: 9px;
 }
 
-.ImageContent {
+.image-content {
   height: 100%;
   margin: 6%;
   width: 100%;
 }
 
-.Image {
+.image {
   height: 40%;
   width:120%;
 }
 
-.ImageCaptionText {
+.image-caption-text {
   font-size: var(--text-font-size);
   height: 20%;
   padding-left: 30px;
   text-align: center;
 }
 
-.WatchBookCollection {
+.watch-book-collection {
   display: flex;
   height: 25%;
   justify-content: center;
@@ -58,7 +58,7 @@ h1 {
   width: 120%;
 }
 
-.WatchButton {
+.watch-button {
   border-style: solid;
   border-radius: 10px;
   display: flex;
@@ -68,7 +68,7 @@ h1 {
   width: 60%;
 }
 
-.BookButton {
+.book-button {
   bottom: 0px;
   border-radius: 10px;
   border-style: solid;
@@ -80,14 +80,7 @@ h1 {
   width: 60%;
 }
 
-.textarea {
-  height: 10%;
-  margin: 2px;
-  padding-top:14px;
-  width: 50%;
-}
-
-.ViewRoomContents {
+.view-room-contents {
   border-style: solid;
   display: flex;
   float: left;
@@ -96,19 +89,26 @@ h1 {
   width: 80%;
 }
 
-.ViewRoomContentsLeft {
+.view-room-contents-left {
   width: 30%;
 }
 
-.ViewRoomContentsRight {
+.view-room-contents-right {
   padding-top: 12px;
   width: 70%;
 }
 
-.ViewRoomContentsRightInner {
+.view-room-contents-right-inner {
   float: left;
   width: 100%;
   margin-left: 5%;
+}
+
+.textarea {
+  height: 10%;
+  margin: 2px;
+  padding-top:14px;
+  width: 50%;
 }
 
 .textbox {

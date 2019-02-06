@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Main.css';
-import CustomStickyBar from './CustomStickyBar/CustomStickyBar.js';
-import LeftSideBar from './LeftSideBar/LeftSideBar';
-import ViewRoom from './ViewRoom';
-import BackClear from './BackClear';
-import SearchRoom from './SearchRoom';
+import BackClear from '../BackClear/BackClear';
+import CustomStickyBar from '../CustomStickyBar/CustomStickyBar';
+import LeftSideBar from '../LeftSideBar/LeftSideBar';
+import ViewRoom from '../ViewRoom/ViewRoom';
+import SearchRoom from '../SearchRoom/SearchRoom';
 
 
 class Test extends Component {
@@ -36,18 +36,18 @@ class Test extends Component {
     return (
       <div className="App">
         <header className="App-header"></header>
-        <div className="PageContent">
-          <CustomStickyBar id="ViewRoom" className="StickyBar" text="View Room"></CustomStickyBar>
-          <div className="PageContentBelowSticky">
-            <div className="LeftRightContent">
-              <div className="LeftSide">
+        <div className="page-content">
+          <CustomStickyBar id="ViewRoom" className="sticky-bar" text="View Room"></CustomStickyBar>
+          <div className="page-content-below-sticky">
+            <div className="left-right-content">
+              <div className="left-side">
                 <LeftSideBar search={this.search.bind(this)} />
               </div>
-              <div className="RightSide">
+              <div className="right-side">
                 {RightSide}
               </div>
             </div>
-            <div className="BackClearButtonsContainer">
+            <div className="back-clear-buttons-container">
               <BackClear />
             </div>
           </div>

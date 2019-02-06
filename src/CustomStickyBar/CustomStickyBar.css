@@ -1,11 +1,11 @@
-.StickyBar {
+.sticky-bar {
   display: flex;
 }
 
-.StickyBarContents {
+.sticky-bar-contents {
   width: 100%;
 }
 
-.StickyBarContentsTitle {
+.sticky-bar-contents-title {
   text-align: center;
 }

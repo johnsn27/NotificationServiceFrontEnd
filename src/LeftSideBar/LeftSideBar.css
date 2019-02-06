@@ -8,7 +8,7 @@ html {
   height:100%;
 }
 
-.mySectionButton {
+.my-section-button {
   align-items: center;
   border-radius: 10px;
   border-style: solid;
@@ -23,7 +23,7 @@ html {
   width: 75%;
 }
 
-.roomsButton {
+.rooms-button {
   align-items: center;
   border-radius: 10px;
   border-style: solid;
@@ -38,14 +38,14 @@ html {
   width: 75%;
 }
 
-.Rooms {
+.rooms {
   float: left;
   height: 45%;
   position: relative;
   width: 80%;
 }
 
-.RoomsTitle {
+.rooms-title {
   float: left;
   font-size: var(--title-font-size);
   font-weight: bold;
@@ -54,20 +54,20 @@ html {
   padding-bottom: 5px;
 }
 
-.RoomsButtons {
+.rooms-buttons {
   float: left;
   height: 100%;
   width: 100%;
 }
 
-.MySection {
+.my-section {
   float: left;
   height: 75%;
   margin-bottom: 15px;
   width: 80%;
 }
 
-.MySectionTitle {
+.my-section-title {
   float: left;
   font-size: var(--title-font-size);
   font-weight: bold;
@@ -76,13 +76,13 @@ html {
   padding-bottom: 5px;
 }
 
-.MySectionButtons {
+.my-section-buttons {
   float: left;
   height: 100%;
   width: 100%;
 }
 
-.buttonBorder {
+.button-border {
   border-style: solid;
   height: 100%;
   min-width: 108px;

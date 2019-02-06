@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Btn from '@bbc/igm-btn';
 import '@bbc/igm-btn/dist/Btn.css';
-import Main from './Main';
+import Main from '../Main/Main';
 
 class Login extends Component {
   constructor(props) {
@@ -20,13 +20,8 @@ class Login extends Component {
       ? <Main />
       : <div className="App">
         <header className="App-header"></header>
-        <div className="LoginButton">
-          <Btn
-            type="primary"
-            tab-index="1"
-            className="Button"
-            onClick={this.toggleViewRoom}
-          >
+        <div className="login-button">
+          <Btn type="primary" tab-index="1" className="Button" onClick={this.toggleViewRoom}>
             <span>Login</span>
           </Btn>
         </div>

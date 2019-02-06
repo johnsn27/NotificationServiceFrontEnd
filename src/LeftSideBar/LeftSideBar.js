@@ -30,42 +30,42 @@ function onClick() {
     render() {
       return (
         <div>
-          <div className="MySection">
-            <div className="MySectionTitle">
+          <div className="my-section">
+            <div className="my-section-title">
               My Section:
             </div>
-            <div className="MySectionButtons">
-              <div className="buttonBorder">
-                <div className="mySectionButton">
+            <div className="my-section-buttons">
+              <div className="button-border">
+                <div className="my-section-button">
                   <LeftSideBarButton type="primary" tab-index="1" className="Button" onClick={onClick} text="My Account">
                   </LeftSideBarButton>
                 </div>
-                <div className="mySectionButton">
+                <div className="my-section-button">
                   <LeftSideBarButton type="primary" tab-index="1" className="Button" onClick={onClick} text="My Bookings">
                   </LeftSideBarButton>
                 </div>
-                <div className="mySectionButton">
+                <div className="my-section-button">
                   <LeftSideBarButton type="primary" tab-index="1" className="Button" onClick={onClick} text="My Watched Rooms">
                   </LeftSideBarButton>
                 </div>
               </div>
             </div>
           </div>
-          <div className="Rooms">
-            <div className="RoomsTitle">
+          <div className="rooms">
+            <div className="rooms-title">
               <span>Rooms:</span>
             </div>
-            <div className="RoomsButtons">
-              <div className="buttonBorder">
-                <div className="roomsButton">
+            <div className="rooms-buttons">
+              <div className="button-border">
+                <div className="rooms-button">
                   <LeftSideBarButton type="primary" tab-index="1" className="Button" onClick={onClick} text="Book a Room">
                   </LeftSideBarButton>
                 </div>
-                <div className="roomsButton">
+                <div className="rooms-button">
                   <LeftSideBarButton type="primary" tab-index="1" className="Button" onClick={this.props.search} text="Search a Room">
                   </LeftSideBarButton>
                 </div>
-                <div className="roomsButton">
+                <div className="rooms-button">
                   <LeftSideBarButton type="primary" tab-index="1" className="Button" onClick={onClick} text="Meeting Rooms">
                   </LeftSideBarButton>
                 </div>

@@ -45,4 +45,5 @@ RoomSelect.propTypes = {
   placeholder: PropTypes.string.isRequired,
   isRtl: PropTypes.bool.isRequired,
 };
+
 export default RoomSelect;
