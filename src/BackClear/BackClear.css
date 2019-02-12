@@ -1,30 +1,30 @@
 .back-clear-buttons {
   display: flex;
   flex-direction: row;
-  height: 100%;
-  margin-left: 35%;
-  margin-top: 1%;
+  height: 48px;
+  margin-left: 600px;
+  margin-top: 16px;
   padding-left: 200px;
 }
 
 
 .back-button {
-  border-radius: 10px;
+  border-radius: 8px;
   border-style: solid;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 48px;
   justify-content: space-between;
-  width: 20%;
+  width: 216px;
 }
 
 .clear-button {
-  border-radius: 10px;
+  border-radius: 8px;
   border-style: solid;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 48px;
   justify-content: space-between;
-  margin-left: 2%;
-  width: 20%;
+  margin-left: 16px;
+  width: 216px;
 }

@@ -3,24 +3,18 @@
   --title-font-size: 20px;
   --text-font-size: 18px;
 }
-
-html {
-  height:100%;
-}
-
 .my-section-button {
   align-items: center;
   border-radius: 10px;
   border-style: solid;
   display: flex;
-  height: 24.75%;
   justify-content: center;
-  margin-bottom: 7%;
-  margin-left: 10%;
-  margin-top: 6%;
+  margin-bottom: 16px;
+  margin-left: 24px;
+  margin-top: 16px;
   min-height: 47px;
   min-width: 150px;
-  width: 75%;
+  width: 216px;
 }
 
 .rooms-button {
@@ -28,21 +22,19 @@ html {
   border-radius: 10px;
   border-style: solid;
   display: flex;
-  height: 24.75%;
   justify-content: center;
-  margin-bottom: 7%;
-  margin-left: 10%;
-  margin-top: 6%;
+  margin-bottom: 16px;
+  margin-left: 24px;
+  margin-top: 16px;
   min-height: 47px;
   min-width: 150px;
-  width: 75%;
+  width: 216px;
 }
 
 .rooms {
   float: left;
-  height: 45%;
   position: relative;
-  width: 80%;
+  width: 280px;
 }
 
 .rooms-title {
@@ -56,34 +48,29 @@ html {
 
 .rooms-buttons {
   float: left;
-  height: 100%;
-  width: 100%;
+  width: 280px;
 }
 
 .my-section {
   float: left;
-  height: 75%;
   margin-bottom: 15px;
-  width: 80%;
+  width: 280px;
 }
 
 .my-section-title {
   float: left;
   font-size: var(--title-font-size);
   font-weight: bold;
-  margin-bottom: 5px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  margin-bottom: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .my-section-buttons {
   float: left;
-  height: 100%;
-  width: 100%;
+  width: 280px;
 }
 
 .button-border {
   border-style: solid;
-  height: 100%;
-  min-width: 108px;
 }

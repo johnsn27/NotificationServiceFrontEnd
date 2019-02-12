@@ -1,11 +1,3 @@
 .sticky-bar {
-  display: flex;
-}
-
-.sticky-bar-contents {
-  width: 100%;
-}
-
-.sticky-bar-contents-title {
   text-align: center;
 }
