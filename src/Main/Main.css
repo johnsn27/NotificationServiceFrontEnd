@@ -1,14 +1,8 @@
-.back-clear-buttons-container {
-  height: 53px;
-}
-
 .page-content-below-sticky {
   display: flex;
   flex-direction: column;
-  height: 474px;
   justify-content: space-between;
   margin-top: 64px;
-  min-width: 600px;
 }
 
 .left-side {
@@ -17,7 +11,6 @@
   float: left;
   justify-content: space-evenly;
   margin-left: 168px;
-  min-width: 328px;
   padding-left: 32px;
   width: 320px;
 }

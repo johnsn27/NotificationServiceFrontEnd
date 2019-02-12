@@ -19,8 +19,8 @@ h1 {
 .view-room-title {
   font-size: var(--title-font-size);
   font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 .image-content {
@@ -36,7 +36,7 @@ h1 {
 
 .image-caption-text {
   font-size: var(--text-font-size);
-  padding-left: 30px;
+  padding-left: 32px;
   text-align: center;
 }
 
@@ -44,14 +44,14 @@ h1 {
   display: flex;
   height: 120px;
   justify-content: center;
-  padding-bottom: 3px;
+  padding-bottom: 8px;
   padding-top: 40px;
   position: relative;
 }
 
 .watch-button {
   border-style: solid;
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,7 +61,7 @@ h1 {
 
 .book-button {
   bottom: 0px;
-  border-radius: 10px;
+  border-radius: 8px;
   border-style: solid;
   display: flex;
   flex-direction: column;
@@ -76,24 +76,24 @@ h1 {
   display: flex;
   float: left;
   width: 1000px;
-  height: 525px;
+  height: 568px;
   margin: 0px;
 }
 
 .view-room-contents-right {
-  padding-top: 12px;
-  width: 700px;
+  padding-top: 16px;
+  width: 704px;
 }
 
 .view-room-contents-right-inner {
   float: left;
-  margin-left: 50px;
+  margin-left: 48px;
 }
 
 .textarea {
   height: 24px;
-  margin: 2px;
-  padding-top:14px;
+  margin: 8px;
+  padding-top:16px;
   width: 400px;
 }
 
@@ -101,7 +101,7 @@ h1 {
   display: flex;
   float: right;
   text-align: center;
-  width: 550px;
+  width: 552px;
 }
 
 .label {
