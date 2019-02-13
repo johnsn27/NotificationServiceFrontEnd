@@ -90,22 +90,4 @@ h1 {
   margin-left: 48px;
 }
 
-.textarea {
-  height: 24px;
-  margin: 8px;
-  padding-top:16px;
-  width: 400px;
-}
 
-.textbox {
-  display: flex;
-  float: right;
-  text-align: center;
-  width: 552px;
-}
-
-.label {
-  font-size: var(--text-font-size);
-  width:400px;
-  text-align: left;
-}
