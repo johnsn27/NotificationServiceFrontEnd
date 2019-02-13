@@ -1,7 +1,7 @@
 module.exports = function () {
 
   this.Given(/^I am on the Home Page$/, function () {
-    return helpers.loadPage(page.url);
+    return helpers.loadPage();
   });
 
   this.When(/^I select My Account button$/, function () {
@@ -51,5 +51,5 @@ module.exports = function () {
   this.Then(/^I see the Meeting Rooms page$/, function () {
     return page.checkMeetingRoomsPage();
   });
-  
+
 };
