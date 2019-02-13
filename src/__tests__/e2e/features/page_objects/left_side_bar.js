@@ -4,7 +4,7 @@ module.exports = {
     pageTitle: by.css(''),
     myAccountButton: by.css(''),
     myBookingsButton: by.css(''),
-    myWatchedRoomsButton: by.css('''),
+    myWatchedRoomsButton: by.css(''),
     bookARoomButton: by.css(''),
     searchARoomButton: by.css(''),
     meetingRoomsButton: by.css(''),
