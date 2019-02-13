@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin-top: 64px;
+  width: 100%;
 }
 
 .left-side {
@@ -10,12 +11,13 @@
   flex-direction: column;
   float: left;
   justify-content: space-evenly;
-  margin-left: 168px;
-  padding-left: 32px;
-  width: 320px;
+  margin-left: 10%;
+  width: 20%;
 }
 
 .right-side {
-  float: left;
+  float: right;
   height: fit-content;
+  margin-right: 10%;
+  width: 60%;
 }
