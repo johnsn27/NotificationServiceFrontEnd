@@ -25,7 +25,7 @@ class ViewRoom extends Component {
         return (
             <div>
                 <div className="SearchRoomTitle">
-                    Studio 1 06 E M1
+                    Search Room
                 </div>
                 <div className="SearchRoomContents">
                     <div className="SearchRoomContentsContainer">

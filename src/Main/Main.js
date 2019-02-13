@@ -47,10 +47,8 @@ class Test extends Component {
               </div>
               <div className="right-side">
                 {RightSide}
+                <BackClear />
               </div>
-            </div>
-            <div className="back-clear-buttons-container">
-              <BackClear />
             </div>
           </div>
         </div>
