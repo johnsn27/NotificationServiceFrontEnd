@@ -1,11 +1,3 @@
-.StickyBar {
-  display: flex;
-}
-
-.StickyBarContents {
-  width: 100%;
-}
-
-.StickyBarContentsTitle {
+.sticky-bar {
   text-align: center;
 }

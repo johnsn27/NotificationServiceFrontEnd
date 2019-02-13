@@ -3,10 +3,10 @@
 }
 
 .igm-btn {
-  width: 100%;
-  height: 100%;
+  width: 216px;
+  height: 48px;
   background-color: white !important;
-  border-radius: 100%;
+  border-radius: 8px;
   color: black !important;
   font-size: var(--text-font-size) !important;
   text-align: center !important;

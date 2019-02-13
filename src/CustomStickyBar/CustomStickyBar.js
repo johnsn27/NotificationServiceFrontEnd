@@ -7,11 +7,7 @@ import '@bbc/igm-sticky-bar/dist/StickyBar.css';
 function CustomStickyBar({ id, className, text }) {
   return (
     <StickyBar id={id} className={className}>
-      <div className="StickyBarContents">
-        <div className="StickyBarContentsTitle">
-          <h1>{text}</h1>
-        </div>
-      </div>
+      <h1>{text}</h1>
     </StickyBar>
   );
 }

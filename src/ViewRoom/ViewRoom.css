@@ -1,0 +1,111 @@
+:root {
+  --Image-size: 200px;
+  --title-font-size: 20px;
+  --text-font-size: 18px;
+}
+
+h1 {
+  margin:0;
+}
+
+.igm-btn {
+  background-color: white !important;
+  color: black !important;
+  font-size: var(--text-font-size) !important;
+  text-align: center !important;
+}
+
+/* change the name of this to be more specific */
+.view-room-title {
+  font-size: var(--title-font-size);
+  font-weight: bold;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.image-content {
+  height: 496px;
+  margin: 16px;
+  width: 296px;
+}
+
+.image {
+  height: 208px;
+  width: 320px;
+}
+
+.image-caption-text {
+  font-size: var(--text-font-size);
+  padding-left: 32px;
+  text-align: center;
+}
+
+.watch-book-collection {
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  padding-bottom: 8px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.watch-button {
+  border-style: solid;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 48px;
+  width: 216px;
+}
+
+.book-button {
+  bottom: 0px;
+  border-radius: 8px;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  height: 48px;
+  justify-content: space-between;
+  position: absolute;
+  width: 216px;
+}
+
+.view-room-contents {
+  border-style: solid;
+  display: flex;
+  float: left;
+  width: 1000px;
+  height: 568px;
+  margin: 0px;
+}
+
+.view-room-contents-right {
+  padding-top: 16px;
+  width: 704px;
+}
+
+.view-room-contents-right-inner {
+  float: left;
+  margin-left: 48px;
+}
+
+.textarea {
+  height: 24px;
+  margin: 8px;
+  padding-top:16px;
+  width: 400px;
+}
+
+.textbox {
+  display: flex;
+  float: right;
+  text-align: center;
+  width: 552px;
+}
+
+.label {
+  font-size: var(--text-font-size);
+  width:400px;
+  text-align: left;
+}

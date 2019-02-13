@@ -1,0 +1,21 @@
+.page-content-below-sticky {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+.left-side {
+  align-items: center;
+  flex-direction: column;
+  float: left;
+  justify-content: space-evenly;
+  margin-left: 168px;
+  padding-left: 32px;
+  width: 320px;
+}
+
+.right-side {
+  float: left;
+  height: fit-content;
+}

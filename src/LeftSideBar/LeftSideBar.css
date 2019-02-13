@@ -3,83 +3,70 @@
   --title-font-size: 20px;
   --text-font-size: 18px;
 }
-
-html {
-  height:100%;
-}
-
-.mySectionButton {
-  width: 75%;
-  height: 24.75%;
-  min-height: 47px;
-  min-width: 150px;
-  margin-left: 10%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  border-style: solid;
-  border-radius: 10px;
-  display: flex;
+.my-section-button {
   align-items: center;
-  justify-content: center;
-}
-
-.roomsButton {
-  width: 75%;
-  height: 24.75%;
-  min-height: 47px;
-  min-width: 150px;
-  margin-left: 10%;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  border-radius: 8px;
   border-style: solid;
-  border-radius: 10px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  margin-bottom: 16px;
+  margin-left: 24px;
+  margin-top: 16px;
+  width: 216px;
 }
 
-.Rooms {
+.rooms-button {
+  align-items: center;
+  border-radius: 8px;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  margin-left: 24px;
+  margin-top: 16px;
+  width: 216px;
+}
+
+.rooms {
   float: left;
-  width: 100%;
-  height: 45%;
   position: relative;
+  width: 280px;
 }
 
-.RoomsTitle {
+.rooms-title {
   float: left;
   font-size: var(--title-font-size);
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
-.RoomsButtons {
+.rooms-buttons {
   float: left;
-  width: 100%;
-  height: 100%;
+  width: 280px;
 }
 
-.MySection {
+.my-section {
   float: left;
-  width: 100%;
-  height: 75%;
-  margin-bottom: 77px;
+  margin-bottom: 16px;
+  width: 280px;
 }
 
-.MySectionTitle {
+.my-section-title {
   float: left;
   font-size: var(--title-font-size);
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
-.MySectionButtons {
+.my-section-buttons {
   float: left;
-  width: 100%;
-  height: 100%;
+  width: 280px;
 }
 
-.buttonBorder {
-  height: 100%;
+.button-border {
   border-style: solid;
-  min-width: 108px;
 }

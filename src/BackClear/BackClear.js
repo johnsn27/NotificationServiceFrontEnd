@@ -23,24 +23,14 @@ class BackClear extends Component {
 
   render() {
     return (
-      <div className="BackClearButtons">
-        <div className="BackButton">
-          <Btn
-            type="primary"
-            tab-index="1"
-            className="Button"
-            onClick={this.toggleBack}
-          >
+      <div className="back-clear-buttons">
+        <div className="back-button">
+          <Btn type="primary" tab-index="1" className="Button" onClick={this.toggleBack}>
             <span>Back</span>
           </Btn>
         </div>
-        <div className="ClearButton">
-          <Btn
-            type="primary"
-            tab-index="1"
-            className="Button"
-            onClick={onClick}
-          >
+        <div className="clear-button">
+          <Btn type="primary" tab-index="1" className="Button" onClick={onClick}>
             <span>Clear</span>
           </Btn>
         </div>
