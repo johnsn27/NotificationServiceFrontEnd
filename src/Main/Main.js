@@ -30,14 +30,16 @@ class Test extends Component {
 
   render() {
     let RightSide = <ViewRoom />
+    let StickyTitle = "View Room"
     if (this.state.DisplaySearchRoom) {
       RightSide = <SearchRoom />
+      StickyTitle = "Search Room"
     }
     return (
       <div className="App">
         <header className="App-header"></header>
         <div className="page-content">
-          <CustomStickyBar id="ViewRoom" className="sticky-bar" text="View Room"></CustomStickyBar>
+          <CustomStickyBar id="ViewRoom" className="sticky-bar" text={StickyTitle}></CustomStickyBar>
           <div className="page-content-below-sticky">
             <div className="left-right-content">
               <div className="left-side">

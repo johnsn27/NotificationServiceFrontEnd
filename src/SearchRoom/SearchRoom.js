@@ -27,8 +27,8 @@ class ViewRoom extends Component {
                 <div className="SearchRoomTitle">
                     Studio 1 06 E M1
                 </div>
-                <div className="SearchRoomContentsContainer">
-                    <div className="SearchRoomContents">
+                <div className="SearchRoomContents">
+                    <div className="SearchRoomContentsContainer">
                         <div className="textbox">
                             <div className="label">
                                 <p>Room Name:</p>

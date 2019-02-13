@@ -13,29 +13,21 @@
     font-weight: bold;
   }
   
-  .SearchRoomContentsContainer {
-    display: flex;
-    border-style: solid;
-    width: 80%;
-    height: 90%;
-    float: left;
-    flex-direction: column;
-  }
-  
   .SearchRoomContents {
-    margin-top: 2px;
-    width: fit-content;
-    height: fit-content;
+    border-style: solid;
+    display: flex;
+    float: left;
+    width: 1000px;
+    height: 568px;
+    margin: 0px;
   }
   
   .AdvancedSearchButton {
-    width: 50%;
-    height: 24.75%;
-    min-height: 47px;
-    min-width: 150px;
-    margin-left: 93%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    width: 216px;
+    height: 48px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 504px;
     border-style: solid;
     border-radius: 10px;
     display: flex;
@@ -45,6 +37,13 @@
   
   .AdvancedSearchButtonContainer {
     float: left;
+    width: 216px;
+    height: 48px;
+  }
+
+  .SearchRoomContentsContainer {
+    padding-top: 16px;
     width: 100%;
-    height: 10%;
+    float: left;
+    margin-left: 48px;
   }

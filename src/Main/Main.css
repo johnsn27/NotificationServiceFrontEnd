@@ -31,7 +31,8 @@
   display: flex;
   float: right;
   text-align: center;
-  width: 552px;
+  width: 100%;
+  height: fit-content;
 }
 
 .label {
