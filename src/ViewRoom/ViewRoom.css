@@ -82,12 +82,13 @@ h1 {
 
 .view-room-contents-right {
   padding-top: 16px;
-  width: 704px;
+  width: 664px;
 }
 
 .view-room-contents-right-inner {
   float: left;
   margin-left: 48px;
+  width:616px;
 }
 
 
