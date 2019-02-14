@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Btn from '@bbc/igm-btn'
 import '@bbc/igm-btn/dist/Btn.css';
-import './LeftSideBarButton.css'
+import './Button.css'
 
-function LeftSideBarButton({ type, tabIndex, className, onClick, text }) {
+function Button({ type, tabIndex, className, onClick, text }) {
   return (
     <Btn
       type={type}
@@ -17,10 +17,10 @@ function LeftSideBarButton({ type, tabIndex, className, onClick, text }) {
   );
 }
 
-LeftSideBarButton.propTypes = {
+Button.propTypes = {
   id: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 }
 
-export default LeftSideBarButton;
+export default Button;

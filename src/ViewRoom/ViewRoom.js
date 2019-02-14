@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './ViewRoom.css';
 import Btn from '@bbc/igm-btn';
+import Button from '../Button/Button.js'
 
 function onClick() {
   var element = document.getElementsByClassName("css-xp4uvy select__single-value")[0].innerHTML;
@@ -41,14 +42,12 @@ class ViewRoom extends Component {
               </div>
               <div className="watch-book-collection">
                 <div className="watch-button">
-                  <Btn type="primary" tab-index="1" className="Button" onClick={onClick}>
-                    <span>Watch</span>
-                  </Btn>
+                  <Button type="primary" tab-index="1" className="Button" onClick={onClick} text="Watch">
+                  </Button>
                 </div>
                 <div className="book-button">
-                  <Btn type="primary" tab-index="1" className="Button" onClick={onClick}>
-                    <span>Book</span>
-                  </Btn>
+                  <Button type="primary" tab-index="1" className="Button" onClick={onClick} text="Book">
+                  </Button>
                 </div>
               </div>
             </div>
