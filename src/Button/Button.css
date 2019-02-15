@@ -3,8 +3,8 @@
 }
 
 .igm-btn {
-  width: 216px;
-  height: 48px;
+  min-width: 2156px;
+  min-height: 48px;
   background-color: white !important;
   border-radius: 8px;
   color: black !important;

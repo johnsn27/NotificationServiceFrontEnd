@@ -45,10 +45,10 @@ class Test extends Component {
               </div>
               <div className="right-side">
                 {RightSide}
+                <div className="back-clear-buttons-container">
+                  <BackClear />
+                </div>
               </div>
-            </div>
-            <div className="back-clear-buttons-container">
-              <BackClear />
             </div>
           </div>
         </div>

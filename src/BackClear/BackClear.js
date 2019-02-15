@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './BackClear.css';
-import Btn from '@bbc/igm-btn';
+import Button from '../Button/Button'
 
 function onClick() {
   var element = document.getElementsByClassName("css-xp4uvy select__single-value")[0].innerHTML;
@@ -25,14 +25,12 @@ class BackClear extends Component {
     return (
       <div className="back-clear-buttons">
         <div className="back-button">
-          <Btn type="primary" tab-index="1" className="Button" onClick={this.toggleBack}>
-            <span>Back</span>
-          </Btn>
+          <Button type="primary" tab-index="1" className="Button" onClick={this.toggleBack} text="Back">
+          </Button>
         </div>
         <div className="clear-button">
-          <Btn type="primary" tab-index="1" className="Button" onClick={onClick}>
-            <span>Clear</span>
-          </Btn>
+          <Button type="primary" tab-index="1" className="Button" onClick={onClick} text="Clear">
+          </Button>
         </div>
       </div>
     );

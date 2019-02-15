@@ -1,10 +1,8 @@
 .back-clear-buttons {
   display: flex;
   flex-direction: row;
-  height: 48px;
-  margin-left: 600px;
-  margin-top: 16px;
-  padding-left: 200px;
+  margin-top: 1%;
+  justify-content: center;
 }
 
 
@@ -13,9 +11,9 @@
   border-style: solid;
   display: flex;
   flex-direction: column;
-  height: 48px;
   justify-content: space-between;
-  width: 216px;
+  width: 22%;
+  min-width: 112px;
 }
 
 .clear-button {
@@ -23,8 +21,8 @@
   border-style: solid;
   display: flex;
   flex-direction: column;
-  height: 48px;
   justify-content: space-between;
-  margin-left: 16px;
-  width: 216px;
+  margin-left: 2%;
+  width: 22%;
+  min-width: 112px;
 }

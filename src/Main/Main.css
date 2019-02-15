@@ -12,6 +12,7 @@
   float: left;
   justify-content: space-evenly;
   margin-left: 10%;
+  min-width: 200px;
   width: 20%;
 }
 

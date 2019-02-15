@@ -37,6 +37,7 @@ h1 {
   margin: 10%;
   width: 80%;
   height:40%;
+  min-width: 112px;
 }
 
 .book-button {
@@ -48,6 +49,7 @@ h1 {
   margin: 10%;
   width: 80%;
   height:40%;
+  min-width: 112px;
 }
 
 .view-room-contents {
