@@ -1,60 +1,66 @@
-.my-section-button {
-  align-items: center;
-  border-radius: 8px;
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  margin: 10%;
-  width: 80%;
-  min-width: 112px;
+@media only screen and (min-width: 962px) {
+  .my-section-button {
+    align-items: center;
+    border-radius: 8px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    width: 80%;
+    min-width: 112px;
+  }
+
+  .rooms-button {
+    align-items: center;
+    border-radius: 8px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    width: 80%;
+    min-width: 112px;
+  }
+
+  .rooms {
+    float: left;
+    position: relative;
+    width: 100%;
+  }
+
+  .rooms-title {
+    float: left;
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    margin: 4%;
+  }
+
+  .rooms-buttons {
+    float: left;
+    width: 80%;
+  }
+
+  .my-section {
+    float: left;
+    width: 80%;
+  }
+
+  .my-section-title {
+    float: left;
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    margin: 4%;
+  }
+
+  .my-section-buttons {
+    float: left;
+    width: 100%;
+  }
+
+  .button-border {
+    border-style: solid;
+  }
 }
 
-.rooms-button {
-  align-items: center;
-  border-radius: 8px;
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  margin: 10%;
-  width: 80%;
-  min-width: 112px;
-}
-
-.rooms {
-  float: left;
-  position: relative;
-  width: 100%;
-}
-
-.rooms-title {
-  float: left;
-  font-size: var(--title-font-size);
-  font-weight: bold;
-  margin: 4%;
-}
-
-.rooms-buttons {
-  float: left;
-  width: 80%;
-}
-
-.my-section {
-  float: left;
-  width: 80%;
-}
-
-.my-section-title {
-  float: left;
-  font-size: var(--title-font-size);
-  font-weight: bold;
-  margin: 4%;
-}
-
-.my-section-buttons {
-  float: left;
-  width: 100%;
-}
-
-.button-border {
-  border-style: solid;
+@media only screen and (max-width: 962px) {
+  
 }
