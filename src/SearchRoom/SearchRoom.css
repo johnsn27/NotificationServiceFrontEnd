@@ -8,12 +8,12 @@
     margin:0;
   }
   
-  .SearchRoomTitle { 
+  .search-room-title { 
     font-size: var(--title-font-size);
     font-weight: bold;
   }
   
-  .SearchRoomContents {
+  .search-room-contents {
     border-style: solid;
     display: flex;
     float: left;
@@ -22,28 +22,27 @@
     margin: 0px;
   }
   /* change css names + alphabetical + px 8 */
-  .AdvancedSearchButton {
+  .advanced-search-button {
     width: 216px;
     height: 48px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     margin-left: 504px;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  .AdvancedSearchButtonContainer {
+  .advanced-search-button-container {
     float: left;
     width: 216px;
     height: 48px;
   }
 
-  .SearchRoomContentsContainer {
+  .search-room-contents-container {
     padding-top: 16px;
-    width: 100%;
     float: left;
     margin: 48px;
   }
