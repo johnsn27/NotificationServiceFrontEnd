@@ -24,11 +24,11 @@ class ViewRoom extends Component {
     render() {
         return (
             <div>
-                <div className="SearchRoomTitle">
+                <div className="search-room-title">
                     Search Room
                 </div>
-                <div className="SearchRoomContents">
-                    <div className="SearchRoomContentsContainer">
+                <div className="search-room-contents">
+                    <div className="search-room-contents-container">
                         <div className="textbox">
                             <div className="label">
                                 <p>Room Name:</p>
@@ -57,18 +57,16 @@ class ViewRoom extends Component {
                             <textarea className="textarea" rows="2">
                             </textarea>
                         </div>
-                        <div className="AdvancedSearchButtonContainer">
-                            <div className="ButtonBorder">
-                                <div className="AdvancedSearchButton">
-                                    <Btn
-                                        type="primary"
-                                        tab-index="1"
-                                        className="Button"
-                                        onClick={onClick}
-                                    >
-                                        <span>Advanced Search</span>
-                                    </Btn>
-                                </div>
+                        <div className="advanced-search-button-container">
+                            <div className="advanced-search-button">
+                                <Btn
+                                    type="primary"
+                                    tab-index="1"
+                                    className="Button"
+                                    onClick={onClick}
+                                >
+                                    <span>Advanced Search</span>
+                                </Btn>
                             </div>
                         </div>
                     </div>
