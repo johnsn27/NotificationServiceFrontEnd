@@ -39,7 +39,7 @@ class Test extends Component {
       <div className="App">
         <header className="App-header"></header>
         <div className="page-content">
-          <CustomStickyBar id="ViewRoom" className="sticky-bar" text={StickyTitle}></CustomStickyBar>
+          <CustomStickyBar id={StickyTitle} className="sticky-bar" text={StickyTitle}></CustomStickyBar>
           <div className="page-content-below-sticky">
             <div className="left-right-content">
               <div className="left-side">
