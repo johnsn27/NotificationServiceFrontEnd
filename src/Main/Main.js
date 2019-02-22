@@ -44,7 +44,7 @@ class Test extends Component {
       <div className="App">
         <header className="App-header"></header>
         <div className="page-content">
-          <CustomStickyBar id="ViewRoom" className="sticky-bar" text={pageTitle()}></CustomStickyBar>
+          <CustomStickyBar id={pageTitle()} className="sticky-bar" text={pageTitle()}></CustomStickyBar>
           <div className="page-content-below-sticky">
             <div className="left-right-content">
               <div className="left-side">
@@ -52,10 +52,8 @@ class Test extends Component {
               </div>
               <div className="right-side">
                 <Content />
+                <BackClear />
               </div>
-            </div>
-            <div className="back-clear-buttons-container">
-              <BackClear />
             </div>
           </div>
         </div>

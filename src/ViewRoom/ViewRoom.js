@@ -16,7 +16,7 @@ class ViewRoom extends Component {
       <div>
         <div className="view-room-title">
           Studio 1 06 E M1
-            </div>
+        </div>
         <div className="view-room-contents">
           <div className="view-room-contents-left">
             <div className="image-content">

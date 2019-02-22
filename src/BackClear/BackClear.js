@@ -14,16 +14,18 @@ function onClick() {
 class BackClear extends Component {
   render() {
     return (
-      <div className="back-clear-buttons">
-        <div className="back-button">
-          <Btn type="primary" tab-index="1" className="Button" onClick={this.props.history.goBack}>
-            <span>Back</span>
-          </Btn>
-        </div>
-        <div className="clear-button">
-          <Btn type="primary" tab-index="1" className="Button" onClick={onClick}>
-            <span>Clear</span>
-          </Btn>
+      <div className="back-clear-buttons-container">
+        <div className="back-clear-buttons">
+          <div className="back-button">
+            <Btn type="primary" tab-index="1" className="Button" onClick={this.props.history.goBack}>
+              <span>Back</span>
+            </Btn>
+          </div>
+          <div className="clear-button">
+            <Btn type="primary" tab-index="1" className="Button" onClick={onClick}>
+              <span>Clear</span>
+            </Btn>
+          </div>
         </div>
       </div>
     );
