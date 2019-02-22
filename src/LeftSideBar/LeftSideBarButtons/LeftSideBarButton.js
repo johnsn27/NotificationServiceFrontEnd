@@ -4,13 +4,13 @@ import Btn from '@bbc/igm-btn'
 import '@bbc/igm-btn/dist/Btn.css';
 import './LeftSideBarButton.css'
 
-function LeftSideBarButton({ type, tabIndex, className, onClick, text }) {
+function LeftSideBarButton({ type, tabIndex, className, link, text }) {
   return (
     <Btn
       type={type}
       tab-index={tabIndex}
       className={className}
-      onClick={onClick}
+      onClick={() => link ? window.location.href = link : console.log('page not yet implemented')}
     >
       <span>{text}</span>
     </Btn>

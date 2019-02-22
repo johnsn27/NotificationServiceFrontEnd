@@ -11,16 +11,6 @@ function onClick() {
 
 
 class ViewRoom extends Component {
-  constructor(props) {
-    super();
-    this.toggleBack = this.toggleBack.bind(this);
-    this.state = { DisplayLogin: props.DisplayLogin };
-  }
-
-  toggleBack() {
-    this.setState({ DisplayLogin: !this.state.DisplayLogin });
-  }
-
   render() {
     return (
       <div>
