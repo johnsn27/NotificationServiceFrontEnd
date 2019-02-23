@@ -25,33 +25,33 @@ class WatchedRooms extends Component {
                             <table width="960">
                                 <tr className="upcoming-meetings-title">
                                     <th>Name</th>
-                                    <th>Date</th>
-                                    <th>Time</th>
                                     <th>Location</th>
+                                    <th>Next Available</th>
                                 </tr>
                                 <tr>
-                                    <td>Project</td>
-                                    <td>07/01/2019</td>
-                                    <td>16:00- 17:30</td>
-                                    <td>BC5 D5 M3 Marie Curie</td>
+                                    <td>Studio 3</td>
+                                    <td>NBH 06 E M2 Studio</td>
+                                    <td>19/02/2019 at 13:00</td>
                                 </tr>
                                 <tr>
-                                    <td>Sprint Review</td>
-                                    <td>12/01/2019</td>
-                                    <td>10:00- 12:00</td>
-                                    <td>NBH 06 B M4 Kiev</td>
+                                    <td>Kari Blackburn</td>
+                                    <td>NBH 04 Collboration Zone</td>
+                                    <td>26/03/2019 at 09:00</td>
                                 </tr>
                                 <tr>
-                                    <td>Retrospective</td>
-                                    <td>25/01/2019</td>
-                                    <td>15:00- 17:00</td>
-                                    <td>BC2 D4 M2 Animal Magic</td>
+                                    <td>Peter Eckersley</td>
+                                    <td>BC4 D5 M2 Picasso</td>
+                                    <td>09/04/2019 at 18:00</td>
                                 </tr>
                                 <tr>
-                                    <td>Project</td>
-                                    <td>28/01/2019</td>
-                                    <td>16:00- 17:30</td>
-                                    <td>BC5 D5 M3 Marie Curie</td>
+                                    <td>Nice To See You</td>
+                                    <td>NBH 03 C M3 Gerard Manell VC</td>
+                                    <td>17/04/2019 at 11:30</td>
+                                </tr>
+                                <tr>
+                                    <td>Kiev</td>
+                                    <td>NBH 07 B M3 Studio</td>
+                                    <td>23/05/2019 at 14:00</td>
                                 </tr>
                             </table>
                         </div>

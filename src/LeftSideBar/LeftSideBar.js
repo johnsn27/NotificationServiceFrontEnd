@@ -2,6 +2,8 @@ import React, { Component} from 'react';
 import PropTypes from 'prop-types';
 import LeftSideBarButton from './LeftSideBarButtons/LeftSideBarButton.js';
 import './LeftSideBar.css';
+import WatchedRooms from '../WatchedRooms/WatchedRooms.js';
+
 
 function onClick() {
   console.log('Left Side Bar Clicked');
@@ -45,7 +47,7 @@ function onClick() {
                   </LeftSideBarButton>
                 </div>
                 <div className="my-section-button">
-                  <LeftSideBarButton type="primary" tab-index="1" className="Button" onClick={onClick} text="My Watched Rooms">
+                  <LeftSideBarButton type="primary" tab-index="1" className="Button" onClick={this.WatchedRooms} text="My Watched Rooms">
                   </LeftSideBarButton>
                 </div>
               </div>
