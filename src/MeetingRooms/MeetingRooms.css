@@ -1,0 +1,58 @@
+.meeting-rooms-title {
+  display: inline-block;
+  font-size: var(--title-font-size);
+  font-weight: bold;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.meeting-rooms-contents {
+  border-style: solid;
+  display: flex;
+  float: left;
+  width: 1000px;
+  height: 568px;
+  margin: 0px;
+}
+
+.meeting-rooms-table {
+  border-collapse: collapse;
+  display: block;
+  margin: 8px;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.room-data td {
+  border-bottom: 2px solid black;
+}
+
+.meeting-rooms-table th {
+  border: 1px solid black;
+  text-align: left;
+}
+
+.meeting-rooms-table .view-meeting-room-link-header {
+  border-left: 0px
+}
+
+.meeting-rooms-table .location-header {
+  border-right: 0px;
+}
+
+.meeting-rooms-table th, td {
+  padding: 8px;
+  width: 50%;
+}
+
+.change-location-button {
+  background-color: #404042 !important;
+  color: white !important;
+  float: right;
+}
+
+.meeting-rooms-title-container {
+  height: 48px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
