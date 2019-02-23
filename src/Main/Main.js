@@ -31,15 +31,15 @@ class Test extends Component {
   }
 
   render() {
-    let RightSide = <HomePage />
-    let StickyTitle = "Welcome User"
+    let RightSide = <HomePage />;
+    let StickyTitle = "Welcome User";
     if (this.state.DisplaySearchRoom) {
-      RightSide = <SearchRoom />
-      StickyTitle = "Search Room"
+      RightSide = <SearchRoom />;
+      StickyTitle = "Search Room";
     }
     else if (this.state.DisplayViewRoom) {
-        RightSide = <ViewRoom />
-        StickyTitle = "View Room"
+        RightSide = <ViewRoom />;
+        StickyTitle = "View Room";
     }
     return (
       <div className="App">
