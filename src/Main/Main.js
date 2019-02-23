@@ -6,6 +6,7 @@ import CustomStickyBar from '../CustomStickyBar/CustomStickyBar';
 import LeftSideBar from '../LeftSideBar/LeftSideBar';
 import ViewRoom from '../ViewRoom/ViewRoom';
 import SearchRoom from '../SearchRoom/SearchRoom';
+import WatchedRooms from '../WatchedRooms/WatchedRooms'
 
 
 class Test extends Component {
@@ -34,6 +35,10 @@ class Test extends Component {
     if (this.state.DisplaySearchRoom) {
       RightSide = <SearchRoom />
       StickyTitle = "Search Room"
+    }
+    if (this.state.DisplayWatchedRooms) {
+      RightSide = <WatchedRooms />
+      StickyTitle = "My Watched Rooms"
     }
     return (
       <div className="App">
