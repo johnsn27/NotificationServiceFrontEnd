@@ -16,7 +16,7 @@ class Login extends Component {
   }
 
   render() {
-    return this.state.DisplayHomePage;
+    return this.state.DisplayHomePage
       ? <Main />
       : <div className="App">
         <header className="App-header"></header>
