@@ -16,7 +16,8 @@ class Test extends Component {
     this.state = {
       DisplayLogin: props.DisplayLogin,
       DisplayViewRoom: props.DisplayViewRoom,
-      DisplaySearchRoom: props.DisplaySearchRoom
+      DisplaySearchRoom: props.DisplaySearchRoom,
+      DisplayWatchRoom: props.DisplayWatchRoom
     };
   }
 
@@ -29,6 +30,11 @@ class Test extends Component {
     this.setState({ DisplaySearchRoom: !this.state.DisplaySearchRoom });
   }
 
+  watch() {
+    console.log('watch');
+    this.setState({ DisplayWatchRoom: !this.state.DisplayWatchRoom});
+  }
+
   render() {
     let RightSide = <ViewRoom />
     let StickyTitle = "View Room"
@@ -36,7 +42,7 @@ class Test extends Component {
       RightSide = <SearchRoom />
       StickyTitle = "Search Room"
     }
-    if (this.state.DisplayWatchedRooms) {
+    if (this.state.DisplayWatchRoom) {
       RightSide = <WatchedRooms />
       StickyTitle = "My Watched Rooms"
     }
@@ -48,7 +54,7 @@ class Test extends Component {
           <div className="page-content-below-sticky">
             <div className="left-right-content">
               <div className="left-side">
-                <LeftSideBar search={this.search.bind(this)} />
+                <LeftSideBar search={this.search.bind(this)} watch={this.watch.bind(this)} />
               </div>
               <div className="right-side">
                 {RightSide}
@@ -66,12 +72,14 @@ Test.propTypes = {
   DisplayBack: PropTypes.bool,
   DisplayViewRoom: PropTypes.bool,
   DisplaySearchRoom: PropTypes.bool,
+  DisplayWatchRoom: PropTypes.bool,
 };
 
 Test.defaultProps = {
   DisplayBack: false,
   DisplayViewRoom: false,
   DisplaySearchRoom: false,
+  DisplayWatchRoom: false,
 }
 
 export default Test;
