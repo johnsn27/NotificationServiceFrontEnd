@@ -7,12 +7,16 @@ import LeftSideBar from '../LeftSideBar/LeftSideBar';
 import ViewRoom from '../ViewRoom/ViewRoom';
 import SearchRoom from '../SearchRoom/SearchRoom';
 import Login from '../Login/Login';
+import WatchedRooms from '../WatchedRooms/WatchedRooms'
+import HomePage from '../HomePage/HomePage';
 
 const Content = () => {
   return (
     <Switch>
       <Route path='/view-room' component={ViewRoom}/>
       <Route path='/search-room' component={SearchRoom}/>
+      <Route path='/watched-rooms' component={WatchedRooms}/>
+      <Route path='/home' component={HomePage}/>
     </Switch>
   )
 }
@@ -36,8 +40,12 @@ class Test extends Component {
           return 'View Room';
         case '/search-room':
           return 'Search Room';
+        case '/watched-rooms':
+          return 'My Watched Rooms';
+        case '/home':
+          return 'Welcome User';
         default:
-          return 'Notification Service'
+          return 'Notification Service';
       }
     }
     return (

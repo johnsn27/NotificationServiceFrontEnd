@@ -22,7 +22,7 @@ class LeftSideBar extends Component {
                   </LeftSideBarButton>
                 </div>
                 <div className="my-section-button">
-                  <LeftSideBarButton type="primary" tab-index="1" className="Button" link='' text="My Watched Rooms">
+                  <LeftSideBarButton type="primary" tab-index="1" className="Button" link='/watched-rooms' text="My Watched Rooms">
                   </LeftSideBarButton>
                 </div>
               </div>
@@ -57,8 +57,7 @@ class LeftSideBar extends Component {
   LeftSideBar.propTypes = {
     id: PropTypes.string.isRequired,
     className: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    search: PropTypes.func.isRequired,
+    text: PropTypes.string.isRequired
   }
 
   export default LeftSideBar;

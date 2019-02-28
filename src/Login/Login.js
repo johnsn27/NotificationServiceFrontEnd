@@ -8,7 +8,7 @@ class Login extends Component {
       <div className="App">
         <header className="App-header"></header>
         <div className="login-button">
-          <Btn type="primary" tab-index="1" className="Button" onClick={() => window.location.href = '/view-room'}>
+          <Btn type="primary" tab-index="1" className="Button" onClick={() => window.location.href = '/home'}>
             <span>Login</span>
           </Btn>
         </div>

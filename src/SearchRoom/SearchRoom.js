@@ -10,17 +10,7 @@ function onClick() {
 }
 
 
-class ViewRoom extends Component {
-    constructor(props) {
-        super();
-        this.toggleBack = this.toggleBack.bind(this);
-        this.state = { DisplayLogin: props.DisplayLogin };
-    }
-
-    toggleBack() {
-        this.setState({ DisplayLogin: !this.state.DisplayLogin });
-    }
-
+class SearchRoom extends Component {
     render() {
         return (
             <div>
@@ -76,13 +66,13 @@ class ViewRoom extends Component {
     }
 }
 
-ViewRoom.propTypes = {
+SearchRoom.propTypes = {
     DisplayBack: PropTypes.bool,
 };
 
-ViewRoom.defaultProps = {
+SearchRoom.defaultProps = {
     DisplayBack: false,
 }
 
-export default ViewRoom;
+export default SearchRoom;
 
