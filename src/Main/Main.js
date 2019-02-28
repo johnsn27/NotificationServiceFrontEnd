@@ -7,6 +7,7 @@ import LeftSideBar from '../LeftSideBar/LeftSideBar';
 import ViewRoom from '../ViewRoom/ViewRoom';
 import SearchRoom from '../SearchRoom/SearchRoom';
 import WatchedRooms from '../WatchedRooms/WatchedRooms'
+import HomePage from '../HomePage/HomePage';
 
 
 class Test extends Component {
@@ -17,7 +18,8 @@ class Test extends Component {
       DisplayLogin: props.DisplayLogin,
       DisplayViewRoom: props.DisplayViewRoom,
       DisplaySearchRoom: props.DisplaySearchRoom,
-      DisplayWatchRoom: props.DisplayWatchRoom
+      DisplayWatchRoom: props.DisplayWatchRoom,
+      DisplayHomePage: props.DisplayHomePage
     };
   }
 
@@ -36,11 +38,15 @@ class Test extends Component {
   }
 
   render() {
-    let RightSide = <ViewRoom />
-    let StickyTitle = "View Room"
+    let RightSide = <HomePage />;
+    let StickyTitle = "Welcome User";
     if (this.state.DisplaySearchRoom) {
-      RightSide = <SearchRoom />
-      StickyTitle = "Search Room"
+      RightSide = <SearchRoom />;
+      StickyTitle = "Search Room";
+    }
+    else if (this.state.DisplayViewRoom) {
+        RightSide = <ViewRoom />;
+        StickyTitle = "View Room";
     }
     if (this.state.DisplayWatchRoom) {
       RightSide = <WatchedRooms />
@@ -73,6 +79,7 @@ Test.propTypes = {
   DisplayViewRoom: PropTypes.bool,
   DisplaySearchRoom: PropTypes.bool,
   DisplayWatchRoom: PropTypes.bool,
+  DisplayHomePage: PropTypes.bool,
 };
 
 Test.defaultProps = {
@@ -80,6 +87,7 @@ Test.defaultProps = {
   DisplayViewRoom: false,
   DisplaySearchRoom: false,
   DisplayWatchRoom: false,
+  DisplayHomePage: false,
 }
 
 export default Test;
