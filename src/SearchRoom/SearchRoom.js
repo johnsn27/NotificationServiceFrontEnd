@@ -10,7 +10,7 @@ function onClick() {
 }
 
 
-class ViewRoom extends Component {
+class SearchRoom extends Component {
     constructor(props) {
         super();
         this.toggleBack = this.toggleBack.bind(this);
@@ -76,13 +76,13 @@ class ViewRoom extends Component {
     }
 }
 
-ViewRoom.propTypes = {
+SearchRoom.propTypes = {
     DisplayBack: PropTypes.bool,
 };
 
-ViewRoom.defaultProps = {
+SearchRoom.defaultProps = {
     DisplayBack: false,
 }
 
-export default ViewRoom;
+export default SearchRoom;
 

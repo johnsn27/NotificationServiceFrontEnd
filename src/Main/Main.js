@@ -6,6 +6,7 @@ import CustomStickyBar from '../CustomStickyBar/CustomStickyBar';
 import LeftSideBar from '../LeftSideBar/LeftSideBar';
 import ViewRoom from '../ViewRoom/ViewRoom';
 import SearchRoom from '../SearchRoom/SearchRoom';
+import HomePage from '../HomePage/HomePage';
 
 
 class Test extends Component {
@@ -15,7 +16,8 @@ class Test extends Component {
     this.state = {
       DisplayLogin: props.DisplayLogin,
       DisplayViewRoom: props.DisplayViewRoom,
-      DisplaySearchRoom: props.DisplaySearchRoom
+      DisplaySearchRoom: props.DisplaySearchRoom,
+      DisplayHomePage: props.DisplayHomePage
     };
   }
 
@@ -29,11 +31,15 @@ class Test extends Component {
   }
 
   render() {
-    let RightSide = <ViewRoom />
-    let StickyTitle = "View Room"
+    let RightSide = <HomePage />;
+    let StickyTitle = "Welcome User";
     if (this.state.DisplaySearchRoom) {
-      RightSide = <SearchRoom />
-      StickyTitle = "Search Room"
+      RightSide = <SearchRoom />;
+      StickyTitle = "Search Room";
+    }
+    else if (this.state.DisplayViewRoom) {
+        RightSide = <ViewRoom />;
+        StickyTitle = "View Room";
     }
     return (
       <div className="App">
@@ -61,12 +67,14 @@ Test.propTypes = {
   DisplayBack: PropTypes.bool,
   DisplayViewRoom: PropTypes.bool,
   DisplaySearchRoom: PropTypes.bool,
+  DisplayHomePage: PropTypes.bool,
 };
 
 Test.defaultProps = {
   DisplayBack: false,
   DisplayViewRoom: false,
   DisplaySearchRoom: false,
+  DisplayHomePage: false,
 }
 
 export default Test;
