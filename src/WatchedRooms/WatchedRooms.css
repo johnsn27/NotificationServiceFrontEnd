@@ -1,0 +1,22 @@
+.upcoming-meetings-title {
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    padding-bottom: 16px;
+    padding-top: 8px;
+}
+
+.upcoming-meetings-contents {
+    border-style: solid;
+    float: left;
+    height: 180px;
+    margin-bottom: 32px;
+    max-height: 180px;
+    overflow-y: scroll;
+    padding: 20px;
+    width: fit-content;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
