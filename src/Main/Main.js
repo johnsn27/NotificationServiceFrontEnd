@@ -7,7 +7,7 @@ import LeftSideBar from '../LeftSideBar/LeftSideBar';
 import ViewRoom from '../ViewRoom/ViewRoom';
 import SearchRoom from '../SearchRoom/SearchRoom';
 import Login from '../Login/Login';
-import WatchedRooms from '../WatchedRooms/WatchedRooms'
+import WatchedRooms from '../WatchedRooms/WatchedRooms';
 import HomePage from '../HomePage/HomePage';
 
 const Content = () => {

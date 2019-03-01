@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Btn from '@bbc/igm-btn'
 import '@bbc/igm-btn/dist/Btn.css';
-import './LeftSideBarButton.css'
+import './LeftSideBarButton.css';
 
 function LeftSideBarButton({ type, tabIndex, className, link, text }) {
   return (
