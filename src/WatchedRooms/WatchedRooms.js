@@ -3,16 +3,6 @@ import PropTypes from 'prop-types';
 import './WatchedRooms.css';
 
 class WatchedRooms extends Component {
-    constructor(props) {
-        super();
-        this.toggleBack = this.toggleBack.bind(this);
-        this.state = { DisplayLogin: props.DisplayLogin };
-    }
-
-    toggleBack() {
-        this.setState({ DisplayLogin: !this.state.DisplayLogin });
-    }
-
     render() {
         return (
             <div>
@@ -71,4 +61,3 @@ WatchedRooms.defaultProps = {
 }
 
 export default WatchedRooms;
-
