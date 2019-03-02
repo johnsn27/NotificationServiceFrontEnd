@@ -44,3 +44,24 @@ h1 {
   width:400px;
   text-align: left;
 }
+
+table {
+  border-collapse: collapse;
+  margin: 16px;
+  padding: 8px;
+  table-layout: fixed;
+  width: 100%;  
+}
+
+tbody td {
+  border-bottom: 2px solid black;
+}
+
+table th {
+  border: 1px solid black;
+  text-align: left;
+}
+
+table th, td {
+  padding: 8px;
+}

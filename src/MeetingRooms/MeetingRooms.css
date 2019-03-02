@@ -13,14 +13,7 @@
   width: 1000px;
   height: 568px;
   margin: 0px;
-}
-
-.meeting-rooms-table {
-  border-collapse: collapse;
-  display: block;
-  margin: 8px;
   overflow-y: scroll;
-  width: 100%;
 }
 
 .room-data td {
@@ -55,4 +48,12 @@
   height: 48px;
   padding-bottom: 8px;
   padding-top: 8px;
+}
+
+.view-room-link {
+  text-align: right;
+}
+
+.view-room-link a {
+  color: grey;
 }

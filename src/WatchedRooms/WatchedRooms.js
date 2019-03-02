@@ -11,13 +11,15 @@ class WatchedRooms extends Component {
                         Upcoming Meetings (4)
                     </div>
                     <div className="upcoming-meetings-contents">
-                        <div className="upcoming-meetings-container">
-                            <table width="960">
-                                <tr className="upcoming-meetings-title">
+                        <table>
+                            <thead>
+                                <tr>
                                     <th>Name</th>
                                     <th>Location</th>
                                     <th>Next Available</th>
                                 </tr>
+                            </thead>
+                            <tbody>
                                 <tr>
                                     <td>Studio 3</td>
                                     <td>NBH 06 E M2 Studio</td>
@@ -43,8 +45,8 @@ class WatchedRooms extends Component {
                                     <td>NBH 07 B M3 Studio</td>
                                     <td>23/05/2019 at 14:00</td>
                                 </tr>
-                            </table>
-                        </div>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

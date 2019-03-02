@@ -4,16 +4,6 @@ import './MeetingRooms.css';
 import Btn from '@bbc/igm-btn';
 
 export default class MeetingRooms extends Component {
-  constructor(props) {
-    super();
-    this.toggleBack = this.toggleBack.bind(this);
-    this.state = { DisplayLogin: props.DisplayLogin };
-  }
-
-  toggleBack() {
-    this.setState({ DisplayLogin: !this.state.DisplayLogin });
-  }
-
   render() {
     const roomsArray = [
       {
@@ -116,14 +106,14 @@ export default class MeetingRooms extends Component {
               {
                 roomsArray.map(room => {
                   return (
-                    <tr className='room-data'>
+                    <tr className="room-data">
                       <td>
                         {room.name}
                       </td>
                       <td>
                         {room.location}
                       </td>
-                      <td>
+                      <td className="view-room-link">
                         <a href={`/view-room/${room.key}`}>view</a>
                       </td>
                     </tr>

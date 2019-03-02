@@ -9,6 +9,7 @@ import SearchRoom from '../SearchRoom/SearchRoom';
 import Login from '../Login/Login';
 import WatchedRooms from '../WatchedRooms/WatchedRooms';
 import HomePage from '../HomePage/HomePage';
+import MeetingRooms from '../MeetingRooms/MeetingRooms';
 
 const Content = () => {
   return (
@@ -16,6 +17,7 @@ const Content = () => {
       <Route path='/view-room' component={ViewRoom}/>
       <Route path='/search-room' component={SearchRoom}/>
       <Route path='/watched-rooms' component={WatchedRooms}/>
+      <Route path='/meeting-rooms' component={MeetingRooms}/>
       <Route path='/home' component={HomePage}/>
     </Switch>
   )

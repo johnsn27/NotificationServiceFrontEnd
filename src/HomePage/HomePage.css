@@ -5,17 +5,6 @@
     padding-top: 8px;
 }
 
-.upcoming-meetings-contents {
-    border-style: solid;
-    float: left;
-    height: 180px;
-    margin-bottom: 32px;
-    max-height: 180px;
-    overflow-y: scroll;
-    padding: 20px;
-    width: fit-content;
-}
-
 .watched-meetings-title {
     font-size: var(--title-font-size);
     font-weight: bold;
@@ -23,18 +12,12 @@
     padding-top: 8px;
 }
 
-.watched-meetings-contents {
+.watched-meetings-contents, .upcoming-meetings-contents {
     border-style: solid;
     display: flex;
     float: left;
-    height: 180px;
-    max-height: 180px;
+    height: 224px;
+    max-height: 224px;
     overflow-y: scroll;
-    padding: 20px;
-    width: fit-content;
+    width: 1000px;
 }
-
-table, th, td {
-    border: 1px solid black;
-    padding: 8px;
-  }

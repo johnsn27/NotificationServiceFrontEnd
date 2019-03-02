@@ -11,44 +11,42 @@ class HomePage extends Component {
                         Upcoming Meetings (4)
                     </div>
                     <div className="upcoming-meetings-contents">
-                        <div className="upcoming-meetings-container">
-                            <table width="960">
-                                <thead>
-                                    <tr className="upcoming-meetings-title">
-                                        <th>Name</th>
-                                        <th>Date</th>
-                                        <th>Time</th>
-                                        <th>Location</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Project</td>
-                                        <td>07/01/2019</td>
-                                        <td>16:00- 17:30</td>
-                                        <td>BC5 D5 M3 Marie Curie</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sprint Review</td>
-                                        <td>12/01/2019</td>
-                                        <td>10:00- 12:00</td>
-                                        <td>NBH 06 B M4 Kiev</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Retrospective</td>
-                                        <td>25/01/2019</td>
-                                        <td>15:00- 17:00</td>
-                                        <td>BC2 D4 M2 Animal Magic</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Project</td>
-                                        <td>28/01/2019</td>
-                                        <td>16:00- 17:30</td>
-                                        <td>BC5 D5 M3 Marie Curie</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Location</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Project</td>
+                                    <td>07/01/2019</td>
+                                    <td>16:00- 17:30</td>
+                                    <td>BC5 D5 M3 Marie Curie</td>
+                                </tr>
+                                <tr>
+                                    <td>Sprint Review</td>
+                                    <td>12/01/2019</td>
+                                    <td>10:00- 12:00</td>
+                                    <td>NBH 06 B M4 Kiev</td>
+                                </tr>
+                                <tr>
+                                    <td>Retrospective</td>
+                                    <td>25/01/2019</td>
+                                    <td>15:00- 17:00</td>
+                                    <td>BC2 D4 M2 Animal Magic</td>
+                                </tr>
+                                <tr>
+                                    <td>Project</td>
+                                    <td>28/01/2019</td>
+                                    <td>16:00- 17:30</td>
+                                    <td>BC5 D5 M3 Marie Curie</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <div>
@@ -56,13 +54,15 @@ class HomePage extends Component {
                         Watched Meetings (5)
                     </div>
                     <div className="watched-meetings-contents">
-                        <div className="watched-meetings-container">
-                            <table width="960">
-                                <tr className="upcoming-meetings-title">
+                        <table>
+                            <thead>
+                                <tr>
                                     <th>Name</th>
                                     <th>Location</th>
                                     <th>Next Available</th>
                                 </tr>
+                            </thead>
+                            <tbody>
                                 <tr>
                                     <td>Project</td>
                                     <td>NBH 06 E M2 Studio 1</td>
@@ -88,8 +88,8 @@ class HomePage extends Component {
                                     <td>NBH 04 Collaboration Zone</td>
                                     <td>07/05/2019 at 12:00</td>
                                 </tr>
-                            </table>
-                        </div>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
