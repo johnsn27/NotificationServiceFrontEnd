@@ -46,6 +46,8 @@ class Test extends Component {
           return 'My Watched Rooms';
         case '/home':
           return 'Welcome User';
+        case '/meeting-rooms':
+          return 'Meeting Rooms';
         default:
           return 'Notification Service';
       }
