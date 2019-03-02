@@ -7,21 +7,21 @@ import Main from '../Main/Main';
 class Login extends Component {
   constructor(props) {
     super();
-    this.toggleViewRoom = this.toggleViewRoom.bind(this);
-    this.state = { DisplayViewRoom: props.DisplayViewRoom };
+    this.toggleHomePage = this.toggleHomePage.bind(this);
+    this.state = { DisplayHomePage: props.DisplayHomePage };
   }
 
-  toggleViewRoom() {
-    this.setState({ DisplayViewRoom: !this.state.DisplayViewRoom });
+  toggleHomePage() {
+    this.setState({ DisplayHomePage: !this.state.DisplayHomePage });
   }
 
   render() {
-    return this.state.DisplayViewRoom
+    return this.state.DisplayHomePage
       ? <Main />
       : <div className="App">
         <header className="App-header"></header>
         <div className="login-button">
-          <Btn type="primary" tab-index="1" className="Button" onClick={this.toggleViewRoom}>
+          <Btn type="primary" tab-index="1" className="Button" onClick={this.toggleHomePage}>
             <span>Login</span>
           </Btn>
         </div>
@@ -30,11 +30,11 @@ class Login extends Component {
 }
 
 Login.propTypes = {
-  DisplayViewRoom: PropTypes.bool,
+  DisplayHomePage: PropTypes.bool,
 };
 
 Login.defaultProps = {
-  DisplayViewRoom: false,
+  DisplayHomePage: false,
 }
 
 export default Login;

@@ -1,3 +1,7 @@
+h1 {
+  margin:0;
+}
+
 .page-content-below-sticky {
   display: flex;
   flex-direction: column;
@@ -18,4 +22,25 @@
 .right-side {
   float: left;
   height: fit-content;
+}
+
+.textarea {
+  height: 24px;
+  margin: 8px;
+  padding-top:16px;
+  width: 400px;
+}
+
+.textbox {
+  display: flex;
+  float: right;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.label {
+  font-size: var(--text-font-size);
+  width:400px;
+  text-align: left;
 }
