@@ -43,7 +43,7 @@ class LeftSideBar extends Component {
                   </LeftSideBarButton>
                 </div>
                 <div className="rooms-button">
-                  <LeftSideBarButton type="primary" tab-index="1" className="Button" link='' text="Meeting Rooms">
+                  <LeftSideBarButton type="primary" tab-index="1" className="Button" link='/meeting-rooms' text="Meeting Rooms">
                   </LeftSideBarButton>
                 </div>
               </div>

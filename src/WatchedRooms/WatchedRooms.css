@@ -7,16 +7,10 @@
 
 .upcoming-meetings-contents {
     border-style: solid;
+    display: flex;
     float: left;
-    height: 180px;
-    margin-bottom: 32px;
-    max-height: 180px;
+    height: 224px;
+    max-height: 224px;
     overflow-y: scroll;
-    padding: 20px;
-    width: fit-content;
+    width: 1000px;
 }
-
-table, th, td {
-    border: 1px solid black;
-    padding: 8px;
-  }
