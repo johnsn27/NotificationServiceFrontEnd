@@ -3,13 +3,6 @@ import PropTypes from 'prop-types';
 import './SearchRoom.css';
 import Btn from '@bbc/igm-btn';
 
-function onClick() {
-    var element = document.getElementsByClassName("css-xp4uvy select__single-value")[0].innerHTML;
-    console.log(element);
-    return element;
-}
-
-
 class SearchRoom extends Component {
     render() {
         return (
@@ -53,7 +46,7 @@ class SearchRoom extends Component {
                                     type="primary"
                                     tab-index="1"
                                     className="Button"
-                                    onClick={onClick}
+                                    onClick={() => window.location.href = '/meeting-rooms'}
                                 >
                                     <span>Advanced Search</span>
                                 </Btn>

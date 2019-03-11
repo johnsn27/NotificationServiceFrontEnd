@@ -2,13 +2,43 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './HomePage.css';
 
+const getBookedRooms = async () => {
+    const res = await fetch('http://127.0.0.1:5000/user-bookings/1', {
+      headers: {
+        'Accept': 'application/json',
+      },
+    });
+    return await res.json();
+}
+
+const getWatchedRooms = async () => {
+    const res = await fetch('http://127.0.0.1:5000/user-watch-list/1', {
+      headers: {
+        'Accept': 'application/json',
+      },
+    });
+    return await res.json();
+}
+
 class HomePage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          bookedRooms: [],
+          watchedRooms: []
+        }
+      }
+    componentDidMount() {
+        getBookedRooms().then(res => this.setState({bookedRooms: res}));
+        getWatchedRooms().then(res => this.setState({watchedRooms: res}));
+    }
     render() {
+        const { bookedRooms, watchedRooms } = this.state;
         return (
             <div>
                 <div>
                     <div className="upcoming-meetings-title">
-                        Upcoming Meetings (4)
+                        Upcoming Meetings ({bookedRooms.length})
                     </div>
                     <div className="upcoming-meetings-contents">
                         <table>
@@ -21,6 +51,26 @@ class HomePage extends Component {
                                 </tr>
                             </thead>
                             <tbody>
+                                {
+                                    bookedRooms.map(room => {
+                                        return (
+                                        <tr>
+                                            <td>
+                                                MEETING NAME
+                                            </td>
+                                            <td>
+                                                {room.StartTime.slice(0, 10)}
+                                            </td>
+                                            <td>
+                                                {room.StartTime.slice(11)} - {room.EndTime.slice(11)}
+                                            </td>
+                                            <td>
+                                                {room.Location}
+                                            </td>
+                                        </tr>
+                                        );
+                                    }) 
+                                }
                                 <tr>
                                     <td>Project</td>
                                     <td>07/01/2019</td>
@@ -51,7 +101,7 @@ class HomePage extends Component {
                 </div>
                 <div>
                     <div className="watched-meetings-title">
-                        Watched Meetings (5)
+                        Watched Meetings ({watchedRooms.length})
                     </div>
                     <div className="watched-meetings-contents">
                         <table>
@@ -63,6 +113,23 @@ class HomePage extends Component {
                                 </tr>
                             </thead>
                             <tbody>
+                            {
+                                watchedRooms.map(room => {
+                                    return (
+                                    <tr>
+                                        <td>
+                                            ROOM NAME?
+                                        </td>
+                                        <td>
+                                            LOCATION
+                                        </td>
+                                        <td>
+                                            {room.StartTime} - {room.EndTime.slice(11)}
+                                        </td>
+                                    </tr>
+                                    );
+                                }) 
+                            }
                                 <tr>
                                     <td>Project</td>
                                     <td>NBH 06 E M2 Studio 1</td>

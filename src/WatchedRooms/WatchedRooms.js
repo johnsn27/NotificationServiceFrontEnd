@@ -2,13 +2,32 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './WatchedRooms.css';
 
+const getWatchedRooms = async () => {
+    const res = await fetch('http://127.0.0.1:5000/user-watch-list/1', {
+      headers: {
+        'Accept': 'application/json',
+      },
+    });
+    return await res.json();
+}
+
 class WatchedRooms extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          watchedRooms: []
+        }
+      }
+    componentDidMount() {
+        getWatchedRooms().then(res => this.setState({watchedRooms: res}));
+    }
     render() {
+        const { watchedRooms } = this.state;
         return (
             <div>
                 <div>
                     <div className="upcoming-meetings-title">
-                        Upcoming Meetings (4)
+                        Watched Rooms ({watchedRooms.length})
                     </div>
                     <div className="upcoming-meetings-contents">
                         <table>

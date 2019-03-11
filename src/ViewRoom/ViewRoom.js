@@ -3,10 +3,40 @@ import PropTypes from 'prop-types';
 import './ViewRoom.css';
 import Btn from '@bbc/igm-btn';
 
-function onClick() {
-  var element = document.getElementsByClassName("css-xp4uvy select__single-value")[0].innerHTML;
-  console.log(element);
-  return element;
+const watchRoom = () => {
+  return fetch('http://127.0.0.1:5000/watch-room', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: JSON.stringify(
+      {
+        UserId: 1,
+        Capacity: 10,
+        StartTime: "2019-02-27 10:00:00",
+        EndTime: "2019-02-27 11:00:00"
+      }
+    ),
+  }).then(res => console.log(res))
+}
+
+const bookRoom = () => {
+  return fetch('http://127.0.0.1:5000/book-room', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: JSON.stringify(
+      {
+        UserId: 1,
+        RoomId: 1, //get from url or something?
+        StartTime: "2019-02-27 10:00:00",
+        EndTime: "2019-02-27 11:00:00"
+      }
+    ),
+  }).then(res => console.log(res))
 }
 
 
@@ -31,12 +61,12 @@ class ViewRoom extends Component {
               </div>
               <div className="watch-book-collection">
                 <div className="watch-button">
-                  <Btn type="primary" tab-index="1" className="Button" onClick={onClick}>
+                  <Btn type="primary" tab-index="1" className="Button" onClick={watchRoom}>
                     <span>Watch</span>
                   </Btn>
                 </div>
                 <div className="book-button">
-                  <Btn type="primary" tab-index="1" className="Button" onClick={onClick}>
+                  <Btn type="primary" tab-index="1" className="Button" onClick={bookRoom}>
                     <span>Book</span>
                   </Btn>
                 </div>

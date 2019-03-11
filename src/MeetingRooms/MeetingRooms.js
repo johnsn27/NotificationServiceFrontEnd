@@ -3,85 +3,28 @@ import PropTypes from 'prop-types';
 import './MeetingRooms.css';
 import Btn from '@bbc/igm-btn';
 
+// This should be edited to accept params at some point, currently just retrieving all meeting rooms
+const getRooms = async () => {
+  const res = await fetch('http://127.0.0.1:5000/meeting-rooms', {
+    headers: {
+      'Accept': 'application/json',
+    },
+  });
+  return await res.json();
+}
+
 export default class MeetingRooms extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      rooms: []
+    }
+  }
+  componentDidMount() {
+    getRooms().then(res => this.setState({rooms: res}));
+  }
   render() {
-    const roomsArray = [
-      {
-        name: 'Studio 1',
-        location: '06 E M1',
-        key: 1
-      },
-      {
-        name: 'Studio 2',
-        location: '06 E M2',
-        key: 2
-      },
-      {
-        name: 'Studio 3',
-        location: '06 E M3',
-        key: 3
-      },
-      {
-        name: 'Mylvaganam Nimalarajan',
-        location: '06 D M4',
-        key: 4
-      },
-      {
-        name: 'Kari Blackburn',
-        location: '06 D M3',
-        key: 5
-      },
-      {
-        name: 'Kiev',
-        location: '06 D M2',
-        key: 6
-      },
-      {
-        name: 'Nice to See You',
-        location: '06 D M1',
-        key: 7
-      },
-      {
-        name: 'Park 2',
-        location: '06 C M3',
-        key: 8
-      },
-      {
-        name: 'Peter Eckersley',
-        location: '06 C M2',
-        key: 9
-      },
-      {
-        name: 'Park 2',
-        location: '06 C M3',
-        key: 10
-      },
-      {
-        name: 'Park 2',
-        location: '06 C M3',
-        key: 11
-      },
-      {
-        name: 'Park 2',
-        location: '06 C M3',
-        key: 12
-      },
-      {
-        name: 'Park 2',
-        location: '06 C M3',
-        key: 13
-      },
-      {
-        name: 'Park 2',
-        location: '06 C M3',
-        key: 14
-      },
-      {
-        name: 'Park 2',
-        location: '06 C M3',
-        key: 15
-      }
-    ];
+    const { rooms } = this.state;
     return (
       <div>
         <div className="meeting-rooms-title-container">
@@ -104,17 +47,17 @@ export default class MeetingRooms extends Component {
             </thead>
             <tbody>
               {
-                roomsArray.map(room => {
+                rooms.map(room => {
                   return (
                     <tr className="room-data">
                       <td>
-                        {room.name}
+                        {room.Name}
                       </td>
                       <td>
-                        {room.location}
+                        {room.Location}
                       </td>
                       <td className="view-room-link">
-                        <a href={`/view-room/${room.key}`}>view</a>
+                        <a href={`/view-room/${room.id}`}>view</a>
                       </td>
                     </tr>
                   );
