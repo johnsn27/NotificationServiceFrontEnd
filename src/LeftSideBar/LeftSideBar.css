@@ -3,70 +3,69 @@
   --title-font-size: 20px;
   --text-font-size: 18px;
 }
-.my-section-button {
-  align-items: center;
-  border-radius: 8px;
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-  margin-left: 24px;
-  margin-top: 16px;
-  width: 216px;
-}
 
-.rooms-button {
-  align-items: center;
-  border-radius: 8px;
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-  margin-left: 24px;
-  margin-top: 16px;
-  width: 216px;
-}
+@media only screen and (min-width: 1000px) {
+  .my-section-button {
+    align-items: center;
+    border-radius: 8px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin: 8%;
+    width: 80%;
+    height: 10%;
+  }
 
-.rooms {
-  float: left;
-  position: relative;
-  width: 280px;
-}
+  .rooms-button {
+    align-items: center;
+    border-radius: 8px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin: 8%;
+    width: 80%;
+  }
 
-.rooms-title {
-  float: left;
-  font-size: var(--title-font-size);
-  font-weight: bold;
-  margin-bottom: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
+  .rooms {
+    float: left;
+    position: relative;
+    width: 90%;
+  }
 
-.rooms-buttons {
-  float: left;
-  width: 280px;
-}
+  .rooms-title {
+    float: left;
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    padding-top: 4%;
+    padding-bottom: 8%;
+  }
 
-.my-section {
-  float: left;
-  margin-bottom: 16px;
-  width: 280px;
-}
+  .rooms-buttons {
+    float: left;
+    width: 80%;
+  }
 
-.my-section-title {
-  float: left;
-  font-size: var(--title-font-size);
-  font-weight: bold;
-  margin-bottom: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
+  .my-section {
+    float: left;
+    margin-bottom: 4%;
+    width: 90%;
+  }
 
-.my-section-buttons {
-  float: left;
-  width: 280px;
-}
+  .my-section-title {
+    float: left;
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    padding-top: 4%;
+    padding-bottom: 8%;
+  }
 
-.button-border {
-  border-style: solid;
+  .my-section-buttons {
+    float: left;
+    width: 80%;
+    height: 100%;
+  }
+
+  .button-border {
+    border-style: solid;
+  }
 }
