@@ -85,9 +85,9 @@
   }
 
   .rooms {
-    float: left;
+    float: right;
     position: relative;
-    width: 100%;
+    width: 50%;
   }
 
   .rooms-title {
@@ -98,12 +98,13 @@
 
   .rooms-buttons {
     float: left;
-    width: 100%;
+    width: 98%;
+    margin: 1%;
   }
 
   .my-section {
     float: left;
-    width: 100%;
+    width: 50%;
   }
 
   .my-section-title {
@@ -115,7 +116,8 @@
 
   .my-section-buttons {
     float: left;
-    width: 100%;
+    width: 98%;
+    margin: 1%;
   }
 
   .button-border {
