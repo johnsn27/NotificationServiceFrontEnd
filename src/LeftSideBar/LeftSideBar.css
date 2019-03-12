@@ -11,9 +11,9 @@
     border-style: solid;
     display: flex;
     justify-content: center;
-    margin: 8%;
+    margin: 10%;
     width: 80%;
-    height: 10%;
+    min-width: 112px;
   }
 
   .rooms-button {
@@ -22,22 +22,22 @@
     border-style: solid;
     display: flex;
     justify-content: center;
-    margin: 8%;
+    margin: 10%;
     width: 80%;
+    min-width: 112px;
   }
 
   .rooms {
     float: left;
     position: relative;
-    width: 90%;
+    width: 100%;
   }
 
   .rooms-title {
     float: left;
     font-size: var(--title-font-size);
     font-weight: bold;
-    padding-top: 4%;
-    padding-bottom: 8%;
+    margin: 4%;
   }
 
   .rooms-buttons {
@@ -47,22 +47,19 @@
 
   .my-section {
     float: left;
-    margin-bottom: 4%;
-    width: 90%;
+    width: 80%;
   }
 
   .my-section-title {
     float: left;
     font-size: var(--title-font-size);
     font-weight: bold;
-    padding-top: 4%;
-    padding-bottom: 8%;
+    margin: 4%;
   }
 
   .my-section-buttons {
     float: left;
-    width: 80%;
-    height: 100%;
+    width: 100%;
   }
 
   .button-border {
