@@ -8,22 +8,91 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 64px;
+    width: 100%;
+  }
+  
+  .left-side {
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    margin-left: 10%;
+    /* margin-right: 10%; */
+    justify-content: space-evenly;
+    min-width: 200px;
+    width: 20%;
+  }
+  
+  .right-side {
+    float: right;
+    height: fit-content;
+    margin-right: 10%;
+    width: 50%;
   }
 
+  .textarea {
+    height: 4%;
+    padding-top:2%;
+    width: 44%;
+  }
+
+  .textbox {
+    display: flex;
+    float: right;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .label {
+    font-size: var(--text-font-size);
+    width:44%;
+    text-align: left;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 1;
+    table-layout: fixed;
+    width: 100%;  
+  }
+
+  tbody td {
+    border-bottom: 2px solid black;
+  }
+
+  table th {
+    border: 1px solid black;
+    text-align: left;
+  }
+
+  table th, td {
+    padding: 8px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .page-content-below-sticky {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 64px;
+    width: 100%;
+  }
+  
   .left-side {
     align-items: center;
     flex-direction: column;
     float: left;
     justify-content: space-evenly;
-    margin-left: 8%;
-    width: 16%;
+    min-width: 200px;
+    width: 100%;
   }
-
+  
   .right-side {
-    float: left;
+    float: right;
     height: fit-content;
+    width: 100%;
   }
-
   .textarea {
     height: 4%;
     padding-top:2%;

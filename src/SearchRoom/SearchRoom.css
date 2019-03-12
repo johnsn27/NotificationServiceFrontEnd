@@ -13,6 +13,7 @@
     width: 80%;
     height: fit-content;
     margin: 0px;
+    width: 100%;
   }
 
   .advanced-search-button {
@@ -37,5 +38,6 @@
   .search-room-contents-container {
     float: left;
     margin: 4%;
+    width: 100%;
   }
 }
