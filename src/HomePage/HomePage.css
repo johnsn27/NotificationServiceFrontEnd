@@ -12,12 +12,12 @@
     padding-top: 8px;
 }
 
-.watched-meetings-contents, .upcoming-meetings-contents {
+.watched-meetings-contents {
     border-style: solid;
     display: flex;
     float: left;
     height: 224px;
     max-height: 224px;
     overflow-y: scroll;
-    width: 1000px;
+    width: 10%;
 }
