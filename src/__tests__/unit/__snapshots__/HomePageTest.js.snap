@@ -1,0 +1,3221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login matches snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <HomePage
+    DisplayBack={false}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          <div
+            className="upcoming-meetings-title"
+          >
+            Upcoming Meetings (4)
+          </div>
+          <div
+            className="upcoming-meetings-contents"
+          >
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    Name
+                  </th>
+                  <th>
+                    Date
+                  </th>
+                  <th>
+                    Time
+                  </th>
+                  <th>
+                    Location
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Project
+                  </td>
+                  <td>
+                    07/01/2019
+                  </td>
+                  <td>
+                    16:00- 17:30
+                  </td>
+                  <td>
+                    BC5 D5 M3 Marie Curie
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Sprint Review
+                  </td>
+                  <td>
+                    12/01/2019
+                  </td>
+                  <td>
+                    10:00- 12:00
+                  </td>
+                  <td>
+                    NBH 06 B M4 Kiev
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Retrospective
+                  </td>
+                  <td>
+                    25/01/2019
+                  </td>
+                  <td>
+                    15:00- 17:00
+                  </td>
+                  <td>
+                    BC2 D4 M2 Animal Magic
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Project
+                  </td>
+                  <td>
+                    28/01/2019
+                  </td>
+                  <td>
+                    16:00- 17:30
+                  </td>
+                  <td>
+                    BC5 D5 M3 Marie Curie
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>,
+        <div>
+          <div
+            className="watched-meetings-title"
+          >
+            Watched Meetings (5)
+          </div>
+          <div
+            className="watched-meetings-contents"
+          >
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    Name
+                  </th>
+                  <th>
+                    Location
+                  </th>
+                  <th>
+                    Next Available
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Project
+                  </td>
+                  <td>
+                    NBH 06 E M2 Studio 1
+                  </td>
+                  <td>
+                    19/02/2019 at 13:00
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Sprint Review
+                  </td>
+                  <td>
+                    NBH 04 Collaboration Zone
+                  </td>
+                  <td>
+                    26/03/2019 at 09:00
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Retrospective
+                  </td>
+                  <td>
+                    BC4 D5 M2 Picsso
+                  </td>
+                  <td>
+                    09/04/2019 at 18:00
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Project
+                  </td>
+                  <td>
+                    NBH 06 E M2 Studio 1
+                  </td>
+                  <td>
+                    15/04/2019 at 17:00
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Sprint Review
+                  </td>
+                  <td>
+                    NBH 04 Collaboration Zone
+                  </td>
+                  <td>
+                    07/05/2019 at 12:00
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="upcoming-meetings-title"
+            >
+              Upcoming Meetings (4)
+            </div>,
+            <div
+              className="upcoming-meetings-contents"
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Date
+                    </th>
+                    <th>
+                      Time
+                    </th>
+                    <th>
+                      Location
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Project
+                    </td>
+                    <td>
+                      07/01/2019
+                    </td>
+                    <td>
+                      16:00- 17:30
+                    </td>
+                    <td>
+                      BC5 D5 M3 Marie Curie
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Sprint Review
+                    </td>
+                    <td>
+                      12/01/2019
+                    </td>
+                    <td>
+                      10:00- 12:00
+                    </td>
+                    <td>
+                      NBH 06 B M4 Kiev
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Retrospective
+                    </td>
+                    <td>
+                      25/01/2019
+                    </td>
+                    <td>
+                      15:00- 17:00
+                    </td>
+                    <td>
+                      BC2 D4 M2 Animal Magic
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Project
+                    </td>
+                    <td>
+                      28/01/2019
+                    </td>
+                    <td>
+                      16:00- 17:30
+                    </td>
+                    <td>
+                      BC5 D5 M3 Marie Curie
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Upcoming Meetings (4)",
+              "className": "upcoming-meetings-title",
+            },
+            "ref": null,
+            "rendered": "Upcoming Meetings (4)",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <table>
+                <thead>
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Date
+                    </th>
+                    <th>
+                      Time
+                    </th>
+                    <th>
+                      Location
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Project
+                    </td>
+                    <td>
+                      07/01/2019
+                    </td>
+                    <td>
+                      16:00- 17:30
+                    </td>
+                    <td>
+                      BC5 D5 M3 Marie Curie
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Sprint Review
+                    </td>
+                    <td>
+                      12/01/2019
+                    </td>
+                    <td>
+                      10:00- 12:00
+                    </td>
+                    <td>
+                      NBH 06 B M4 Kiev
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Retrospective
+                    </td>
+                    <td>
+                      25/01/2019
+                    </td>
+                    <td>
+                      15:00- 17:00
+                    </td>
+                    <td>
+                      BC2 D4 M2 Animal Magic
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Project
+                    </td>
+                    <td>
+                      28/01/2019
+                    </td>
+                    <td>
+                      16:00- 17:30
+                    </td>
+                    <td>
+                      BC5 D5 M3 Marie Curie
+                    </td>
+                  </tr>
+                </tbody>
+              </table>,
+              "className": "upcoming-meetings-contents",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <thead>
+                    <tr>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Date
+                      </th>
+                      <th>
+                        Time
+                      </th>
+                      <th>
+                        Location
+                      </th>
+                    </tr>
+                  </thead>,
+                  <tbody>
+                    <tr>
+                      <td>
+                        Project
+                      </td>
+                      <td>
+                        07/01/2019
+                      </td>
+                      <td>
+                        16:00- 17:30
+                      </td>
+                      <td>
+                        BC5 D5 M3 Marie Curie
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Sprint Review
+                      </td>
+                      <td>
+                        12/01/2019
+                      </td>
+                      <td>
+                        10:00- 12:00
+                      </td>
+                      <td>
+                        NBH 06 B M4 Kiev
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Retrospective
+                      </td>
+                      <td>
+                        25/01/2019
+                      </td>
+                      <td>
+                        15:00- 17:00
+                      </td>
+                      <td>
+                        BC2 D4 M2 Animal Magic
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Project
+                      </td>
+                      <td>
+                        28/01/2019
+                      </td>
+                      <td>
+                        16:00- 17:30
+                      </td>
+                      <td>
+                        BC5 D5 M3 Marie Curie
+                      </td>
+                    </tr>
+                  </tbody>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <tr>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Date
+                      </th>
+                      <th>
+                        Time
+                      </th>
+                      <th>
+                        Location
+                      </th>
+                    </tr>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <th>
+                          Name
+                        </th>,
+                        <th>
+                          Date
+                        </th>,
+                        <th>
+                          Time
+                        </th>,
+                        <th>
+                          Location
+                        </th>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Name",
+                        },
+                        "ref": null,
+                        "rendered": "Name",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Date",
+                        },
+                        "ref": null,
+                        "rendered": "Date",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Time",
+                        },
+                        "ref": null,
+                        "rendered": "Time",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Location",
+                        },
+                        "ref": null,
+                        "rendered": "Location",
+                        "type": "th",
+                      },
+                    ],
+                    "type": "tr",
+                  },
+                  "type": "thead",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <tr>
+                        <td>
+                          Project
+                        </td>
+                        <td>
+                          07/01/2019
+                        </td>
+                        <td>
+                          16:00- 17:30
+                        </td>
+                        <td>
+                          BC5 D5 M3 Marie Curie
+                        </td>
+                      </tr>,
+                      <tr>
+                        <td>
+                          Sprint Review
+                        </td>
+                        <td>
+                          12/01/2019
+                        </td>
+                        <td>
+                          10:00- 12:00
+                        </td>
+                        <td>
+                          NBH 06 B M4 Kiev
+                        </td>
+                      </tr>,
+                      <tr>
+                        <td>
+                          Retrospective
+                        </td>
+                        <td>
+                          25/01/2019
+                        </td>
+                        <td>
+                          15:00- 17:00
+                        </td>
+                        <td>
+                          BC2 D4 M2 Animal Magic
+                        </td>
+                      </tr>,
+                      <tr>
+                        <td>
+                          Project
+                        </td>
+                        <td>
+                          28/01/2019
+                        </td>
+                        <td>
+                          16:00- 17:30
+                        </td>
+                        <td>
+                          BC5 D5 M3 Marie Curie
+                        </td>
+                      </tr>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <td>
+                            Project
+                          </td>,
+                          <td>
+                            07/01/2019
+                          </td>,
+                          <td>
+                            16:00- 17:30
+                          </td>,
+                          <td>
+                            BC5 D5 M3 Marie Curie
+                          </td>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Project",
+                          },
+                          "ref": null,
+                          "rendered": "Project",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "07/01/2019",
+                          },
+                          "ref": null,
+                          "rendered": "07/01/2019",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "16:00- 17:30",
+                          },
+                          "ref": null,
+                          "rendered": "16:00- 17:30",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "BC5 D5 M3 Marie Curie",
+                          },
+                          "ref": null,
+                          "rendered": "BC5 D5 M3 Marie Curie",
+                          "type": "td",
+                        },
+                      ],
+                      "type": "tr",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <td>
+                            Sprint Review
+                          </td>,
+                          <td>
+                            12/01/2019
+                          </td>,
+                          <td>
+                            10:00- 12:00
+                          </td>,
+                          <td>
+                            NBH 06 B M4 Kiev
+                          </td>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Sprint Review",
+                          },
+                          "ref": null,
+                          "rendered": "Sprint Review",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "12/01/2019",
+                          },
+                          "ref": null,
+                          "rendered": "12/01/2019",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "10:00- 12:00",
+                          },
+                          "ref": null,
+                          "rendered": "10:00- 12:00",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "NBH 06 B M4 Kiev",
+                          },
+                          "ref": null,
+                          "rendered": "NBH 06 B M4 Kiev",
+                          "type": "td",
+                        },
+                      ],
+                      "type": "tr",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <td>
+                            Retrospective
+                          </td>,
+                          <td>
+                            25/01/2019
+                          </td>,
+                          <td>
+                            15:00- 17:00
+                          </td>,
+                          <td>
+                            BC2 D4 M2 Animal Magic
+                          </td>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Retrospective",
+                          },
+                          "ref": null,
+                          "rendered": "Retrospective",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "25/01/2019",
+                          },
+                          "ref": null,
+                          "rendered": "25/01/2019",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "15:00- 17:00",
+                          },
+                          "ref": null,
+                          "rendered": "15:00- 17:00",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "BC2 D4 M2 Animal Magic",
+                          },
+                          "ref": null,
+                          "rendered": "BC2 D4 M2 Animal Magic",
+                          "type": "td",
+                        },
+                      ],
+                      "type": "tr",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <td>
+                            Project
+                          </td>,
+                          <td>
+                            28/01/2019
+                          </td>,
+                          <td>
+                            16:00- 17:30
+                          </td>,
+                          <td>
+                            BC5 D5 M3 Marie Curie
+                          </td>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Project",
+                          },
+                          "ref": null,
+                          "rendered": "Project",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "28/01/2019",
+                          },
+                          "ref": null,
+                          "rendered": "28/01/2019",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "16:00- 17:30",
+                          },
+                          "ref": null,
+                          "rendered": "16:00- 17:30",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "BC5 D5 M3 Marie Curie",
+                          },
+                          "ref": null,
+                          "rendered": "BC5 D5 M3 Marie Curie",
+                          "type": "td",
+                        },
+                      ],
+                      "type": "tr",
+                    },
+                  ],
+                  "type": "tbody",
+                },
+              ],
+              "type": "table",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="watched-meetings-title"
+            >
+              Watched Meetings (5)
+            </div>,
+            <div
+              className="watched-meetings-contents"
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Location
+                    </th>
+                    <th>
+                      Next Available
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Project
+                    </td>
+                    <td>
+                      NBH 06 E M2 Studio 1
+                    </td>
+                    <td>
+                      19/02/2019 at 13:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Sprint Review
+                    </td>
+                    <td>
+                      NBH 04 Collaboration Zone
+                    </td>
+                    <td>
+                      26/03/2019 at 09:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Retrospective
+                    </td>
+                    <td>
+                      BC4 D5 M2 Picsso
+                    </td>
+                    <td>
+                      09/04/2019 at 18:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Project
+                    </td>
+                    <td>
+                      NBH 06 E M2 Studio 1
+                    </td>
+                    <td>
+                      15/04/2019 at 17:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Sprint Review
+                    </td>
+                    <td>
+                      NBH 04 Collaboration Zone
+                    </td>
+                    <td>
+                      07/05/2019 at 12:00
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Watched Meetings (5)",
+              "className": "watched-meetings-title",
+            },
+            "ref": null,
+            "rendered": "Watched Meetings (5)",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <table>
+                <thead>
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Location
+                    </th>
+                    <th>
+                      Next Available
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Project
+                    </td>
+                    <td>
+                      NBH 06 E M2 Studio 1
+                    </td>
+                    <td>
+                      19/02/2019 at 13:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Sprint Review
+                    </td>
+                    <td>
+                      NBH 04 Collaboration Zone
+                    </td>
+                    <td>
+                      26/03/2019 at 09:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Retrospective
+                    </td>
+                    <td>
+                      BC4 D5 M2 Picsso
+                    </td>
+                    <td>
+                      09/04/2019 at 18:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Project
+                    </td>
+                    <td>
+                      NBH 06 E M2 Studio 1
+                    </td>
+                    <td>
+                      15/04/2019 at 17:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Sprint Review
+                    </td>
+                    <td>
+                      NBH 04 Collaboration Zone
+                    </td>
+                    <td>
+                      07/05/2019 at 12:00
+                    </td>
+                  </tr>
+                </tbody>
+              </table>,
+              "className": "watched-meetings-contents",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <thead>
+                    <tr>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Location
+                      </th>
+                      <th>
+                        Next Available
+                      </th>
+                    </tr>
+                  </thead>,
+                  <tbody>
+                    <tr>
+                      <td>
+                        Project
+                      </td>
+                      <td>
+                        NBH 06 E M2 Studio 1
+                      </td>
+                      <td>
+                        19/02/2019 at 13:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Sprint Review
+                      </td>
+                      <td>
+                        NBH 04 Collaboration Zone
+                      </td>
+                      <td>
+                        26/03/2019 at 09:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Retrospective
+                      </td>
+                      <td>
+                        BC4 D5 M2 Picsso
+                      </td>
+                      <td>
+                        09/04/2019 at 18:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Project
+                      </td>
+                      <td>
+                        NBH 06 E M2 Studio 1
+                      </td>
+                      <td>
+                        15/04/2019 at 17:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Sprint Review
+                      </td>
+                      <td>
+                        NBH 04 Collaboration Zone
+                      </td>
+                      <td>
+                        07/05/2019 at 12:00
+                      </td>
+                    </tr>
+                  </tbody>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <tr>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Location
+                      </th>
+                      <th>
+                        Next Available
+                      </th>
+                    </tr>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <th>
+                          Name
+                        </th>,
+                        <th>
+                          Location
+                        </th>,
+                        <th>
+                          Next Available
+                        </th>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Name",
+                        },
+                        "ref": null,
+                        "rendered": "Name",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Location",
+                        },
+                        "ref": null,
+                        "rendered": "Location",
+                        "type": "th",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Next Available",
+                        },
+                        "ref": null,
+                        "rendered": "Next Available",
+                        "type": "th",
+                      },
+                    ],
+                    "type": "tr",
+                  },
+                  "type": "thead",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <tr>
+                        <td>
+                          Project
+                        </td>
+                        <td>
+                          NBH 06 E M2 Studio 1
+                        </td>
+                        <td>
+                          19/02/2019 at 13:00
+                        </td>
+                      </tr>,
+                      <tr>
+                        <td>
+                          Sprint Review
+                        </td>
+                        <td>
+                          NBH 04 Collaboration Zone
+                        </td>
+                        <td>
+                          26/03/2019 at 09:00
+                        </td>
+                      </tr>,
+                      <tr>
+                        <td>
+                          Retrospective
+                        </td>
+                        <td>
+                          BC4 D5 M2 Picsso
+                        </td>
+                        <td>
+                          09/04/2019 at 18:00
+                        </td>
+                      </tr>,
+                      <tr>
+                        <td>
+                          Project
+                        </td>
+                        <td>
+                          NBH 06 E M2 Studio 1
+                        </td>
+                        <td>
+                          15/04/2019 at 17:00
+                        </td>
+                      </tr>,
+                      <tr>
+                        <td>
+                          Sprint Review
+                        </td>
+                        <td>
+                          NBH 04 Collaboration Zone
+                        </td>
+                        <td>
+                          07/05/2019 at 12:00
+                        </td>
+                      </tr>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <td>
+                            Project
+                          </td>,
+                          <td>
+                            NBH 06 E M2 Studio 1
+                          </td>,
+                          <td>
+                            19/02/2019 at 13:00
+                          </td>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Project",
+                          },
+                          "ref": null,
+                          "rendered": "Project",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "NBH 06 E M2 Studio 1",
+                          },
+                          "ref": null,
+                          "rendered": "NBH 06 E M2 Studio 1",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "19/02/2019 at 13:00",
+                          },
+                          "ref": null,
+                          "rendered": "19/02/2019 at 13:00",
+                          "type": "td",
+                        },
+                      ],
+                      "type": "tr",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <td>
+                            Sprint Review
+                          </td>,
+                          <td>
+                            NBH 04 Collaboration Zone
+                          </td>,
+                          <td>
+                            26/03/2019 at 09:00
+                          </td>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Sprint Review",
+                          },
+                          "ref": null,
+                          "rendered": "Sprint Review",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "NBH 04 Collaboration Zone",
+                          },
+                          "ref": null,
+                          "rendered": "NBH 04 Collaboration Zone",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "26/03/2019 at 09:00",
+                          },
+                          "ref": null,
+                          "rendered": "26/03/2019 at 09:00",
+                          "type": "td",
+                        },
+                      ],
+                      "type": "tr",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <td>
+                            Retrospective
+                          </td>,
+                          <td>
+                            BC4 D5 M2 Picsso
+                          </td>,
+                          <td>
+                            09/04/2019 at 18:00
+                          </td>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Retrospective",
+                          },
+                          "ref": null,
+                          "rendered": "Retrospective",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "BC4 D5 M2 Picsso",
+                          },
+                          "ref": null,
+                          "rendered": "BC4 D5 M2 Picsso",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "09/04/2019 at 18:00",
+                          },
+                          "ref": null,
+                          "rendered": "09/04/2019 at 18:00",
+                          "type": "td",
+                        },
+                      ],
+                      "type": "tr",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <td>
+                            Project
+                          </td>,
+                          <td>
+                            NBH 06 E M2 Studio 1
+                          </td>,
+                          <td>
+                            15/04/2019 at 17:00
+                          </td>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Project",
+                          },
+                          "ref": null,
+                          "rendered": "Project",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "NBH 06 E M2 Studio 1",
+                          },
+                          "ref": null,
+                          "rendered": "NBH 06 E M2 Studio 1",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "15/04/2019 at 17:00",
+                          },
+                          "ref": null,
+                          "rendered": "15/04/2019 at 17:00",
+                          "type": "td",
+                        },
+                      ],
+                      "type": "tr",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <td>
+                            Sprint Review
+                          </td>,
+                          <td>
+                            NBH 04 Collaboration Zone
+                          </td>,
+                          <td>
+                            07/05/2019 at 12:00
+                          </td>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Sprint Review",
+                          },
+                          "ref": null,
+                          "rendered": "Sprint Review",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "NBH 04 Collaboration Zone",
+                          },
+                          "ref": null,
+                          "rendered": "NBH 04 Collaboration Zone",
+                          "type": "td",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "07/05/2019 at 12:00",
+                          },
+                          "ref": null,
+                          "rendered": "07/05/2019 at 12:00",
+                          "type": "td",
+                        },
+                      ],
+                      "type": "tr",
+                    },
+                  ],
+                  "type": "tbody",
+                },
+              ],
+              "type": "table",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <div
+              className="upcoming-meetings-title"
+            >
+              Upcoming Meetings (4)
+            </div>
+            <div
+              className="upcoming-meetings-contents"
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Date
+                    </th>
+                    <th>
+                      Time
+                    </th>
+                    <th>
+                      Location
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Project
+                    </td>
+                    <td>
+                      07/01/2019
+                    </td>
+                    <td>
+                      16:00- 17:30
+                    </td>
+                    <td>
+                      BC5 D5 M3 Marie Curie
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Sprint Review
+                    </td>
+                    <td>
+                      12/01/2019
+                    </td>
+                    <td>
+                      10:00- 12:00
+                    </td>
+                    <td>
+                      NBH 06 B M4 Kiev
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Retrospective
+                    </td>
+                    <td>
+                      25/01/2019
+                    </td>
+                    <td>
+                      15:00- 17:00
+                    </td>
+                    <td>
+                      BC2 D4 M2 Animal Magic
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Project
+                    </td>
+                    <td>
+                      28/01/2019
+                    </td>
+                    <td>
+                      16:00- 17:30
+                    </td>
+                    <td>
+                      BC5 D5 M3 Marie Curie
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>,
+          <div>
+            <div
+              className="watched-meetings-title"
+            >
+              Watched Meetings (5)
+            </div>
+            <div
+              className="watched-meetings-contents"
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Location
+                    </th>
+                    <th>
+                      Next Available
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Project
+                    </td>
+                    <td>
+                      NBH 06 E M2 Studio 1
+                    </td>
+                    <td>
+                      19/02/2019 at 13:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Sprint Review
+                    </td>
+                    <td>
+                      NBH 04 Collaboration Zone
+                    </td>
+                    <td>
+                      26/03/2019 at 09:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Retrospective
+                    </td>
+                    <td>
+                      BC4 D5 M2 Picsso
+                    </td>
+                    <td>
+                      09/04/2019 at 18:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Project
+                    </td>
+                    <td>
+                      NBH 06 E M2 Studio 1
+                    </td>
+                    <td>
+                      15/04/2019 at 17:00
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Sprint Review
+                    </td>
+                    <td>
+                      NBH 04 Collaboration Zone
+                    </td>
+                    <td>
+                      07/05/2019 at 12:00
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="upcoming-meetings-title"
+              >
+                Upcoming Meetings (4)
+              </div>,
+              <div
+                className="upcoming-meetings-contents"
+              >
+                <table>
+                  <thead>
+                    <tr>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Date
+                      </th>
+                      <th>
+                        Time
+                      </th>
+                      <th>
+                        Location
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Project
+                      </td>
+                      <td>
+                        07/01/2019
+                      </td>
+                      <td>
+                        16:00- 17:30
+                      </td>
+                      <td>
+                        BC5 D5 M3 Marie Curie
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Sprint Review
+                      </td>
+                      <td>
+                        12/01/2019
+                      </td>
+                      <td>
+                        10:00- 12:00
+                      </td>
+                      <td>
+                        NBH 06 B M4 Kiev
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Retrospective
+                      </td>
+                      <td>
+                        25/01/2019
+                      </td>
+                      <td>
+                        15:00- 17:00
+                      </td>
+                      <td>
+                        BC2 D4 M2 Animal Magic
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Project
+                      </td>
+                      <td>
+                        28/01/2019
+                      </td>
+                      <td>
+                        16:00- 17:30
+                      </td>
+                      <td>
+                        BC5 D5 M3 Marie Curie
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Upcoming Meetings (4)",
+                "className": "upcoming-meetings-title",
+              },
+              "ref": null,
+              "rendered": "Upcoming Meetings (4)",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <table>
+                  <thead>
+                    <tr>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Date
+                      </th>
+                      <th>
+                        Time
+                      </th>
+                      <th>
+                        Location
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Project
+                      </td>
+                      <td>
+                        07/01/2019
+                      </td>
+                      <td>
+                        16:00- 17:30
+                      </td>
+                      <td>
+                        BC5 D5 M3 Marie Curie
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Sprint Review
+                      </td>
+                      <td>
+                        12/01/2019
+                      </td>
+                      <td>
+                        10:00- 12:00
+                      </td>
+                      <td>
+                        NBH 06 B M4 Kiev
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Retrospective
+                      </td>
+                      <td>
+                        25/01/2019
+                      </td>
+                      <td>
+                        15:00- 17:00
+                      </td>
+                      <td>
+                        BC2 D4 M2 Animal Magic
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Project
+                      </td>
+                      <td>
+                        28/01/2019
+                      </td>
+                      <td>
+                        16:00- 17:30
+                      </td>
+                      <td>
+                        BC5 D5 M3 Marie Curie
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>,
+                "className": "upcoming-meetings-contents",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <thead>
+                      <tr>
+                        <th>
+                          Name
+                        </th>
+                        <th>
+                          Date
+                        </th>
+                        <th>
+                          Time
+                        </th>
+                        <th>
+                          Location
+                        </th>
+                      </tr>
+                    </thead>,
+                    <tbody>
+                      <tr>
+                        <td>
+                          Project
+                        </td>
+                        <td>
+                          07/01/2019
+                        </td>
+                        <td>
+                          16:00- 17:30
+                        </td>
+                        <td>
+                          BC5 D5 M3 Marie Curie
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Sprint Review
+                        </td>
+                        <td>
+                          12/01/2019
+                        </td>
+                        <td>
+                          10:00- 12:00
+                        </td>
+                        <td>
+                          NBH 06 B M4 Kiev
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Retrospective
+                        </td>
+                        <td>
+                          25/01/2019
+                        </td>
+                        <td>
+                          15:00- 17:00
+                        </td>
+                        <td>
+                          BC2 D4 M2 Animal Magic
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Project
+                        </td>
+                        <td>
+                          28/01/2019
+                        </td>
+                        <td>
+                          16:00- 17:30
+                        </td>
+                        <td>
+                          BC5 D5 M3 Marie Curie
+                        </td>
+                      </tr>
+                    </tbody>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <tr>
+                        <th>
+                          Name
+                        </th>
+                        <th>
+                          Date
+                        </th>
+                        <th>
+                          Time
+                        </th>
+                        <th>
+                          Location
+                        </th>
+                      </tr>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <th>
+                            Name
+                          </th>,
+                          <th>
+                            Date
+                          </th>,
+                          <th>
+                            Time
+                          </th>,
+                          <th>
+                            Location
+                          </th>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Name",
+                          },
+                          "ref": null,
+                          "rendered": "Name",
+                          "type": "th",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Date",
+                          },
+                          "ref": null,
+                          "rendered": "Date",
+                          "type": "th",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Time",
+                          },
+                          "ref": null,
+                          "rendered": "Time",
+                          "type": "th",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Location",
+                          },
+                          "ref": null,
+                          "rendered": "Location",
+                          "type": "th",
+                        },
+                      ],
+                      "type": "tr",
+                    },
+                    "type": "thead",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <tr>
+                          <td>
+                            Project
+                          </td>
+                          <td>
+                            07/01/2019
+                          </td>
+                          <td>
+                            16:00- 17:30
+                          </td>
+                          <td>
+                            BC5 D5 M3 Marie Curie
+                          </td>
+                        </tr>,
+                        <tr>
+                          <td>
+                            Sprint Review
+                          </td>
+                          <td>
+                            12/01/2019
+                          </td>
+                          <td>
+                            10:00- 12:00
+                          </td>
+                          <td>
+                            NBH 06 B M4 Kiev
+                          </td>
+                        </tr>,
+                        <tr>
+                          <td>
+                            Retrospective
+                          </td>
+                          <td>
+                            25/01/2019
+                          </td>
+                          <td>
+                            15:00- 17:00
+                          </td>
+                          <td>
+                            BC2 D4 M2 Animal Magic
+                          </td>
+                        </tr>,
+                        <tr>
+                          <td>
+                            Project
+                          </td>
+                          <td>
+                            28/01/2019
+                          </td>
+                          <td>
+                            16:00- 17:30
+                          </td>
+                          <td>
+                            BC5 D5 M3 Marie Curie
+                          </td>
+                        </tr>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <td>
+                              Project
+                            </td>,
+                            <td>
+                              07/01/2019
+                            </td>,
+                            <td>
+                              16:00- 17:30
+                            </td>,
+                            <td>
+                              BC5 D5 M3 Marie Curie
+                            </td>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Project",
+                            },
+                            "ref": null,
+                            "rendered": "Project",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "07/01/2019",
+                            },
+                            "ref": null,
+                            "rendered": "07/01/2019",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "16:00- 17:30",
+                            },
+                            "ref": null,
+                            "rendered": "16:00- 17:30",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "BC5 D5 M3 Marie Curie",
+                            },
+                            "ref": null,
+                            "rendered": "BC5 D5 M3 Marie Curie",
+                            "type": "td",
+                          },
+                        ],
+                        "type": "tr",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <td>
+                              Sprint Review
+                            </td>,
+                            <td>
+                              12/01/2019
+                            </td>,
+                            <td>
+                              10:00- 12:00
+                            </td>,
+                            <td>
+                              NBH 06 B M4 Kiev
+                            </td>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Sprint Review",
+                            },
+                            "ref": null,
+                            "rendered": "Sprint Review",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "12/01/2019",
+                            },
+                            "ref": null,
+                            "rendered": "12/01/2019",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "10:00- 12:00",
+                            },
+                            "ref": null,
+                            "rendered": "10:00- 12:00",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "NBH 06 B M4 Kiev",
+                            },
+                            "ref": null,
+                            "rendered": "NBH 06 B M4 Kiev",
+                            "type": "td",
+                          },
+                        ],
+                        "type": "tr",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <td>
+                              Retrospective
+                            </td>,
+                            <td>
+                              25/01/2019
+                            </td>,
+                            <td>
+                              15:00- 17:00
+                            </td>,
+                            <td>
+                              BC2 D4 M2 Animal Magic
+                            </td>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Retrospective",
+                            },
+                            "ref": null,
+                            "rendered": "Retrospective",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "25/01/2019",
+                            },
+                            "ref": null,
+                            "rendered": "25/01/2019",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "15:00- 17:00",
+                            },
+                            "ref": null,
+                            "rendered": "15:00- 17:00",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "BC2 D4 M2 Animal Magic",
+                            },
+                            "ref": null,
+                            "rendered": "BC2 D4 M2 Animal Magic",
+                            "type": "td",
+                          },
+                        ],
+                        "type": "tr",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <td>
+                              Project
+                            </td>,
+                            <td>
+                              28/01/2019
+                            </td>,
+                            <td>
+                              16:00- 17:30
+                            </td>,
+                            <td>
+                              BC5 D5 M3 Marie Curie
+                            </td>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Project",
+                            },
+                            "ref": null,
+                            "rendered": "Project",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "28/01/2019",
+                            },
+                            "ref": null,
+                            "rendered": "28/01/2019",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "16:00- 17:30",
+                            },
+                            "ref": null,
+                            "rendered": "16:00- 17:30",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "BC5 D5 M3 Marie Curie",
+                            },
+                            "ref": null,
+                            "rendered": "BC5 D5 M3 Marie Curie",
+                            "type": "td",
+                          },
+                        ],
+                        "type": "tr",
+                      },
+                    ],
+                    "type": "tbody",
+                  },
+                ],
+                "type": "table",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="watched-meetings-title"
+              >
+                Watched Meetings (5)
+              </div>,
+              <div
+                className="watched-meetings-contents"
+              >
+                <table>
+                  <thead>
+                    <tr>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Location
+                      </th>
+                      <th>
+                        Next Available
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Project
+                      </td>
+                      <td>
+                        NBH 06 E M2 Studio 1
+                      </td>
+                      <td>
+                        19/02/2019 at 13:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Sprint Review
+                      </td>
+                      <td>
+                        NBH 04 Collaboration Zone
+                      </td>
+                      <td>
+                        26/03/2019 at 09:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Retrospective
+                      </td>
+                      <td>
+                        BC4 D5 M2 Picsso
+                      </td>
+                      <td>
+                        09/04/2019 at 18:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Project
+                      </td>
+                      <td>
+                        NBH 06 E M2 Studio 1
+                      </td>
+                      <td>
+                        15/04/2019 at 17:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Sprint Review
+                      </td>
+                      <td>
+                        NBH 04 Collaboration Zone
+                      </td>
+                      <td>
+                        07/05/2019 at 12:00
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Watched Meetings (5)",
+                "className": "watched-meetings-title",
+              },
+              "ref": null,
+              "rendered": "Watched Meetings (5)",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <table>
+                  <thead>
+                    <tr>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Location
+                      </th>
+                      <th>
+                        Next Available
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Project
+                      </td>
+                      <td>
+                        NBH 06 E M2 Studio 1
+                      </td>
+                      <td>
+                        19/02/2019 at 13:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Sprint Review
+                      </td>
+                      <td>
+                        NBH 04 Collaboration Zone
+                      </td>
+                      <td>
+                        26/03/2019 at 09:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Retrospective
+                      </td>
+                      <td>
+                        BC4 D5 M2 Picsso
+                      </td>
+                      <td>
+                        09/04/2019 at 18:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Project
+                      </td>
+                      <td>
+                        NBH 06 E M2 Studio 1
+                      </td>
+                      <td>
+                        15/04/2019 at 17:00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Sprint Review
+                      </td>
+                      <td>
+                        NBH 04 Collaboration Zone
+                      </td>
+                      <td>
+                        07/05/2019 at 12:00
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>,
+                "className": "watched-meetings-contents",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <thead>
+                      <tr>
+                        <th>
+                          Name
+                        </th>
+                        <th>
+                          Location
+                        </th>
+                        <th>
+                          Next Available
+                        </th>
+                      </tr>
+                    </thead>,
+                    <tbody>
+                      <tr>
+                        <td>
+                          Project
+                        </td>
+                        <td>
+                          NBH 06 E M2 Studio 1
+                        </td>
+                        <td>
+                          19/02/2019 at 13:00
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Sprint Review
+                        </td>
+                        <td>
+                          NBH 04 Collaboration Zone
+                        </td>
+                        <td>
+                          26/03/2019 at 09:00
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Retrospective
+                        </td>
+                        <td>
+                          BC4 D5 M2 Picsso
+                        </td>
+                        <td>
+                          09/04/2019 at 18:00
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Project
+                        </td>
+                        <td>
+                          NBH 06 E M2 Studio 1
+                        </td>
+                        <td>
+                          15/04/2019 at 17:00
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Sprint Review
+                        </td>
+                        <td>
+                          NBH 04 Collaboration Zone
+                        </td>
+                        <td>
+                          07/05/2019 at 12:00
+                        </td>
+                      </tr>
+                    </tbody>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <tr>
+                        <th>
+                          Name
+                        </th>
+                        <th>
+                          Location
+                        </th>
+                        <th>
+                          Next Available
+                        </th>
+                      </tr>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <th>
+                            Name
+                          </th>,
+                          <th>
+                            Location
+                          </th>,
+                          <th>
+                            Next Available
+                          </th>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Name",
+                          },
+                          "ref": null,
+                          "rendered": "Name",
+                          "type": "th",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Location",
+                          },
+                          "ref": null,
+                          "rendered": "Location",
+                          "type": "th",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Next Available",
+                          },
+                          "ref": null,
+                          "rendered": "Next Available",
+                          "type": "th",
+                        },
+                      ],
+                      "type": "tr",
+                    },
+                    "type": "thead",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <tr>
+                          <td>
+                            Project
+                          </td>
+                          <td>
+                            NBH 06 E M2 Studio 1
+                          </td>
+                          <td>
+                            19/02/2019 at 13:00
+                          </td>
+                        </tr>,
+                        <tr>
+                          <td>
+                            Sprint Review
+                          </td>
+                          <td>
+                            NBH 04 Collaboration Zone
+                          </td>
+                          <td>
+                            26/03/2019 at 09:00
+                          </td>
+                        </tr>,
+                        <tr>
+                          <td>
+                            Retrospective
+                          </td>
+                          <td>
+                            BC4 D5 M2 Picsso
+                          </td>
+                          <td>
+                            09/04/2019 at 18:00
+                          </td>
+                        </tr>,
+                        <tr>
+                          <td>
+                            Project
+                          </td>
+                          <td>
+                            NBH 06 E M2 Studio 1
+                          </td>
+                          <td>
+                            15/04/2019 at 17:00
+                          </td>
+                        </tr>,
+                        <tr>
+                          <td>
+                            Sprint Review
+                          </td>
+                          <td>
+                            NBH 04 Collaboration Zone
+                          </td>
+                          <td>
+                            07/05/2019 at 12:00
+                          </td>
+                        </tr>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <td>
+                              Project
+                            </td>,
+                            <td>
+                              NBH 06 E M2 Studio 1
+                            </td>,
+                            <td>
+                              19/02/2019 at 13:00
+                            </td>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Project",
+                            },
+                            "ref": null,
+                            "rendered": "Project",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "NBH 06 E M2 Studio 1",
+                            },
+                            "ref": null,
+                            "rendered": "NBH 06 E M2 Studio 1",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "19/02/2019 at 13:00",
+                            },
+                            "ref": null,
+                            "rendered": "19/02/2019 at 13:00",
+                            "type": "td",
+                          },
+                        ],
+                        "type": "tr",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <td>
+                              Sprint Review
+                            </td>,
+                            <td>
+                              NBH 04 Collaboration Zone
+                            </td>,
+                            <td>
+                              26/03/2019 at 09:00
+                            </td>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Sprint Review",
+                            },
+                            "ref": null,
+                            "rendered": "Sprint Review",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "NBH 04 Collaboration Zone",
+                            },
+                            "ref": null,
+                            "rendered": "NBH 04 Collaboration Zone",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "26/03/2019 at 09:00",
+                            },
+                            "ref": null,
+                            "rendered": "26/03/2019 at 09:00",
+                            "type": "td",
+                          },
+                        ],
+                        "type": "tr",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <td>
+                              Retrospective
+                            </td>,
+                            <td>
+                              BC4 D5 M2 Picsso
+                            </td>,
+                            <td>
+                              09/04/2019 at 18:00
+                            </td>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Retrospective",
+                            },
+                            "ref": null,
+                            "rendered": "Retrospective",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "BC4 D5 M2 Picsso",
+                            },
+                            "ref": null,
+                            "rendered": "BC4 D5 M2 Picsso",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "09/04/2019 at 18:00",
+                            },
+                            "ref": null,
+                            "rendered": "09/04/2019 at 18:00",
+                            "type": "td",
+                          },
+                        ],
+                        "type": "tr",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <td>
+                              Project
+                            </td>,
+                            <td>
+                              NBH 06 E M2 Studio 1
+                            </td>,
+                            <td>
+                              15/04/2019 at 17:00
+                            </td>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Project",
+                            },
+                            "ref": null,
+                            "rendered": "Project",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "NBH 06 E M2 Studio 1",
+                            },
+                            "ref": null,
+                            "rendered": "NBH 06 E M2 Studio 1",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "15/04/2019 at 17:00",
+                            },
+                            "ref": null,
+                            "rendered": "15/04/2019 at 17:00",
+                            "type": "td",
+                          },
+                        ],
+                        "type": "tr",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <td>
+                              Sprint Review
+                            </td>,
+                            <td>
+                              NBH 04 Collaboration Zone
+                            </td>,
+                            <td>
+                              07/05/2019 at 12:00
+                            </td>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Sprint Review",
+                            },
+                            "ref": null,
+                            "rendered": "Sprint Review",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "NBH 04 Collaboration Zone",
+                            },
+                            "ref": null,
+                            "rendered": "NBH 04 Collaboration Zone",
+                            "type": "td",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "07/05/2019 at 12:00",
+                            },
+                            "ref": null,
+                            "rendered": "07/05/2019 at 12:00",
+                            "type": "td",
+                          },
+                        ],
+                        "type": "tr",
+                      },
+                    ],
+                    "type": "tbody",
+                  },
+                ],
+                "type": "table",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
