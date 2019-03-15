@@ -75,9 +75,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "chai": "*",
+    "chai": "^4.2.0",
     "cucumber": "^5.1.0",
-    "mocha": "*",
+    "mocha": "^6.0.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1"
   },
