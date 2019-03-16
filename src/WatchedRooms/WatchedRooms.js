@@ -11,6 +11,16 @@ const getWatchedRooms = async () => {
     return await res.json();
 }
 
+const unwatchRoom = async (watchId) => {
+    const res = await fetch(`http://127.0.0.1:5000/delete-watch/${watchId}`, {
+        method: 'DELETE',
+        headers: {
+            Accept: 'application/json',
+        },
+    });
+    console.log(await res.json());
+}
+
 class WatchedRooms extends Component {
     constructor(props) {
         super(props);
@@ -30,40 +40,41 @@ class WatchedRooms extends Component {
                         Watched Rooms ({watchedRooms.length})
                     </div>
                     <div className="upcoming-meetings-contents">
-                        <table>
+                    <table>
                             <thead>
                                 <tr>
                                     <th>Name</th>
                                     <th>Location</th>
-                                    <th>Next Available</th>
+                                    <th>Time</th>
+                                    <th>Availability</th>
+                                    <th>Unwatch</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Studio 3</td>
-                                    <td>NBH 06 E M2 Studio</td>
-                                    <td>19/02/2019 at 13:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Kari Blackburn</td>
-                                    <td>NBH 04 Collboration Zone</td>
-                                    <td>26/03/2019 at 09:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Peter Eckersley</td>
-                                    <td>BC4 D5 M2 Picasso</td>
-                                    <td>09/04/2019 at 18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Nice To See You</td>
-                                    <td>NBH 03 C M3 Gerard Manell VC</td>
-                                    <td>17/04/2019 at 11:30</td>
-                                </tr>
-                                <tr>
-                                    <td>Kiev</td>
-                                    <td>NBH 07 B M3 Studio</td>
-                                    <td>23/05/2019 at 14:00</td>
-                                </tr>
+                            {
+                                watchedRooms.map(room => {
+                                    return (
+                                    <tr>
+                                        <td>
+                                            {room.RoomName}
+                                        </td>
+                                        <td>
+                                            {room.Location}
+                                        </td>
+                                        <td>
+                                            {room.StartTime} - {room.EndTime.slice(11)}
+                                        </td>
+                                        <td>
+                                            {room.Availability} {room.Availability === 'Available' ? '- Book' : null}
+                                        </td>
+                                        <td>
+                                            {room.WatchedId}
+                                            <button onClick={() => {unwatchRoom(room.WatchedId)}}>Unwatch</button>
+                                        </td>
+                                    </tr>
+                                    );
+                                }) 
+                            }
                             </tbody>
                         </table>
                     </div>

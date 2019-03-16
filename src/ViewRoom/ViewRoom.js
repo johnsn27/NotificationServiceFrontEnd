@@ -3,6 +3,15 @@ import PropTypes from 'prop-types';
 import './ViewRoom.css';
 import Btn from '@bbc/igm-btn';
 
+const getRooms = async () => {
+  const res = await fetch('http://127.0.0.1:5000/meeting-rooms', {
+    headers: {
+      'Accept': 'application/json',
+    },
+  });
+  return await res.json();
+}
+
 const watchRoom = () => {
   return fetch('http://127.0.0.1:5000/watch-room', {
     method: 'POST',
@@ -31,7 +40,8 @@ const bookRoom = () => {
     body: JSON.stringify(
       {
         UserId: 1,
-        RoomId: 1, //get from url or something?
+        RoomId: this.state.roomInfo.id,
+        Name: "My meeting",
         StartTime: "2019-02-27 10:00:00",
         EndTime: "2019-02-27 11:00:00"
       }
@@ -41,11 +51,23 @@ const bookRoom = () => {
 
 
 class ViewRoom extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      roomInfo: []
+    }
+  }
+  componentDidMount() {
+    const { id } = this.props.match.params;
+    const roomId = id - 1;
+    getRooms().then(res => this.setState({roomInfo: res[roomId]}));
+  }
   render() {
+    const { roomInfo } = this.state;
     return (
       <div>
         <div className="view-room-title">
-          Studio 1 06 E M1
+          {roomInfo.Name} {roomInfo.Location}
         </div>
         <div className="view-room-contents">
           <div className="view-room-contents-left">
@@ -79,28 +101,28 @@ class ViewRoom extends Component {
                 <div className="label">
                   <p>Room ID:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" rows="2" placeholder={roomInfo.id} disabled>
                 </textarea>
               </div>
               <div className="textbox">
                 <div className="label">
                   <p>Room Name:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" rows="2" placeholder={roomInfo.Name} disabled>
                 </textarea>
               </div>
               <div className="textbox">
                 <div className="label">
                   <p>Area Code:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" rows="2" placeholder={roomInfo.Location} disabled>
                 </textarea>
               </div>
               <div className="textbox">
                 <div className="label">
                   <p>Capacity:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" rows="2" placeholder={roomInfo.Capacity} disabled>
                 </textarea>
               </div>
               <div className="textbox">

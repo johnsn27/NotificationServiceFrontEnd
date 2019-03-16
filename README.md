@@ -10,6 +10,7 @@
 
 1. Run `yarn start`.
 2. Open [http://localhost:3000](http://localhost:3000) to view the project (Make sure localhost is defined in your bypass proxy settings).
+3. In order to transfer data to/from the API, the [NotificationServiceBackEnd](https://github.com/johnsn27/NotificationServiceBackEnd) must be running. Instructions can be found in the project README.md.
 
 PS: The page will automatically refresh as changes to the code are made.
 

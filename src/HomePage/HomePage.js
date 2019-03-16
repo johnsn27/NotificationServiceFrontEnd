@@ -20,6 +20,35 @@ const getWatchedRooms = async () => {
     return await res.json();
 }
 
+const unwatchRoom = async (watchId) => {
+    const res = await fetch(`http://127.0.0.1:5000/delete-watch/${watchId}`, {
+        method: 'DELETE',
+        headers: {
+            Accept: 'application/json',
+        },
+    });
+    console.log(await res.json());
+}
+
+const bookRoom = (roomId) => {
+    return fetch('http://127.0.0.1:5000/book-room', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(
+        {
+          UserId: 1,
+          RoomId: roomId,
+          Name: "My meeting",
+          StartTime: "2019-02-27 10:00:00",
+          EndTime: "2019-02-27 11:00:00"
+        }
+      ),
+    }).then(res => console.log(res))
+  }
+
 class HomePage extends Component {
     constructor(props) {
         super(props);
@@ -56,7 +85,7 @@ class HomePage extends Component {
                                         return (
                                         <tr>
                                             <td>
-                                                MEETING NAME
+                                                {room.MeetingName}
                                             </td>
                                             <td>
                                                 {room.StartTime.slice(0, 10)}
@@ -65,43 +94,19 @@ class HomePage extends Component {
                                                 {room.StartTime.slice(11)} - {room.EndTime.slice(11)}
                                             </td>
                                             <td>
-                                                {room.Location}
+                                                {room.Location} {room.RoomName}
                                             </td>
                                         </tr>
                                         );
                                     }) 
                                 }
-                                <tr>
-                                    <td>Project</td>
-                                    <td>07/01/2019</td>
-                                    <td>16:00- 17:30</td>
-                                    <td>BC5 D5 M3 Marie Curie</td>
-                                </tr>
-                                <tr>
-                                    <td>Sprint Review</td>
-                                    <td>12/01/2019</td>
-                                    <td>10:00- 12:00</td>
-                                    <td>NBH 06 B M4 Kiev</td>
-                                </tr>
-                                <tr>
-                                    <td>Retrospective</td>
-                                    <td>25/01/2019</td>
-                                    <td>15:00- 17:00</td>
-                                    <td>BC2 D4 M2 Animal Magic</td>
-                                </tr>
-                                <tr>
-                                    <td>Project</td>
-                                    <td>28/01/2019</td>
-                                    <td>16:00- 17:30</td>
-                                    <td>BC5 D5 M3 Marie Curie</td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
                 <div>
                     <div className="watched-meetings-title">
-                        Watched Meetings ({watchedRooms.length})
+                        Watched Rooms ({watchedRooms.length})
                     </div>
                     <div className="watched-meetings-contents">
                         <table>
@@ -109,7 +114,9 @@ class HomePage extends Component {
                                 <tr>
                                     <th>Name</th>
                                     <th>Location</th>
-                                    <th>Next Available</th>
+                                    <th>Time</th>
+                                    <th>Availability</th>
+                                    <th>Unwatch</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -118,43 +125,27 @@ class HomePage extends Component {
                                     return (
                                     <tr>
                                         <td>
-                                            ROOM NAME?
+                                            {room.RoomName}
                                         </td>
                                         <td>
-                                            LOCATION
+                                            {room.Location}
                                         </td>
                                         <td>
                                             {room.StartTime} - {room.EndTime.slice(11)}
+                                        </td>
+                                        <td>
+                                            {room.Availability} {room.Availability === 'Available'
+                                                ? <div>- <button onClikc={() => {bookRoom(room.WatchedId)}}>Book</button></div>
+                                                : null}
+                                        </td>
+                                        <td>
+                                            {room.WatchedId}
+                                            <button onClick={() => {unwatchRoom(room.WatchedId)}}>Unwatch</button>
                                         </td>
                                     </tr>
                                     );
                                 }) 
                             }
-                                <tr>
-                                    <td>Project</td>
-                                    <td>NBH 06 E M2 Studio 1</td>
-                                    <td>19/02/2019 at 13:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Sprint Review</td>
-                                    <td>NBH 04 Collaboration Zone</td>
-                                    <td>26/03/2019 at 09:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Retrospective</td>
-                                    <td>BC4 D5 M2 Picsso</td>
-                                    <td>09/04/2019 at 18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Project</td>
-                                    <td>NBH 06 E M2 Studio 1</td>
-                                    <td>15/04/2019 at 17:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Sprint Review</td>
-                                    <td>NBH 04 Collaboration Zone</td>
-                                    <td>07/05/2019 at 12:00</td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
