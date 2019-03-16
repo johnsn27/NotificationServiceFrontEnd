@@ -2,16 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './MeetingRooms.css';
 import Btn from '@bbc/igm-btn';
-
-// This should be edited to accept params at some point, currently just retrieving all meeting rooms
-const getRooms = async () => {
-  const res = await fetch('http://127.0.0.1:5000/meeting-rooms', {
-    headers: {
-      'Accept': 'application/json',
-    },
-  });
-  return await res.json();
-}
+import { getRooms } from '../ApiHelperFunctions';
 
 export default class MeetingRooms extends Component {
   constructor(props) {

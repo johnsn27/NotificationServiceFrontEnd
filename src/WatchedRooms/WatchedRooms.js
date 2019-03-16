@@ -1,25 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './WatchedRooms.css';
-
-const getWatchedRooms = async () => {
-    const res = await fetch('http://127.0.0.1:5000/user-watch-list/1', {
-      headers: {
-        'Accept': 'application/json',
-      },
-    });
-    return await res.json();
-}
-
-const unwatchRoom = async (watchId) => {
-    const res = await fetch(`http://127.0.0.1:5000/delete-watch/${watchId}`, {
-        method: 'DELETE',
-        headers: {
-            Accept: 'application/json',
-        },
-    });
-    console.log(await res.json());
-}
+import { getWatchedRooms, unwatchRoom, bookRoom } from '../ApiHelperFunctions';
 
 class WatchedRooms extends Component {
     constructor(props) {
@@ -40,7 +22,7 @@ class WatchedRooms extends Component {
                         Watched Rooms ({watchedRooms.length})
                     </div>
                     <div className="upcoming-meetings-contents">
-                    <table>
+                        <table>
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -65,11 +47,13 @@ class WatchedRooms extends Component {
                                             {room.StartTime} - {room.EndTime.slice(11)}
                                         </td>
                                         <td>
-                                            {room.Availability} {room.Availability === 'Available' ? '- Book' : null}
+                                            {room.Availability} {room.Availability === 'Available'
+                                                ? <div>- <button onClick={() => {bookRoom(room.WatchedId).then(unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res}))))}}>Book</button></div>
+                                                : null}
                                         </td>
                                         <td>
                                             {room.WatchedId}
-                                            <button onClick={() => {unwatchRoom(room.WatchedId)}}>Unwatch</button>
+                                            <button onClick={() => {unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res})))}}>Unwatch</button>
                                         </td>
                                     </tr>
                                     );

@@ -1,53 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './HomePage.css';
-
-const getBookedRooms = async () => {
-    const res = await fetch('http://127.0.0.1:5000/user-bookings/1', {
-      headers: {
-        'Accept': 'application/json',
-      },
-    });
-    return await res.json();
-}
-
-const getWatchedRooms = async () => {
-    const res = await fetch('http://127.0.0.1:5000/user-watch-list/1', {
-      headers: {
-        'Accept': 'application/json',
-      },
-    });
-    return await res.json();
-}
-
-const unwatchRoom = async (watchId) => {
-    const res = await fetch(`http://127.0.0.1:5000/delete-watch/${watchId}`, {
-        method: 'DELETE',
-        headers: {
-            Accept: 'application/json',
-        },
-    });
-    console.log(await res.json());
-}
-
-const bookRoom = (roomId) => {
-    return fetch('http://127.0.0.1:5000/book-room', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify(
-        {
-          UserId: 1,
-          RoomId: roomId,
-          Name: "My meeting",
-          StartTime: "2019-02-27 10:00:00",
-          EndTime: "2019-02-27 11:00:00"
-        }
-      ),
-    }).then(res => console.log(res))
-  }
+import { getBookedRooms, getWatchedRooms, unwatchRoom, bookRoom } from '../ApiHelperFunctions';
 
 class HomePage extends Component {
     constructor(props) {
@@ -135,12 +89,12 @@ class HomePage extends Component {
                                         </td>
                                         <td>
                                             {room.Availability} {room.Availability === 'Available'
-                                                ? <div>- <button onClikc={() => {bookRoom(room.WatchedId)}}>Book</button></div>
+                                                ? <div>- <button onClick={() => {bookRoom(room.WatchedId).then(unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res}))))}}>Book</button></div>
                                                 : null}
                                         </td>
                                         <td>
                                             {room.WatchedId}
-                                            <button onClick={() => {unwatchRoom(room.WatchedId)}}>Unwatch</button>
+                                            <button onClick={() => {unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res})))}}>Unwatch</button>
                                         </td>
                                     </tr>
                                     );
