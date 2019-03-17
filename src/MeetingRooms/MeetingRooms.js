@@ -12,7 +12,15 @@ export default class MeetingRooms extends Component {
     }
   }
   componentDidMount() {
-    getRooms().then(res => this.setState({rooms: res}));
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name') || null;
+    const location = urlParams.get('location') || null;
+    const floor = urlParams.get('floor') || null;
+    const capacity = urlParams.get('capacity') || 0;
+    const startTime = urlParams.get('start') || null;
+    const endTime = urlParams.get('end') || null;
+    const showUnavailable = urlParams.get('view_unavailable') || false;
+    getRooms(name, location, floor, capacity, startTime, endTime, showUnavailable).then(res => this.setState({rooms: res}));
   }
   render() {
     const { rooms } = this.state;
@@ -33,6 +41,7 @@ export default class MeetingRooms extends Component {
               <tr>
                 <th>Room Name</th>
                 <th className="location-header">Location</th>
+                <th>Book</th>
                 <th className="view-meeting-room-link-header"></th>
               </tr>
             </thead>
@@ -47,6 +56,10 @@ export default class MeetingRooms extends Component {
                       <td>
                         {room.Location}
                       </td>
+                      <td>{room.Availability === 'Available'
+                        ? <button>Book</button>
+                        : <div>{room.Availability + ' '}<button>watch</button></div>
+                      }</td>
                       <td className="view-room-link">
                         <a href={`/view-room/${room.id}`}>view</a>
                       </td>

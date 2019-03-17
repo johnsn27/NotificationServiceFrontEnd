@@ -55,9 +55,8 @@ export const bookRoom = (roomId) => {
     }).then(res => console.log(res))
 }
 
-// This should be edited to accept params at some point, currently just retrieving all meeting rooms
-export const getRooms = async () => {
-    const res = await fetch('http://127.0.0.1:5000/meeting-rooms', {
+export const getRooms = async (name=null, location=null, floor=null, capacity=0, start=null, end=null, showUnavailable) => {
+    const res = await fetch(`http://127.0.0.1:5000/meeting-rooms?capacity=${capacity}${name ? `&name=${name}` : ''}${location ? `&location=${location}` : ''}${floor ? `&floor=${floor}` : ''}${start ? `&start=${start}`: ''}${end ? `&end=${end}` : ''}&show_unavailable=${showUnavailable}`, {
       headers: {
         'Accept': 'application/json',
       },
