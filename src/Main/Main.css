@@ -1,66 +1,67 @@
-@media only screen and (min-width: 1000px) {
-  h1 {
-    margin:0;
-  }
+h1 {
+  margin:0;
+}
 
-  .page-content-below-sticky {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 64px;
-  }
+.page-content-below-sticky {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 64px;
+}
 
-  .left-side {
-    align-items: center;
-    flex-direction: column;
-    float: left;
-    justify-content: space-evenly;
-    margin-left: 8%;
-    width: 16%;
-  }
+.left-side {
+  align-items: center;
+  flex-direction: column;
+  float: left;
+  justify-content: space-evenly;
+  margin-left: 168px;
+  padding-left: 32px;
+  width: 320px;
+}
 
-  .right-side {
-    float: left;
-    height: fit-content;
-  }
+.right-side {
+  float: left;
+  height: fit-content;
+}
 
-  .textarea {
-    height: 4%;
-    padding-top:2%;
-    width: 44%;
-  }
+.textarea {
+  height: 24px;
+  margin: 8px;
+  padding-top:16px;
+  width: 400px;
+}
 
-  .textbox {
-    display: flex;
-    float: right;
-    text-align: center;
-    width: 100%;
-    height: fit-content;
-  }
+.textbox {
+  display: flex;
+  float: right;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+}
 
-  .label {
-    font-size: var(--text-font-size);
-    width:44%;
-    text-align: left;
-  }
+.label {
+  font-size: var(--text-font-size);
+  width:400px;
+  text-align: left;
+}
 
-  table {
-    border-collapse: collapse;
-    margin: 1;
-    table-layout: fixed;
-    width: 100%;  
-  }
+table {
+  border-collapse: collapse;
+  margin: 16px;
+  padding: 8px;
+  table-layout: fixed;
+  width: 100%;  
+}
 
-  tbody td {
-    border-bottom: 2px solid black;
-  }
+tbody td {
+  border-bottom: 2px solid black;
+}
 
-  table th {
-    border: 1px solid black;
-    text-align: left;
-  }
+table th {
+  border: 1px solid black;
+  text-align: left;
+}
 
-  table th, td {
-    padding: 8px;
-  }
+table th, td {
+  padding: 8px;
 }
