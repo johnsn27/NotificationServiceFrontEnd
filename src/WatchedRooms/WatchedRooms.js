@@ -58,7 +58,7 @@ class WatchedRooms extends Component {
                                             {room.Availability} {room.Availability === 'Available'
                                                 ? <div>- <button onClick={() => {
                                                     this.setDisplayDialog(true, {room: room, start: room.StartTime, end: room.EndTime})
-                                                    //bookRoom(null, room.WatchedId, null, room.StartTime, room.EndTime).then(unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res}))))
+                                                    //bookRoom(room.WatchedId, null, room.StartTime, room.EndTime).then(unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res}))))
                                                 }}>Book</button></div>
                                                 : null}
                                         </td>

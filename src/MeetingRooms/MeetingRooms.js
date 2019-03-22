@@ -77,7 +77,7 @@ export default class MeetingRooms extends Component {
                         }}>{room.Availability === 'Available' ? 'Book' : 'Watch'}</button>
                       {/* {room.Availability === 'Available'
                         ? <button onClick={() => {
-                          bookRoom(1, room.id, null, (this.urlParams.get('start')) || null, (this.urlParams.get('end') || null)).then(updateRooms().then(res => this.setState({rooms: res})))
+                          bookRoom(room.id, null, (this.urlParams.get('start')) || null, (this.urlParams.get('end') || null)).then(updateRooms().then(res => this.setState({rooms: res})))
                         }}>Book</button>
                         : <div>{room.Availability + ' '}<button onClick={() => {
                           this.setDisplayDialog(true, {room: room, start: urlParams.get('start') || null, end: urlParams.get('end') || null})

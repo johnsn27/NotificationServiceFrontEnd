@@ -1,4 +1,6 @@
-export const getBookedRooms = async (userId=1) => {
+const userId = localStorage.getItem("userId");
+
+export const getBookedRooms = async () => {
     const res = await fetch(`http://127.0.0.1:5000/user-bookings/${userId}`, {
       headers: {
         'Accept': 'application/json',
@@ -12,7 +14,7 @@ export const getBookedRooms = async (userId=1) => {
     return resJson;
 }
 
-export const getWatchedRooms = async (userId=1) => {
+export const getWatchedRooms = async () => {
     const res = await fetch(`http://127.0.0.1:5000/user-watch-list/${userId}`, {
       headers: {
         'Accept': 'application/json',
@@ -27,7 +29,6 @@ export const getWatchedRooms = async (userId=1) => {
 }
 
 export const watchRoom = (
-    userId=1,
     roomId=1,
     capacity=0,
     startTime="2019-02-27 10:00:00",
@@ -70,7 +71,6 @@ export const unwatchRoom = async (watchId) => {
 }
 
 export const bookRoom = (
-    userId=1,
     roomId=1,
     name="My meeting",
     startTime="2019-02-27 10:00:00",
