@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './HomePage.css';
-import { getBookedRooms, getWatchedRooms, unwatchRoom, bookRoom } from '../ApiHelperFunctions';
+import { getBookedRooms, getWatchedRooms, convertDate } from '../ApiHelperFunctions';
+import WatchedRooms from '../WatchedRooms/WatchedRooms';
 
 class HomePage extends Component {
     constructor(props) {
         super(props);
         this.state = {
           bookedRooms: [],
-          watchedRooms: []
         }
       }
     componentDidMount() {
@@ -16,7 +16,7 @@ class HomePage extends Component {
         getWatchedRooms().then(res => this.setState({watchedRooms: res}));
     }
     render() {
-        const { bookedRooms, watchedRooms } = this.state;
+        const { bookedRooms } = this.state;
         return (
             <div>
                 <div>
@@ -36,16 +36,17 @@ class HomePage extends Component {
                             <tbody>
                                 {
                                     bookedRooms.map(room => {
+                                        const startTime = convertDate(room.StartTime);
                                         return (
                                         <tr>
                                             <td>
                                                 {room.MeetingName}
                                             </td>
                                             <td>
-                                                {room.StartTime.slice(0, 10)}
+                                                {startTime.slice(0, 10)}
                                             </td>
                                             <td>
-                                                {room.StartTime.slice(11)} - {room.EndTime.slice(11)}
+                                                {startTime.slice(11)} - {convertDate(room.EndTime).slice(11)}
                                             </td>
                                             <td>
                                                 {room.Location} {room.RoomName}
@@ -58,52 +59,7 @@ class HomePage extends Component {
                         </table>
                     </div>
                 </div>
-                <div>
-                    <div className="watched-meetings-title">
-                        Watched Rooms ({watchedRooms.length})
-                    </div>
-                    <div className="watched-meetings-contents">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Location</th>
-                                    <th>Time</th>
-                                    <th>Availability</th>
-                                    <th>Unwatch</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            {
-                                watchedRooms.map(room => {
-                                    return (
-                                    <tr>
-                                        <td>
-                                            {room.RoomName}
-                                        </td>
-                                        <td>
-                                            {room.Location}
-                                        </td>
-                                        <td>
-                                            {room.StartTime} - {room.EndTime.slice(11)}
-                                        </td>
-                                        <td>
-                                            {room.Availability} {room.Availability === 'Available'
-                                                ? <div>- <button onClick={() => {bookRoom(room.WatchedId).then(unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res}))))}}>Book</button></div>
-                                                : null}
-                                        </td>
-                                        <td>
-                                            {room.WatchedId}
-                                            <button onClick={() => {unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res})))}}>Unwatch</button>
-                                        </td>
-                                    </tr>
-                                    );
-                                }) 
-                            }
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <WatchedRooms/>
             </div>
         );
     }

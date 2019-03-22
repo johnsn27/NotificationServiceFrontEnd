@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './WatchedRooms.css';
-import { getWatchedRooms, unwatchRoom, bookRoom } from '../ApiHelperFunctions';
+import { getWatchedRooms, unwatchRoom, convertDate } from '../ApiHelperFunctions';
+import WatchRoomDialog from '../WatchRoomDialog/WatchRoomDialog';
 
 class WatchedRooms extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          watchedRooms: []
+          watchedRooms: [],
+          activeRoom : { room: { room: {} }, start: null, end: null },
+          displayDialog: false
         }
+        this.setDisplayDialog = this.setDisplayDialog.bind(this);
       }
     componentDidMount() {
         getWatchedRooms().then(res => this.setState({watchedRooms: res}));
     }
+    setDisplayDialog(bool, room={room: {}, start: null, end: null}) {
+        this.setState({displayDialog: bool})
+        this.setState({activeRoom: room})
+    }
     render() {
-        const { watchedRooms } = this.state;
+        const { watchedRooms, activeRoom, displayDialog } = this.state;
         return (
             <div>
                 <div>
@@ -44,11 +52,14 @@ class WatchedRooms extends Component {
                                             {room.Location}
                                         </td>
                                         <td>
-                                            {room.StartTime} - {room.EndTime.slice(11)}
+                                            {convertDate(room.StartTime)} - {convertDate(room.EndTime).slice(11)}
                                         </td>
                                         <td>
                                             {room.Availability} {room.Availability === 'Available'
-                                                ? <div>- <button onClick={() => {bookRoom(room.WatchedId).then(unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res}))))}}>Book</button></div>
+                                                ? <div>- <button onClick={() => {
+                                                    this.setDisplayDialog(true, {room: room, start: room.StartTime, end: room.EndTime})
+                                                    //bookRoom(null, room.WatchedId, null, room.StartTime, room.EndTime).then(unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res}))))
+                                                }}>Book</button></div>
                                                 : null}
                                         </td>
                                         <td>
@@ -61,6 +72,11 @@ class WatchedRooms extends Component {
                             }
                             </tbody>
                         </table>
+                        <WatchRoomDialog
+                            dialogHidden={!displayDialog}
+                            room={activeRoom}
+                            close={() => this.setDisplayDialog(false)}
+                        />
                     </div>
                 </div>
             </div>

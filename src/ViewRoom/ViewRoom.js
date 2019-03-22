@@ -2,68 +2,31 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './ViewRoom.css';
 import Btn from '@bbc/igm-btn';
-
-const getRooms = async () => {
-  const res = await fetch('http://127.0.0.1:5000/meeting-rooms', {
-    headers: {
-      'Accept': 'application/json',
-    },
-  });
-  return await res.json();
-}
-
-const watchRoom = () => {
-  return fetch('http://127.0.0.1:5000/watch-room', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-    body: JSON.stringify(
-      {
-        UserId: 1,
-        Capacity: 10,
-        StartTime: "2019-02-27 10:00:00",
-        EndTime: "2019-02-27 11:00:00"
-      }
-    ),
-  }).then(res => console.log(res))
-}
-
-const bookRoom = () => {
-  return fetch('http://127.0.0.1:5000/book-room', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-    body: JSON.stringify(
-      {
-        UserId: 1,
-        RoomId: this.state.roomInfo.id,
-        Name: "My meeting",
-        StartTime: "2019-02-27 10:00:00",
-        EndTime: "2019-02-27 11:00:00"
-      }
-    ),
-  }).then(res => console.log(res))
-}
-
+import { getRooms } from '../ApiHelperFunctions';
+import WatchRoomDialog from '../WatchRoomDialog/WatchRoomDialog';
+import '@bbc/igm-dialog-instance/dist/DialogInstance.css';
 
 class ViewRoom extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      roomInfo: []
+      roomInfo: [],
+      activeRoom: {room: {}, start: null, end: null},
+      displayDialog: false
     }
+    this.setDisplayDialog = this.setDisplayDialog.bind(this);
   }
   componentDidMount() {
     const { id } = this.props.match.params;
     const roomId = id - 1;
     getRooms().then(res => this.setState({roomInfo: res[roomId]}));
   }
+  setDisplayDialog(bool, room={room: {}, start: null, end: null}) {
+    this.setState({displayDialog: bool})
+    this.setState({activeRoom: room})
+  }
   render() {
-    const { roomInfo } = this.state;
+    const { roomInfo, activeRoom, displayDialog } = this.state;
     return (
       <div>
         <div className="view-room-title">
@@ -83,12 +46,15 @@ class ViewRoom extends Component {
               </div>
               <div className="watch-book-collection">
                 <div className="watch-button">
-                  <Btn type="primary" tab-index="1" className="Button" onClick={watchRoom}>
+                {/* Proabbly need to pass something to say if it's watch or book rather than depend on the availability thing */}
+                  <Btn type="primary" tab-index="1" className="Button"
+                    onClick={() => {this.setDisplayDialog(true, {room: roomInfo, start: null, end: null})}}
+                  >
                     <span>Watch</span>
                   </Btn>
                 </div>
                 <div className="book-button">
-                  <Btn type="primary" tab-index="1" className="Button" onClick={bookRoom}>
+                  <Btn type="primary" tab-index="1" className="Button" onClick={() => {this.setDisplayDialog(true, {room: roomInfo, start: null, end: null})}}>
                     <span>Book</span>
                   </Btn>
                 </div>
@@ -162,6 +128,11 @@ class ViewRoom extends Component {
               </div>
             </div>
           </div>
+          <WatchRoomDialog
+            dialogHidden={!displayDialog}
+            room={activeRoom}
+            close={() => this.setDisplayDialog(false)}
+          />
         </div>
       </div>
     );
