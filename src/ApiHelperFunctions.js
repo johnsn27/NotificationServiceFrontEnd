@@ -7,10 +7,6 @@ export const getBookedRooms = async () => {
       },
     });
     const resJson = await res.json();
-    // for (let i=0; i < resJson.length; i++) {
-    //     resJson[i].StartTime = convertDate(resJson[i].StartTime);
-    //     resJson[i].EndTime = convertDate(resJson[i].EndTime); 
-    // }
     return resJson;
 }
 
@@ -21,10 +17,6 @@ export const getWatchedRooms = async () => {
       },
     });
     const resJson = await res.json();
-    // for (let i=0; i < resJson.length; i++) {
-    //     resJson[i].StartTime = convertDate(resJson[i].StartTime);
-    //     resJson[i].EndTime = convertDate(resJson[i].EndTime); 
-    // }
     return resJson;
 }
 

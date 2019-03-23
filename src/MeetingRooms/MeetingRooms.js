@@ -24,19 +24,21 @@ export default class MeetingRooms extends Component {
     this.state = {
       rooms: [],
       activeRoom: {room: {}, start: null, end: null},
-      displayDialog: false
+      displayDialog: false,
+      dialogType: 'Book'
     }
     this.setDisplayDialog = this.setDisplayDialog.bind(this);
   }
   componentDidMount() {
     updateRooms().then(res => this.setState({rooms: res}));
   }
-  setDisplayDialog(bool, room={room: {}, start: null, end: null}) {
+  setDisplayDialog(bool, room={room: {}, start: null, end: null}, type) {
+    this.setState({dialogType: type})
     this.setState({displayDialog: bool})
     this.setState({activeRoom: room})
   }
   render() {
-    const { rooms, displayDialog, activeRoom } = this.state;
+    const { rooms, displayDialog, activeRoom, dialogType } = this.state;
     const urlParams = new URLSearchParams(window.location.search);
     return (
       <div>
@@ -50,7 +52,7 @@ export default class MeetingRooms extends Component {
         </div>
 
         <div className="meeting-rooms-contents">
-          <table className="meeting-rooms-table">
+          {rooms.length ? <table className="meeting-rooms-table">
             <thead>
               <tr>
                 <th>Room Name</th>
@@ -72,9 +74,9 @@ export default class MeetingRooms extends Component {
                       </td>
                       <td>
                       {room.Availability === 'Available' ? null : 'Unavailable'}
-                      <button button onClick={() => {
-                          this.setDisplayDialog(true, {room: room, start: urlParams.get('start') || null, end: urlParams.get('end') || null})
-                        }}>{room.Availability === 'Available' ? 'Book' : 'Watch'}</button>
+                      <button button disabled={false} onClick={() => {
+                          this.setDisplayDialog(true, {room: room, start: urlParams.get('start') || null, end: urlParams.get('end') || null}, room.Availability === 'Available' ? 'Book' : 'Watch')
+                        }}>{room.Availability === 'Available' ? 'Book' : true ? 'Watch' : 'Already watching'}</button>
                       {/* {room.Availability === 'Available'
                         ? <button onClick={() => {
                           bookRoom(room.id, null, (this.urlParams.get('start')) || null, (this.urlParams.get('end') || null)).then(updateRooms().then(res => this.setState({rooms: res})))
@@ -91,11 +93,12 @@ export default class MeetingRooms extends Component {
                 })
               }
             </tbody>
-          </table>
+          </table> : <div className="no-results-found">No rooms found {urlParams.get('view_unavailable') !== 'false' ? null : <button onClick={() => window.location.search = window.location.search.replace("view_unavailable=false","view_unavailable=true")}>Check For Booked Rooms</button> }</div>}
           <WatchRoomDialog
             dialogHidden={!displayDialog}
             room={activeRoom}
             close={() => this.setDisplayDialog(false)}
+            type={dialogType}
           />
         </div>
       </div>

@@ -30,52 +30,57 @@ class WatchedRooms extends Component {
                         Watched Rooms ({watchedRooms.length})
                     </div>
                     <div className="upcoming-meetings-contents">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Location</th>
-                                    <th>Time</th>
-                                    <th>Availability</th>
-                                    <th>Unwatch</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            {
-                                watchedRooms.map(room => {
-                                    return (
+                        {
+                            watchedRooms.length ?
+                            <table>
+                                <thead>
                                     <tr>
-                                        <td>
-                                            {room.RoomName}
-                                        </td>
-                                        <td>
-                                            {room.Location}
-                                        </td>
-                                        <td>
-                                            {convertDate(room.StartTime)} - {convertDate(room.EndTime).slice(11)}
-                                        </td>
-                                        <td>
-                                            {room.Availability} {room.Availability === 'Available'
-                                                ? <div>- <button onClick={() => {
-                                                    this.setDisplayDialog(true, {room: room, start: room.StartTime, end: room.EndTime})
-                                                    //bookRoom(room.WatchedId, null, room.StartTime, room.EndTime).then(unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res}))))
-                                                }}>Book</button></div>
-                                                : null}
-                                        </td>
-                                        <td>
-                                            {room.WatchedId}
-                                            <button onClick={() => {unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res})))}}>Unwatch</button>
-                                        </td>
+                                        <th>Name</th>
+                                        <th>Location</th>
+                                        <th>Time</th>
+                                        <th>Availability</th>
+                                        <th>Unwatch</th>
                                     </tr>
-                                    );
-                                }) 
-                            }
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                {
+                                    watchedRooms.map(room => {
+                                        return (
+                                        <tr>
+                                            <td>
+                                                {room.RoomName}
+                                            </td>
+                                            <td>
+                                                {room.Location}
+                                            </td>
+                                            <td>
+                                                {convertDate(room.StartTime)} - {convertDate(room.EndTime).slice(11)}
+                                            </td>
+                                            <td>
+                                                {room.Availability} {room.Availability === 'Available'
+                                                    ? <div>- <button onClick={() => {
+                                                        this.setDisplayDialog(true, {room: room, start: room.StartTime, end: room.EndTime})
+                                                        //bookRoom(room.WatchedId, null, room.StartTime, room.EndTime).then(unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res}))))
+                                                    }}>Book</button></div>
+                                                    : null}
+                                            </td>
+                                            <td>
+                                                {room.WatchedId}
+                                                <button onClick={() => {unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res})))}}>Unwatch</button>
+                                            </td>
+                                        </tr>
+                                        );
+                                    }) 
+                                }
+                                </tbody>
+                            </table>
+                            : 'You are not currently watching any rooms'
+                        }
                         <WatchRoomDialog
                             dialogHidden={!displayDialog}
                             room={activeRoom}
                             close={() => this.setDisplayDialog(false)}
+                            type="Watch"
                         />
                     </div>
                 </div>

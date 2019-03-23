@@ -24,39 +24,42 @@ class HomePage extends Component {
                         Upcoming Meetings ({bookedRooms.length})
                     </div>
                     <div className="upcoming-meetings-contents">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Date</th>
-                                    <th>Time</th>
-                                    <th>Location</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {
-                                    bookedRooms.map(room => {
-                                        const startTime = convertDate(room.StartTime);
-                                        return (
-                                        <tr>
-                                            <td>
-                                                {room.MeetingName}
-                                            </td>
-                                            <td>
-                                                {startTime.slice(0, 10)}
-                                            </td>
-                                            <td>
-                                                {startTime.slice(11)} - {convertDate(room.EndTime).slice(11)}
-                                            </td>
-                                            <td>
-                                                {room.Location} {room.RoomName}
-                                            </td>
-                                        </tr>
-                                        );
-                                    }) 
-                                }
-                            </tbody>
-                        </table>
+                        { bookedRooms.length ?
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Location</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {
+                                        bookedRooms.map(room => {
+                                            const startTime = convertDate(room.StartTime);
+                                            return (
+                                            <tr>
+                                                <td>
+                                                    {room.MeetingName}
+                                                </td>
+                                                <td>
+                                                    {startTime.slice(0, 10)}
+                                                </td>
+                                                <td>
+                                                    {startTime.slice(11)} - {convertDate(room.EndTime).slice(11)}
+                                                </td>
+                                                <td>
+                                                    {room.Location} {room.RoomName}
+                                                </td>
+                                            </tr>
+                                            );
+                                        }) 
+                                    }
+                                </tbody>
+                            </table>
+                            : 'You do not have any upcoming meetings'
+                        }
                     </div>
                 </div>
                 <WatchedRooms/>

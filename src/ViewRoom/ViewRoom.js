@@ -12,7 +12,8 @@ class ViewRoom extends Component {
     this.state = {
       roomInfo: [],
       activeRoom: {room: {}, start: null, end: null},
-      displayDialog: false
+      displayDialog: false,
+      dialogType: 'Book'
     }
     this.setDisplayDialog = this.setDisplayDialog.bind(this);
   }
@@ -21,7 +22,8 @@ class ViewRoom extends Component {
     const roomId = id - 1;
     getRooms().then(res => this.setState({roomInfo: res[roomId]}));
   }
-  setDisplayDialog(bool, room={room: {}, start: null, end: null}) {
+  setDisplayDialog(bool, room={room: {}, start: null, end: null}, type) {
+    this.setState({dialogType: type})
     this.setState({displayDialog: bool})
     this.setState({activeRoom: room})
   }
@@ -48,13 +50,13 @@ class ViewRoom extends Component {
                 <div className="watch-button">
                 {/* Proabbly need to pass something to say if it's watch or book rather than depend on the availability thing */}
                   <Btn type="primary" tab-index="1" className="Button"
-                    onClick={() => {this.setDisplayDialog(true, {room: roomInfo, start: null, end: null})}}
+                    onClick={() => {this.setDisplayDialog(true, {room: roomInfo, start: null, end: null}, 'Watch')}}
                   >
                     <span>Watch</span>
                   </Btn>
                 </div>
                 <div className="book-button">
-                  <Btn type="primary" tab-index="1" className="Button" onClick={() => {this.setDisplayDialog(true, {room: roomInfo, start: null, end: null})}}>
+                  <Btn type="primary" tab-index="1" className="Button" onClick={() => {this.setDisplayDialog(true, {room: roomInfo, start: null, end: null}, 'Book')}}>
                     <span>Book</span>
                   </Btn>
                 </div>

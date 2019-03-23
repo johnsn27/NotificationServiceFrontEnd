@@ -13,10 +13,10 @@ export default class WatchRoomDialog extends Component {
             document.getElementById("end").value = nextProps.room.end ? convertDate(nextProps.room.end).slice(11) : '';
         }
     render() {
-        const { dialogHidden, room, close } = this.props;
+        const { dialogHidden, room, close, type } = this.props;
         return (
             <DialogInstance
-                dialogHeader={<h3>{room.room.Availability === 'Available' ? 'Book' : 'Watch'} Room</h3>}
+                dialogHeader={<h3>{type} Room</h3>}
                 dialogBody={
                     <div>
                         <div className="textbox">
@@ -41,7 +41,7 @@ export default class WatchRoomDialog extends Component {
                             </textarea>
                         </div>
                         {
-                            room.room.Availability === 'Available' ?
+                            type === 'Book' ?
                             <div className="textbox">
                                 <label className="label">
                                     <p>Meeting Name:</p>
@@ -72,7 +72,7 @@ export default class WatchRoomDialog extends Component {
                     </div>
                 }
                 dialogFooter={<div>
-                    <button onClick={() => {room.room.Availability === 'Available' ? bookRoom(room.room.id, document.getElementById('meeting-name').value, room.start, room.end) : watchRoom(room.room.id, 0, room.start, room.end)
+                    <button onClick={() => {type === 'Book' ? bookRoom(room.room.id, document.getElementById('meeting-name').value, room.start, room.end) : watchRoom(room.room.id, 0, room.start, room.end)
                     close()}}>Confirm</button>
                     <button onClick={close}>Cancel</button>
                 </div>}
