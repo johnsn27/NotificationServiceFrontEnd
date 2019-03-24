@@ -47,66 +47,66 @@ class ViewRoom extends Component {
           <div className="view-room-contents-right">
             <div className="view-room-contents-right-inner">
               <div className="textbox">
-                <div className="room-id-label">
+                <div className="label" id="room-id-label">
                   <p>Room ID:</p>
                 </div>
-                <textarea className="room-id-textarea" rows="2">
+                <textarea className="textarea" id="room-id-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="room-name-label">
+                <div className="label" id="room-name-label">
                   <p>Room Name:</p>
                 </div>
-                <textarea className="room-name-textarea" rows="2">
+                <textarea className="textarea" id="room-name-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="area-code-label">
+                <div className="label" id="area-code-label">
                   <p>Area Code:</p>
                 </div>
-                <textarea className="area-code-textarea" rows="2">
+                <textarea className="textarea" id="area-code-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="capacity-label">
+                <div className="label" id="capacity-label">
                   <p>Capacity:</p>
                 </div>
-                <textarea className="capacity-textarea" rows="2">
+                <textarea className="textarea" id="capacity-textarea"rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="screen-label">
+                <div className="label" id="screen-label">
                   <p>Screen:</p>
                 </div>
-                <textarea className="screen-textarea" rows="2">
+                <textarea className="textarea" id="screen-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="dvd-label">
+                <div className="label" id="dvd-label">
                   <p>DVD:</p>
                 </div>
-                <textarea className="dvd-textarea" rows="2">
+                <textarea className="textarea" id="dvd-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="vcu-label">
+                <div className="label" id="vcu-label">
                   <p>VCU:</p>
                 </div>
-                <textarea className="vcu-textarea" rows="2">
+                <textarea className="textarea" id="vcu-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="whiteboard-label">
+                <div className="label" id="whiteboard-label">
                   <p>Whiteboard:</p>
                 </div>
-                <textarea className="whiteboard-textarea" rows="2">
+                <textarea className="textarea" id="whiteboard-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="wheelchair-support-label">
+                <div className="label" id="wheelchair-support-label">
                   <p>Wheelchair Support:</p>
                 </div>
-                <textarea className="wheelchair-support-textarea" rows="2">
+                <textarea className="textarea" id="wheelchair-support-textarea" rows="2">
                 </textarea>
               </div>
             </div>
