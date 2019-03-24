@@ -11,13 +11,13 @@ class HomePage extends Component {
                         Upcoming Meetings (4)
                     </div>
                     <div className="upcoming-meetings-contents">
-                        <table>
+                        <table className="upcoming-meetings-table">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Date</th>
-                                    <th>Time</th>
-                                    <th>Location</th>
+                                    <th className="upcoming-name-title">Name</th>
+                                    <th className="upcoming-date-title">Date</th>
+                                    <th className="upcoming-time-title">Time</th>
+                                    <th className="upcoming-location-title">Location</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -57,9 +57,9 @@ class HomePage extends Component {
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Location</th>
-                                    <th>Next Available</th>
+                                    <th className="watched-name-title">Name</th>
+                                    <th className="watched-location-title">Location</th>
+                                    <th className="watched-next-available-title">Next Available</th>
                                 </tr>
                             </thead>
                             <tbody>
