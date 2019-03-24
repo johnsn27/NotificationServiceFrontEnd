@@ -94,7 +94,7 @@ class SearchRoom extends Component {
                                             )
                                     }}
                                 >
-                                    <span>Advanced Search</span>
+                                    <span>Search</span>
                                 </Btn>
                             </div>
                         </div>

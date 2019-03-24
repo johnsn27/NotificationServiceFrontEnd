@@ -62,13 +62,13 @@ export const unwatchRoom = async (watchId) => {
     console.log(await res.json());
 }
 
-export const bookRoom = (
+export const bookRoom = async (
     roomId=1,
     name="My meeting",
     startTime="2019-02-27 10:00:00",
     endTime="2019-02-27 11:00:00"
   ) => {
-    return fetch('http://127.0.0.1:5000/book-room', {
+    return await fetch('http://127.0.0.1:5000/book-room', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -83,7 +83,7 @@ export const bookRoom = (
           EndTime: endTime
         }
       ),
-    }).then(res => console.log(res))
+    });
 }
 
 export const getRooms = async (name=null, location=null, floor=null, capacity=0, start=null, end=null, showUnavailable) => {

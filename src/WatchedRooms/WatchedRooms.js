@@ -80,7 +80,7 @@ class WatchedRooms extends Component {
                             dialogHidden={!displayDialog}
                             room={activeRoom}
                             close={() => this.setDisplayDialog(false)}
-                            type="Watch"
+                            type="Book"
                         />
                     </div>
                 </div>

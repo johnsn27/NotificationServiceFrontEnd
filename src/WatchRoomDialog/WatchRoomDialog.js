@@ -1,24 +1,37 @@
 import React, { Component } from 'react';
 import DialogInstance from '@bbc/igm-dialog-instance';
 import { convertDate, watchRoom, bookRoom } from '../ApiHelperFunctions';
+import './WatchRoomDialog.css';
 
 export default class WatchRoomDialog extends Component {
-    componentWillReceiveProps(nextProps) {
-            document.getElementById("name").value = nextProps.room.room.Name || nextProps.room.room.RoomName;
-            document.getElementById("building").value = nextProps.room.room.Building;
-            document.getElementById("location").value = nextProps.room.room.Location;
-            //date might not work for other browsers.
-            document.getElementById("date").value = nextProps.room.start ? nextProps.room.start.slice(0, 10) : '';
-            document.getElementById("start").value = nextProps.room.start ? convertDate(nextProps.room.start).slice(11) : '';
-            document.getElementById("end").value = nextProps.room.end ? convertDate(nextProps.room.end).slice(11) : '';
+    constructor(props) {
+        super(props);
+        this.state = {
+          notification: {displayed: false, message: ''}
         }
+    }
+    componentWillReceiveProps(nextProps) {
+        this.setState({notification: {displayed: false, message: ''}})
+        document.getElementById("name").value = nextProps.room.room.Name || nextProps.room.room.RoomName;
+        document.getElementById("building").value = nextProps.room.room.Building;
+        document.getElementById("location").value = nextProps.room.room.Location;
+        //date might not work for other browsers.
+        document.getElementById("date").value = nextProps.room.start ? nextProps.room.start.slice(0, 10) : '';
+        document.getElementById("start").value = nextProps.room.start ? convertDate(nextProps.room.start).slice(11) : '';
+        document.getElementById("end").value = nextProps.room.end ? convertDate(nextProps.room.end).slice(11) : '';
+    }
+    showError() {
+        this.setState({notification: {displayed: true, message: 'Error Booking Room'}})
+    }
     render() {
         const { dialogHidden, room, close, type } = this.props;
+        const { notification } = this.state;
         return (
             <DialogInstance
                 dialogHeader={<h3>{type} Room</h3>}
-                dialogBody={
+                dialogBody={   
                     <div>
+                        <div role="alert" hidden={!notification.displayed} className="notification"><strong></strong>{notification.message}</div>
                         <div className="textbox">
                             <label className="label">
                                 <p>Room Name:</p>
@@ -72,8 +85,10 @@ export default class WatchRoomDialog extends Component {
                     </div>
                 }
                 dialogFooter={<div>
-                    <button onClick={() => {type === 'Book' ? bookRoom(room.room.id, document.getElementById('meeting-name').value, room.start, room.end) : watchRoom(room.room.id, 0, room.start, room.end)
-                    close()}}>Confirm</button>
+                    <button onClick={() => {type === 'Book'
+                        ? bookRoom(room.room.id, document.getElementById('meeting-name').value, room.start, room.end).then(res => {(res.status === 500) ? this.showError() : close()})
+                        : watchRoom(room.room.id, 0, room.start, room.end).then(close())
+                    }}>Confirm</button>
                     <button onClick={close}>Cancel</button>
                 </div>}
                 hidden={dialogHidden}

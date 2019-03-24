@@ -73,18 +73,11 @@ export default class MeetingRooms extends Component {
                         {room.Location}
                       </td>
                       <td>
-                      {room.Availability === 'Available' ? null : 'Unavailable'}
-                      <button button disabled={false} onClick={() => {
-                          this.setDisplayDialog(true, {room: room, start: urlParams.get('start') || null, end: urlParams.get('end') || null}, room.Availability === 'Available' ? 'Book' : 'Watch')
-                        }}>{room.Availability === 'Available' ? 'Book' : true ? 'Watch' : 'Already watching'}</button>
-                      {/* {room.Availability === 'Available'
-                        ? <button onClick={() => {
-                          bookRoom(room.id, null, (this.urlParams.get('start')) || null, (this.urlParams.get('end') || null)).then(updateRooms().then(res => this.setState({rooms: res})))
-                        }}>Book</button>
-                        : <div>{room.Availability + ' '}<button onClick={() => {
-                          this.setDisplayDialog(true, {room: room, start: urlParams.get('start') || null, end: urlParams.get('end') || null})
-                        }}>watch</button></div>
-                      }*/}</td> 
+                        {room.Availability === 'Available' ? null : 'Unavailable'}
+                        <button button disabled={false} onClick={() => {
+                            this.setDisplayDialog(true, {room: room, start: urlParams.get('start') || null, end: urlParams.get('end') || null}, room.Availability === 'Available' ? 'Book' : 'Watch')
+                          }}>{room.Availability === 'Available' ? 'Book' : true ? 'Watch' : 'Already watching'}</button>
+                      </td> 
                       <td className="view-room-link">
                         <a href={`/view-room/${room.id}`}>view</a>
                       </td>
@@ -97,7 +90,10 @@ export default class MeetingRooms extends Component {
           <WatchRoomDialog
             dialogHidden={!displayDialog}
             room={activeRoom}
-            close={() => this.setDisplayDialog(false)}
+            close={() => {
+              this.setDisplayDialog(false);
+              updateRooms().then(res => this.setState({rooms: res}));
+            }}
             type={dialogType}
           />
         </div>
