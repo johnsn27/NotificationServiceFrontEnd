@@ -9,7 +9,6 @@ function onClick() {
     return element;
 }
 
-
 class SearchRoom extends Component {
     render() {
         return (
@@ -23,28 +22,28 @@ class SearchRoom extends Component {
                             <div className="label">
                                 <p>Room Name:</p>
                             </div>
-                            <textarea className="textarea" rows="2">
+                            <textarea className="textarea" rows="2" id="name">
                             </textarea>
                         </div>
                         <div className="textbox">
                             <div className="label">
                                 <p>Location:</p>
                             </div>
-                            <textarea className="textarea" rows="2">
+                            <textarea className="textarea" rows="2" id="location">
                             </textarea>
                         </div>
                         <div className="textbox">
                             <div className="label">
                                 <p>Floor:</p>
                             </div>
-                            <textarea className="textarea" rows="2">
+                            <textarea className="textarea" rows="2" id="floor">
                             </textarea>
                         </div>
                         <div className="textbox">
                             <div className="label">
                                 <p>Capacity:</p>
                             </div>
-                            <textarea className="textarea" rows="2">
+                            <textarea className="textarea" rows="2" id="capacity">
                             </textarea>
                         </div>
                         <div className="advanced-search-button-container">
