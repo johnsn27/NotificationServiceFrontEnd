@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './ViewRoom.css';
@@ -46,66 +47,66 @@ class ViewRoom extends Component {
           <div className="view-room-contents-right">
             <div className="view-room-contents-right-inner">
               <div className="textbox">
-                <div className="label">
+                <div className="label" id="room-id-label">
                   <p>Room ID:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" id="room-id-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="label">
+                <div className="label" id="room-name-label">
                   <p>Room Name:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" id="room-name-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="label">
+                <div className="label" id="area-code-label">
                   <p>Area Code:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" id="area-code-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="label">
+                <div className="label" id="capacity-label">
                   <p>Capacity:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" id="capacity-textarea"rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="label">
+                <div className="label" id="screen-label">
                   <p>Screen:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" id="screen-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="label">
+                <div className="label" id="dvd-label">
                   <p>DVD:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" id="dvd-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="label">
+                <div className="label" id="vcu-label">
                   <p>VCU:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" id="vcu-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="label">
+                <div className="label" id="whiteboard-label">
                   <p>Whiteboard:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" id="whiteboard-textarea" rows="2">
                 </textarea>
               </div>
               <div className="textbox">
-                <div className="label">
+                <div className="label" id="wheelchair-support-label">
                   <p>Wheelchair Support:</p>
                 </div>
-                <textarea className="textarea" rows="2">
+                <textarea className="textarea" id="wheelchair-support-textarea" rows="2">
                 </textarea>
               </div>
             </div>
