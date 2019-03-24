@@ -13,10 +13,6 @@ describe('HomePage', () => {
       shallow(<HomePage />);
     });
 
-    // it('matches snapshot', () => {
-    //   expect(wrapper).toMatchSnapshot();
-    // })
-
     it('upcoming meeting title heading is displayed', () => {
         const element = wrapper.find('.upcoming-meetings-title');
         expect(element.text()).to.equal('Upcoming Meetings (4)');
