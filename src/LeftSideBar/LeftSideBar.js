@@ -14,15 +14,15 @@ class LeftSideBar extends Component {
           <div className="my-section-buttons">
             <div className="button-border">
               <div className="my-section-button">
-                <LeftSideBarButton type="primary" tab-index="1" className="Button" link='' text="My Account">
+                <LeftSideBarButton id="account" type="primary" tab-index="1" className="Button" link='' text="My Account">
                 </LeftSideBarButton>
               </div>
                 <div className="my-section-button">
-                  <LeftSideBarButton type="primary" tab-index="1" className="Button" link='' text="My Bookings">
+                  <LeftSideBarButton id="bookings" type="primary" tab-index="1" className="Button" link='' text="My Bookings">
                   </LeftSideBarButton>
                 </div>
                 <div className="my-section-button">
-                  <LeftSideBarButton type="primary" tab-index="1" className="Button" link='/watched-rooms' text="My Watched Rooms">
+                  <LeftSideBarButton id="watchedRooms" type="primary" tab-index="1" className="Button" link='/watched-rooms' text="My Watched Rooms">
                   </LeftSideBarButton>
                 </div>
               </div>
@@ -35,15 +35,15 @@ class LeftSideBar extends Component {
             <div className="rooms-buttons">
               <div className="button-border">
                 <div className="rooms-button">
-                  <LeftSideBarButton type="primary" tab-index="1" className="Button" link='' text="Book a Room">
+                  <LeftSideBarButton id="bookRoom" type="primary" tab-index="1" className="Button" link='' text="Book a Room">
                   </LeftSideBarButton>
                 </div>
                 <div className="rooms-button">
-                  <LeftSideBarButton type="primary" tab-index="1" className="Button" link='/search-room' text="Search a Room">
+                  <LeftSideBarButton id="searchRoom" type="primary" tab-index="1" className="Button" link='/search-room' text="Search a Room">
                   </LeftSideBarButton>
                 </div>
                 <div className="rooms-button">
-                  <LeftSideBarButton type="primary" tab-index="1" className="Button" link='/meeting-rooms' text="Meeting Rooms">
+                  <LeftSideBarButton id="meetingRooms" type="primary" tab-index="1" className="Button" link='/meeting-rooms' text="Meeting Rooms">
                   </LeftSideBarButton>
                 </div>
               </div>
@@ -52,12 +52,6 @@ class LeftSideBar extends Component {
         </div >
       );
     }
-  }
-
-  LeftSideBar.propTypes = {
-    id: PropTypes.string.isRequired,
-    className: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired
   }
 
   export default LeftSideBar;

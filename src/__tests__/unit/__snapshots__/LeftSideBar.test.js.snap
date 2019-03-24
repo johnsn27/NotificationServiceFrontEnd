@@ -1,0 +1,1413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchRoom matches snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LeftSideBar />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="my-section"
+        >
+          <div
+            className="my-section-title"
+          >
+            My Section:
+          </div>
+          <div
+            className="my-section-buttons"
+          >
+            <div
+              className="button-border"
+            >
+              <div
+                className="my-section-button"
+              >
+                <LeftSideBarButton
+                  className="Button"
+                  id="account"
+                  link=""
+                  tab-index="1"
+                  text="My Account"
+                  type="primary"
+                />
+              </div>
+              <div
+                className="my-section-button"
+              >
+                <LeftSideBarButton
+                  className="Button"
+                  id="bookings"
+                  link=""
+                  tab-index="1"
+                  text="My Bookings"
+                  type="primary"
+                />
+              </div>
+              <div
+                className="my-section-button"
+              >
+                <LeftSideBarButton
+                  className="Button"
+                  id="watchedRooms"
+                  link="/watched-rooms"
+                  tab-index="1"
+                  text="My Watched Rooms"
+                  type="primary"
+                />
+              </div>
+            </div>
+          </div>
+        </div>,
+        <div
+          className="rooms"
+        >
+          <div
+            className="rooms-title"
+          >
+            <span>
+              Rooms:
+            </span>
+          </div>
+          <div
+            className="rooms-buttons"
+          >
+            <div
+              className="button-border"
+            >
+              <div
+                className="rooms-button"
+              >
+                <LeftSideBarButton
+                  className="Button"
+                  id="bookRoom"
+                  link=""
+                  tab-index="1"
+                  text="Book a Room"
+                  type="primary"
+                />
+              </div>
+              <div
+                className="rooms-button"
+              >
+                <LeftSideBarButton
+                  className="Button"
+                  id="searchRoom"
+                  link="/search-room"
+                  tab-index="1"
+                  text="Search a Room"
+                  type="primary"
+                />
+              </div>
+              <div
+                className="rooms-button"
+              >
+                <LeftSideBarButton
+                  className="Button"
+                  id="meetingRooms"
+                  link="/meeting-rooms"
+                  tab-index="1"
+                  text="Meeting Rooms"
+                  type="primary"
+                />
+              </div>
+            </div>
+          </div>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="my-section-title"
+            >
+              My Section:
+            </div>,
+            <div
+              className="my-section-buttons"
+            >
+              <div
+                className="button-border"
+              >
+                <div
+                  className="my-section-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="account"
+                    link=""
+                    tab-index="1"
+                    text="My Account"
+                    type="primary"
+                  />
+                </div>
+                <div
+                  className="my-section-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="bookings"
+                    link=""
+                    tab-index="1"
+                    text="My Bookings"
+                    type="primary"
+                  />
+                </div>
+                <div
+                  className="my-section-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="watchedRooms"
+                    link="/watched-rooms"
+                    tab-index="1"
+                    text="My Watched Rooms"
+                    type="primary"
+                  />
+                </div>
+              </div>
+            </div>,
+          ],
+          "className": "my-section",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "My Section:",
+              "className": "my-section-title",
+            },
+            "ref": null,
+            "rendered": "My Section:",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="button-border"
+              >
+                <div
+                  className="my-section-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="account"
+                    link=""
+                    tab-index="1"
+                    text="My Account"
+                    type="primary"
+                  />
+                </div>
+                <div
+                  className="my-section-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="bookings"
+                    link=""
+                    tab-index="1"
+                    text="My Bookings"
+                    type="primary"
+                  />
+                </div>
+                <div
+                  className="my-section-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="watchedRooms"
+                    link="/watched-rooms"
+                    tab-index="1"
+                    text="My Watched Rooms"
+                    type="primary"
+                  />
+                </div>
+              </div>,
+              "className": "my-section-buttons",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="my-section-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="account"
+                      link=""
+                      tab-index="1"
+                      text="My Account"
+                      type="primary"
+                    />
+                  </div>,
+                  <div
+                    className="my-section-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="bookings"
+                      link=""
+                      tab-index="1"
+                      text="My Bookings"
+                      type="primary"
+                    />
+                  </div>,
+                  <div
+                    className="my-section-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="watchedRooms"
+                      link="/watched-rooms"
+                      tab-index="1"
+                      text="My Watched Rooms"
+                      type="primary"
+                    />
+                  </div>,
+                ],
+                "className": "button-border",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <LeftSideBarButton
+                      className="Button"
+                      id="account"
+                      link=""
+                      tab-index="1"
+                      text="My Account"
+                      type="primary"
+                    />,
+                    "className": "my-section-button",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "Button",
+                      "id": "account",
+                      "link": "",
+                      "tab-index": "1",
+                      "text": "My Account",
+                      "type": "primary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <LeftSideBarButton
+                      className="Button"
+                      id="bookings"
+                      link=""
+                      tab-index="1"
+                      text="My Bookings"
+                      type="primary"
+                    />,
+                    "className": "my-section-button",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "Button",
+                      "id": "bookings",
+                      "link": "",
+                      "tab-index": "1",
+                      "text": "My Bookings",
+                      "type": "primary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <LeftSideBarButton
+                      className="Button"
+                      id="watchedRooms"
+                      link="/watched-rooms"
+                      tab-index="1"
+                      text="My Watched Rooms"
+                      type="primary"
+                    />,
+                    "className": "my-section-button",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "Button",
+                      "id": "watchedRooms",
+                      "link": "/watched-rooms",
+                      "tab-index": "1",
+                      "text": "My Watched Rooms",
+                      "type": "primary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="rooms-title"
+            >
+              <span>
+                Rooms:
+              </span>
+            </div>,
+            <div
+              className="rooms-buttons"
+            >
+              <div
+                className="button-border"
+              >
+                <div
+                  className="rooms-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="bookRoom"
+                    link=""
+                    tab-index="1"
+                    text="Book a Room"
+                    type="primary"
+                  />
+                </div>
+                <div
+                  className="rooms-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="searchRoom"
+                    link="/search-room"
+                    tab-index="1"
+                    text="Search a Room"
+                    type="primary"
+                  />
+                </div>
+                <div
+                  className="rooms-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="meetingRooms"
+                    link="/meeting-rooms"
+                    tab-index="1"
+                    text="Meeting Rooms"
+                    type="primary"
+                  />
+                </div>
+              </div>
+            </div>,
+          ],
+          "className": "rooms",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <span>
+                Rooms:
+              </span>,
+              "className": "rooms-title",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Rooms:",
+              },
+              "ref": null,
+              "rendered": "Rooms:",
+              "type": "span",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="button-border"
+              >
+                <div
+                  className="rooms-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="bookRoom"
+                    link=""
+                    tab-index="1"
+                    text="Book a Room"
+                    type="primary"
+                  />
+                </div>
+                <div
+                  className="rooms-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="searchRoom"
+                    link="/search-room"
+                    tab-index="1"
+                    text="Search a Room"
+                    type="primary"
+                  />
+                </div>
+                <div
+                  className="rooms-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="meetingRooms"
+                    link="/meeting-rooms"
+                    tab-index="1"
+                    text="Meeting Rooms"
+                    type="primary"
+                  />
+                </div>
+              </div>,
+              "className": "rooms-buttons",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="rooms-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="bookRoom"
+                      link=""
+                      tab-index="1"
+                      text="Book a Room"
+                      type="primary"
+                    />
+                  </div>,
+                  <div
+                    className="rooms-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="searchRoom"
+                      link="/search-room"
+                      tab-index="1"
+                      text="Search a Room"
+                      type="primary"
+                    />
+                  </div>,
+                  <div
+                    className="rooms-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="meetingRooms"
+                      link="/meeting-rooms"
+                      tab-index="1"
+                      text="Meeting Rooms"
+                      type="primary"
+                    />
+                  </div>,
+                ],
+                "className": "button-border",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <LeftSideBarButton
+                      className="Button"
+                      id="bookRoom"
+                      link=""
+                      tab-index="1"
+                      text="Book a Room"
+                      type="primary"
+                    />,
+                    "className": "rooms-button",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "Button",
+                      "id": "bookRoom",
+                      "link": "",
+                      "tab-index": "1",
+                      "text": "Book a Room",
+                      "type": "primary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <LeftSideBarButton
+                      className="Button"
+                      id="searchRoom"
+                      link="/search-room"
+                      tab-index="1"
+                      text="Search a Room"
+                      type="primary"
+                    />,
+                    "className": "rooms-button",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "Button",
+                      "id": "searchRoom",
+                      "link": "/search-room",
+                      "tab-index": "1",
+                      "text": "Search a Room",
+                      "type": "primary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <LeftSideBarButton
+                      className="Button"
+                      id="meetingRooms"
+                      link="/meeting-rooms"
+                      tab-index="1"
+                      text="Meeting Rooms"
+                      type="primary"
+                    />,
+                    "className": "rooms-button",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "Button",
+                      "id": "meetingRooms",
+                      "link": "/meeting-rooms",
+                      "tab-index": "1",
+                      "text": "Meeting Rooms",
+                      "type": "primary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="my-section"
+          >
+            <div
+              className="my-section-title"
+            >
+              My Section:
+            </div>
+            <div
+              className="my-section-buttons"
+            >
+              <div
+                className="button-border"
+              >
+                <div
+                  className="my-section-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="account"
+                    link=""
+                    tab-index="1"
+                    text="My Account"
+                    type="primary"
+                  />
+                </div>
+                <div
+                  className="my-section-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="bookings"
+                    link=""
+                    tab-index="1"
+                    text="My Bookings"
+                    type="primary"
+                  />
+                </div>
+                <div
+                  className="my-section-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="watchedRooms"
+                    link="/watched-rooms"
+                    tab-index="1"
+                    text="My Watched Rooms"
+                    type="primary"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>,
+          <div
+            className="rooms"
+          >
+            <div
+              className="rooms-title"
+            >
+              <span>
+                Rooms:
+              </span>
+            </div>
+            <div
+              className="rooms-buttons"
+            >
+              <div
+                className="button-border"
+              >
+                <div
+                  className="rooms-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="bookRoom"
+                    link=""
+                    tab-index="1"
+                    text="Book a Room"
+                    type="primary"
+                  />
+                </div>
+                <div
+                  className="rooms-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="searchRoom"
+                    link="/search-room"
+                    tab-index="1"
+                    text="Search a Room"
+                    type="primary"
+                  />
+                </div>
+                <div
+                  className="rooms-button"
+                >
+                  <LeftSideBarButton
+                    className="Button"
+                    id="meetingRooms"
+                    link="/meeting-rooms"
+                    tab-index="1"
+                    text="Meeting Rooms"
+                    type="primary"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="my-section-title"
+              >
+                My Section:
+              </div>,
+              <div
+                className="my-section-buttons"
+              >
+                <div
+                  className="button-border"
+                >
+                  <div
+                    className="my-section-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="account"
+                      link=""
+                      tab-index="1"
+                      text="My Account"
+                      type="primary"
+                    />
+                  </div>
+                  <div
+                    className="my-section-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="bookings"
+                      link=""
+                      tab-index="1"
+                      text="My Bookings"
+                      type="primary"
+                    />
+                  </div>
+                  <div
+                    className="my-section-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="watchedRooms"
+                      link="/watched-rooms"
+                      tab-index="1"
+                      text="My Watched Rooms"
+                      type="primary"
+                    />
+                  </div>
+                </div>
+              </div>,
+            ],
+            "className": "my-section",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "My Section:",
+                "className": "my-section-title",
+              },
+              "ref": null,
+              "rendered": "My Section:",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="button-border"
+                >
+                  <div
+                    className="my-section-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="account"
+                      link=""
+                      tab-index="1"
+                      text="My Account"
+                      type="primary"
+                    />
+                  </div>
+                  <div
+                    className="my-section-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="bookings"
+                      link=""
+                      tab-index="1"
+                      text="My Bookings"
+                      type="primary"
+                    />
+                  </div>
+                  <div
+                    className="my-section-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="watchedRooms"
+                      link="/watched-rooms"
+                      tab-index="1"
+                      text="My Watched Rooms"
+                      type="primary"
+                    />
+                  </div>
+                </div>,
+                "className": "my-section-buttons",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="my-section-button"
+                    >
+                      <LeftSideBarButton
+                        className="Button"
+                        id="account"
+                        link=""
+                        tab-index="1"
+                        text="My Account"
+                        type="primary"
+                      />
+                    </div>,
+                    <div
+                      className="my-section-button"
+                    >
+                      <LeftSideBarButton
+                        className="Button"
+                        id="bookings"
+                        link=""
+                        tab-index="1"
+                        text="My Bookings"
+                        type="primary"
+                      />
+                    </div>,
+                    <div
+                      className="my-section-button"
+                    >
+                      <LeftSideBarButton
+                        className="Button"
+                        id="watchedRooms"
+                        link="/watched-rooms"
+                        tab-index="1"
+                        text="My Watched Rooms"
+                        type="primary"
+                      />
+                    </div>,
+                  ],
+                  "className": "button-border",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <LeftSideBarButton
+                        className="Button"
+                        id="account"
+                        link=""
+                        tab-index="1"
+                        text="My Account"
+                        type="primary"
+                      />,
+                      "className": "my-section-button",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "className": "Button",
+                        "id": "account",
+                        "link": "",
+                        "tab-index": "1",
+                        "text": "My Account",
+                        "type": "primary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <LeftSideBarButton
+                        className="Button"
+                        id="bookings"
+                        link=""
+                        tab-index="1"
+                        text="My Bookings"
+                        type="primary"
+                      />,
+                      "className": "my-section-button",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "className": "Button",
+                        "id": "bookings",
+                        "link": "",
+                        "tab-index": "1",
+                        "text": "My Bookings",
+                        "type": "primary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <LeftSideBarButton
+                        className="Button"
+                        id="watchedRooms"
+                        link="/watched-rooms"
+                        tab-index="1"
+                        text="My Watched Rooms"
+                        type="primary"
+                      />,
+                      "className": "my-section-button",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "className": "Button",
+                        "id": "watchedRooms",
+                        "link": "/watched-rooms",
+                        "tab-index": "1",
+                        "text": "My Watched Rooms",
+                        "type": "primary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="rooms-title"
+              >
+                <span>
+                  Rooms:
+                </span>
+              </div>,
+              <div
+                className="rooms-buttons"
+              >
+                <div
+                  className="button-border"
+                >
+                  <div
+                    className="rooms-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="bookRoom"
+                      link=""
+                      tab-index="1"
+                      text="Book a Room"
+                      type="primary"
+                    />
+                  </div>
+                  <div
+                    className="rooms-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="searchRoom"
+                      link="/search-room"
+                      tab-index="1"
+                      text="Search a Room"
+                      type="primary"
+                    />
+                  </div>
+                  <div
+                    className="rooms-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="meetingRooms"
+                      link="/meeting-rooms"
+                      tab-index="1"
+                      text="Meeting Rooms"
+                      type="primary"
+                    />
+                  </div>
+                </div>
+              </div>,
+            ],
+            "className": "rooms",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <span>
+                  Rooms:
+                </span>,
+                "className": "rooms-title",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Rooms:",
+                },
+                "ref": null,
+                "rendered": "Rooms:",
+                "type": "span",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="button-border"
+                >
+                  <div
+                    className="rooms-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="bookRoom"
+                      link=""
+                      tab-index="1"
+                      text="Book a Room"
+                      type="primary"
+                    />
+                  </div>
+                  <div
+                    className="rooms-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="searchRoom"
+                      link="/search-room"
+                      tab-index="1"
+                      text="Search a Room"
+                      type="primary"
+                    />
+                  </div>
+                  <div
+                    className="rooms-button"
+                  >
+                    <LeftSideBarButton
+                      className="Button"
+                      id="meetingRooms"
+                      link="/meeting-rooms"
+                      tab-index="1"
+                      text="Meeting Rooms"
+                      type="primary"
+                    />
+                  </div>
+                </div>,
+                "className": "rooms-buttons",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="rooms-button"
+                    >
+                      <LeftSideBarButton
+                        className="Button"
+                        id="bookRoom"
+                        link=""
+                        tab-index="1"
+                        text="Book a Room"
+                        type="primary"
+                      />
+                    </div>,
+                    <div
+                      className="rooms-button"
+                    >
+                      <LeftSideBarButton
+                        className="Button"
+                        id="searchRoom"
+                        link="/search-room"
+                        tab-index="1"
+                        text="Search a Room"
+                        type="primary"
+                      />
+                    </div>,
+                    <div
+                      className="rooms-button"
+                    >
+                      <LeftSideBarButton
+                        className="Button"
+                        id="meetingRooms"
+                        link="/meeting-rooms"
+                        tab-index="1"
+                        text="Meeting Rooms"
+                        type="primary"
+                      />
+                    </div>,
+                  ],
+                  "className": "button-border",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <LeftSideBarButton
+                        className="Button"
+                        id="bookRoom"
+                        link=""
+                        tab-index="1"
+                        text="Book a Room"
+                        type="primary"
+                      />,
+                      "className": "rooms-button",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "className": "Button",
+                        "id": "bookRoom",
+                        "link": "",
+                        "tab-index": "1",
+                        "text": "Book a Room",
+                        "type": "primary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <LeftSideBarButton
+                        className="Button"
+                        id="searchRoom"
+                        link="/search-room"
+                        tab-index="1"
+                        text="Search a Room"
+                        type="primary"
+                      />,
+                      "className": "rooms-button",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "className": "Button",
+                        "id": "searchRoom",
+                        "link": "/search-room",
+                        "tab-index": "1",
+                        "text": "Search a Room",
+                        "type": "primary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <LeftSideBarButton
+                        className="Button"
+                        id="meetingRooms"
+                        link="/meeting-rooms"
+                        tab-index="1"
+                        text="Meeting Rooms"
+                        type="primary"
+                      />,
+                      "className": "rooms-button",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "className": "Button",
+                        "id": "meetingRooms",
+                        "link": "/meeting-rooms",
+                        "tab-index": "1",
+                        "text": "Meeting Rooms",
+                        "type": "primary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

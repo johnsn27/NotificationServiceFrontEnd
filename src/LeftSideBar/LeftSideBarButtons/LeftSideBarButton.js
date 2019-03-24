@@ -4,9 +4,10 @@ import Btn from '@bbc/igm-btn'
 import '@bbc/igm-btn/dist/Btn.css';
 import './LeftSideBarButton.css';
 
-function LeftSideBarButton({ type, tabIndex, className, link, text }) {
+function LeftSideBarButton({ id, type, tabIndex, className, link, text }) {
   return (
     <Btn
+    id={id}
       type={type}
       tab-index={tabIndex}
       className={className}
