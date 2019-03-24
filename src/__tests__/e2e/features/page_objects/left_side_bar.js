@@ -1,5 +1,5 @@
 module.exports = {
-
+  url: 'http://localhost:3000/',
   elements: {
     pageTitle: by.css(''),
     myAccountButton: by.css(''),
