@@ -1,0 +1,23 @@
+.upcoming-meetings-title {
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    padding-bottom: 16px;
+    padding-top: 8px;
+}
+
+.watched-meetings-title {
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    padding-bottom: 16px;
+    padding-top: 8px;
+}
+
+.watched-meetings-contents, .upcoming-meetings-contents {
+    border-style: solid;
+    display: flex;
+    float: left;
+    height: 224px;
+    max-height: 224px;
+    overflow-y: scroll;
+    width: 1000px;
+}

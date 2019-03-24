@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 import './BackClear.css';
 import Btn from '@bbc/igm-btn';
 
@@ -11,28 +12,20 @@ function onClick() {
 
 
 class BackClear extends Component {
-  constructor(props) {
-    super();
-    this.toggleBack = this.toggleBack.bind(this);
-    this.state = { DisplayLogin: props.DisplayLogin };
-  }
-
-  toggleBack() {
-    this.setState({ DisplayLogin: !this.state.DisplayLogin });
-  }
-
   render() {
     return (
-      <div className="back-clear-buttons">
-        <div className="back-button">
-          <Btn type="primary" tab-index="1" className="Button" onClick={this.toggleBack}>
-            <span>Back</span>
-          </Btn>
-        </div>
-        <div className="clear-button">
-          <Btn type="primary" tab-index="1" className="Button" onClick={onClick}>
-            <span>Clear</span>
-          </Btn>
+      <div className="back-clear-buttons-container">
+        <div className="back-clear-buttons">
+          <div className="back-button">
+            <Btn type="primary" tab-index="1" className="Button" onClick={this.props.history.goBack}>
+              <span>Back</span>
+            </Btn>
+          </div>
+          <div className="clear-button">
+            <Btn type="primary" tab-index="1" className="Button" onClick={onClick}>
+              <span>Clear</span>
+            </Btn>
+          </div>
         </div>
       </div>
     );
@@ -47,4 +40,4 @@ BackClear.defaultProps = {
   DisplayBack: false,
 }
 
-export default BackClear;
+export default withRouter(BackClear);
