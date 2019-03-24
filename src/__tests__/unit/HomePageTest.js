@@ -5,7 +5,7 @@ import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { Table } from 'react-toolbox'
 
-describe('Login', () => {
+describe('HomePage', () => {
     configure({ adapter: new Adapter() });
     let wrapper = shallow(<HomePage/>);
 
