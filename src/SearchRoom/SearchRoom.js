@@ -19,31 +19,31 @@ class SearchRoom extends Component {
                 <div className="search-room-contents">
                     <div className="search-room-contents-container">
                         <div className="textbox">
-                            <div className="label">
+                            <div className="label" id="room-name-label">
                                 <p>Room Name:</p>
                             </div>
-                            <textarea className="textarea" rows="2" id="name">
+                            <textarea className="textarea" id="room-name-textarea" rows="2">
                             </textarea>
                         </div>
                         <div className="textbox">
-                            <div className="label">
+                            <div className="label" id="location-label">
                                 <p>Location:</p>
                             </div>
-                            <textarea className="textarea" rows="2" id="location">
+                            <textarea className="textarea" id="location-textarea" rows="2">
                             </textarea>
                         </div>
                         <div className="textbox">
-                            <div className="label">
+                            <div className="label" id="floor-label">
                                 <p>Floor:</p>
                             </div>
-                            <textarea className="textarea" rows="2" id="floor">
+                            <textarea className="textarea" id="floor-textarea" rows="2">
                             </textarea>
                         </div>
                         <div className="textbox">
-                            <div className="label">
+                            <div className="label" id="capacity-label">
                                 <p>Capacity:</p>
                             </div>
-                            <textarea className="textarea" rows="2" id="capacity">
+                            <textarea className="textarea" id="capacity-textarea" rows="2">
                             </textarea>
                         </div>
                         <div className="advanced-search-button-container">
