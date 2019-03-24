@@ -97,7 +97,7 @@ export default class MeetingRooms extends Component {
           <table className="meeting-rooms-table">
             <thead>
               <tr>
-                <th>Room Name</th>
+                <th className="room-name-header">Room Name</th>
                 <th className="location-header">Location</th>
                 <th className="view-meeting-room-link-header"></th>
               </tr>
