@@ -42,7 +42,6 @@ export default class MeetingRooms extends Component {
   render() {
     const { rooms, displayDialog, activeRoom, dialogType, watched } = this.state;
     const urlParams = new URLSearchParams(window.location.search);
-    console.log(rooms)
     return (
       <div>
         <div className="meeting-rooms-title-container">
@@ -58,7 +57,7 @@ export default class MeetingRooms extends Component {
           {rooms.length ? <table className="meeting-rooms-table">
             <thead>
               <tr>
-                <th>Room Name</th>
+                <th className="room-name-header">Room Name</th>
                 <th className="location-header">Location</th>
                 <th>Book</th>
                 <th className="view-meeting-room-link-header"></th>

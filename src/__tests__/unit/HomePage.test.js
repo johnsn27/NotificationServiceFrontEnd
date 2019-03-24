@@ -34,59 +34,39 @@ describe('HomePage', () => {
     it('renders without crashing', () => {
       shallow(<HomePage />);
     });
-    console.log(wrapper);
-    it('upcoming meeting title heading is displayed', () => {
+
+    it('should display upcoming meeting title heading', () => {
         const element = wrapper.find('.upcoming-meetings-title');
         expect(element.text()).to.equal('Upcoming Meetings (2)');
     });
 
-    // it('contains upcoming meeting table', () => {
-    //     const element = wrapper.find('.upcoming-meetings-table');
-    //     expect(element).to.exist.and.be.a('table');
-    // });
 
-    it('contains correct upcoming meeting first column title', () => {
+    it('should contain upcoming meeting table', () => {
+        const element = wrapper.find('.upcoming-meetings-contents');
+        expect(element.find('table')).to.have.lengthOf(1);
+    });
+
+    it('should display correct upcoming meeting first column title', () => {
         const element = wrapper.find('#upcoming-name-title');
         expect(element.text()).to.equal('Name');
     });
 
-    it('contains correct upcoming meeting second column title', () => {
+    it('should display correct upcoming meeting second column title', () => {
         const element = wrapper.find('#upcoming-date-title');
         expect(element.text()).to.equal('Date');
     });
 
-    it('contains correct upcoming meeting third column title', () => {
+    it('should display correct upcoming meeting third column title', () => {
         const element = wrapper.find('#upcoming-time-title');
         expect(element.text()).to.equal('Time');
     });
 
-    it('contains correct upcoming meeting fourth column title', () => {
+    it('should display correct upcoming meeting fourth column title', () => {
         const element = wrapper.find('#upcoming-location-title');
         expect(element.text()).to.equal('Location');
     });
 
-    // it('watched meeting title heading is displayed', () => {
-    //     const element = wrapper.find('#watched-meetings-title');
-    //     expect(element.text()).to.equal('Watched Meetings (5)');
-    // });
-
-    // it('contains watched meeting table', () => {
-    //     const element = wrapper.find('.watched-meetings-contents');
-    // });
-
-    // it('contains correct watched meeting first column title', () => {
-    //     const element = wrapper.find('#watched-name-title');
-    //     expect(element.text()).to.equal('Name');
-    // });
-
-    // it('contains correct watched meeting second column title', () => {
-    //     const element = wrapper.find('#watched-location-title');
-    //     expect(element.text()).to.equal('Location');
-    // });
-
-    // it('contains correct watched meeting third column title', () => {
-    //     const element = wrapper.find('#watched-time-title');
-    //     expect(element.text()).to.equal('Time');
-    // });
-
-  });
+    it('should display watched meeting table', () => {
+        expect(wrapper.text()).to.include('<WatchedRooms />');
+    });
+});

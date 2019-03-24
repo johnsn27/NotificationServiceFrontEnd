@@ -26,10 +26,10 @@ class WatchedRooms extends Component {
         return (
             <div>
                 <div>
-                    <div className="upcoming-meetings-title">
+                    <div className="watched-meetings-title">
                         Watched Rooms ({watchedRooms.length})
                     </div>
-                    <div className="upcoming-meetings-contents">
+                    <div className="watched-meetings-contents">
                         {
                             watchedRooms.length ?
                             <table>
@@ -60,7 +60,6 @@ class WatchedRooms extends Component {
                                                 {room.Availability} {room.Availability === 'Available'
                                                     ? <div>- <button onClick={() => {
                                                         this.setDisplayDialog(true, {room: room, start: room.StartTime, end: room.EndTime})
-                                                        //bookRoom(room.WatchedId, null, room.StartTime, room.EndTime).then(unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res}))))
                                                     }}>Book</button></div>
                                                     : null}
                                             </td>
@@ -79,7 +78,10 @@ class WatchedRooms extends Component {
                         <WatchRoomDialog
                             dialogHidden={!displayDialog}
                             room={activeRoom}
-                            close={() => this.setDisplayDialog(false)}
+                            close={() => {
+                                this.setDisplayDialog(false);
+                                getWatchedRooms().then(res => this.setState({watchedRooms: res}));
+                            }}
                             type="Book"
                         />
                     </div>
