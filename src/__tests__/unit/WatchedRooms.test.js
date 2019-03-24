@@ -17,7 +17,7 @@ describe('WatchedRooms', () => {
         expect(element.text()).to.equal('Watched Meetings (4)');
     });
 
-    it('should display correct wheelchair support text box', () => {
+    it('should display watched meeting table', () => {
         const element = wrapper.find('.watched-meetings-contents');
         expect(element.find('table')).to.have.lengthOf(1);
     });
