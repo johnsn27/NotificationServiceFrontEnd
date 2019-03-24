@@ -7,16 +7,16 @@ class WatchedRooms extends Component {
         return (
             <div>
                 <div>
-                    <div className="upcoming-meetings-title">
-                        Upcoming Meetings (4)
+                    <div className="watched-meetings-title">
+                        Watched Meetings (4)
                     </div>
-                    <div className="upcoming-meetings-contents">
+                    <div className="watched-meetings-contents">
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Location</th>
-                                    <th>Next Available</th>
+                                    <th className="watched-name-title">Name</th>
+                                    <th className="watched-location-title">Location</th>
+                                    <th className="watched-next-available-title">Next Available</th>
                                 </tr>
                             </thead>
                             <tbody>
