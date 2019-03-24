@@ -25,13 +25,13 @@ class HomePage extends Component {
                     </div>
                     <div className="upcoming-meetings-contents">
                         { bookedRooms.length ?
-                            <table>
+                            <table id="upcoming-meetings-table">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Date</th>
-                                        <th>Time</th>
-                                        <th>Location</th>
+                                        <th id="upcoming-name-title">Name</th>
+                                        <th id="upcoming-date-title">Date</th>
+                                        <th id="upcoming-time-title">Time</th>
+                                        <th id="upcoming-location-title">Location</th>
                                     </tr>
                                 </thead>
                                 <tbody>

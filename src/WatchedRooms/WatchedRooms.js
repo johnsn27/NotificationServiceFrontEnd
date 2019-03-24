@@ -35,11 +35,11 @@ class WatchedRooms extends Component {
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Location</th>
-                                        <th>Time</th>
-                                        <th>Availability</th>
-                                        <th>Unwatch</th>
+                                        <th id="watched-name-title">Name</th>
+                                        <th id="watched-location-title">Location</th>
+                                        <th id="watched-time-title">Time</th>
+                                        <th id="watched-availability-title">Availability</th>
+                                        <th id="watched-unwatch-title">Unwatch</th>
                                     </tr>
                                 </thead>
                                 <tbody>
