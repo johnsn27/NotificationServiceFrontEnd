@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './MeetingRooms.css';
 import Btn from '@bbc/igm-btn';
-import { getRooms } from '../ApiHelperFunctions';
+import { getRooms, getWatchedRooms } from '../ApiHelperFunctions';
 import WatchRoomDialog from '../WatchRoomDialog/WatchRoomDialog';
 import '@bbc/igm-dialog-instance/dist/DialogInstance.css';
 
@@ -25,12 +25,14 @@ export default class MeetingRooms extends Component {
       rooms: [],
       activeRoom: {room: {}, start: null, end: null},
       displayDialog: false,
-      dialogType: 'Book'
+      dialogType: 'Book',
+      watched: []
     }
     this.setDisplayDialog = this.setDisplayDialog.bind(this);
   }
   componentDidMount() {
     updateRooms().then(res => this.setState({rooms: res}));
+    getWatchedRooms().then(res => this.setState({watched: res}));
   }
   setDisplayDialog(bool, room={room: {}, start: null, end: null}, type) {
     this.setState({dialogType: type})
@@ -38,16 +40,17 @@ export default class MeetingRooms extends Component {
     this.setState({activeRoom: room})
   }
   render() {
-    const { rooms, displayDialog, activeRoom, dialogType } = this.state;
+    const { rooms, displayDialog, activeRoom, dialogType, watched } = this.state;
     const urlParams = new URLSearchParams(window.location.search);
+    console.log(rooms)
     return (
       <div>
         <div className="meeting-rooms-title-container">
           <div className="meeting-rooms-title">
-            Meeting rooms near you:
+            Matching meeting rooms:
           </div>
-          <Btn className="change-location-button">
-            Change location
+          <Btn className="change-location-button" onClick={() => {window.location.href = '/search-room'}}>
+            Change search
           </Btn>
         </div>
 
@@ -73,10 +76,9 @@ export default class MeetingRooms extends Component {
                         {room.Location}
                       </td>
                       <td>
-                        {room.Availability === 'Available' ? null : 'Unavailable'}
-                        <button button disabled={false} onClick={() => {
+                        <button button disabled={room.Availability === 'Available' ? false : watched.some(r => r.RoomId === room.id && r.StartTime === urlParams.get('start') && r.EndTime === urlParams.get('end'))} onClick={() => {
                             this.setDisplayDialog(true, {room: room, start: urlParams.get('start') || null, end: urlParams.get('end') || null}, room.Availability === 'Available' ? 'Book' : 'Watch')
-                          }}>{room.Availability === 'Available' ? 'Book' : true ? 'Watch' : 'Already watching'}</button>
+                          }}>{room.Availability === 'Available' ? 'Book' : 'Watch'}</button>
                       </td> 
                       <td className="view-room-link">
                         <a href={`/view-room/${room.id}`}>view</a>
