@@ -86,7 +86,12 @@ export default class WatchRoomDialog extends Component {
                 }
                 dialogFooter={<div>
                     <button onClick={() => {type === 'Book'
-                        ? bookRoom(room.room.id, document.getElementById('meeting-name').value, room.start, room.end).then(res => {(res.status === 500) ? this.showError() : close()})
+                        ? bookRoom(
+                            room.room.id,
+                            document.getElementById('meeting-name').value,
+                            `${(new Date(document.getElementById('date').value).toISOString()).slice(0,10)} ${document.getElementById('start').value}:00`,
+                            `${(new Date(document.getElementById('date').value).toISOString()).slice(0,10)} ${document.getElementById('end').value}:00`,
+                        ).then(res => {(res.status === 500) ? this.showError() : close()})
                         : watchRoom(room.room.id, 0, room.start, room.end).then(close())
                     }}>Confirm</button>
                     <button onClick={close}>Cancel</button>

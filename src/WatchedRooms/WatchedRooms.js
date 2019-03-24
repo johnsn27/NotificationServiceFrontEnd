@@ -64,7 +64,6 @@ class WatchedRooms extends Component {
                                                     : null}
                                             </td>
                                             <td>
-                                                {room.WatchedId}
                                                 <button onClick={() => {unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res})))}}>Unwatch</button>
                                             </td>
                                         </tr>
