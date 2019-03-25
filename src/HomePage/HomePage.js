@@ -54,7 +54,7 @@ class HomePage extends Component {
                                                     {room.Location} {room.RoomName}
                                                 </td>
                                                 <td>
-                                                    <button onClick={() => {cancelBooking(room.BookingId)}}>Cancel</button>
+                                                    <button onClick={() => {cancelBooking(room.BookingId).then(getBookedRooms().then(res => this.setState({bookedRooms: res})))}}>Cancel</button>
                                                 </td>
                                             </tr>
                                             );
