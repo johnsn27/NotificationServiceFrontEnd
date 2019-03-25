@@ -6,15 +6,24 @@ import ViewRoom from '../../ViewRoom/ViewRoom';
 
 describe('ViewRoom', () => {
     configure({ adapter: new Adapter() });
-    let wrapper = shallow(<ViewRoom/>);
+    let wrapper = shallow(<ViewRoom match={{params: {id: 1}}}/>);
+    wrapper.setState({roomInfo: {
+        id: 3,
+        Name: "Marie Curie",
+        Location: "BC5 D5 M3",
+        Floor: "5",
+        Capacity: 4,
+        Building: "White City",
+        Availability: "Available"
+    }});
 
     it('renders without crashing', () => {
-      shallow(<ViewRoom />);
+      shallow(<ViewRoom match={{params: {id: 1}}}/>);
     });
 
     it('should display view room title', () => {
         const element = wrapper.find('.view-room-title');
-        expect(element.text()).to.equal('Studio 1 06 E M1');
+        expect(element.text()).to.equal('Marie Curie BC5 D5 M3');
     });
 
 

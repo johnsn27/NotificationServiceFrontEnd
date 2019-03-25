@@ -7,8 +7,13 @@ class Login extends Component {
     return (
       <div className="App">
         <header className="App-header"></header>
+        <label htmlFor="user-id">Enter user ID: </label>
+        <input id="user-id"/>
         <div className="login-button">
-          <Btn type="primary" tab-index="1" className="Button" onClick={() => window.location.href = '/home'}>
+          <Btn type="primary" tab-index="1" className="Button" onClick={() => {
+            localStorage.setItem("userId", document.getElementById("user-id").value)
+            window.location.href = '/home';
+          }}>
             <span>Login</span>
           </Btn>
         </div>
