@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './HomePage.css';
-import { getBookedRooms, getWatchedRooms, convertDate } from '../ApiHelperFunctions';
+import { getBookedRooms, getWatchedRooms, convertDate, cancelBooking } from '../ApiHelperFunctions';
 import WatchedRooms from '../WatchedRooms/WatchedRooms';
 
 class HomePage extends Component {
@@ -32,6 +32,7 @@ class HomePage extends Component {
                                         <th id="upcoming-date-title">Date</th>
                                         <th id="upcoming-time-title">Time</th>
                                         <th id="upcoming-location-title">Location</th>
+                                        <th>Cancel</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -51,6 +52,9 @@ class HomePage extends Component {
                                                 </td>
                                                 <td>
                                                     {room.Location} {room.RoomName}
+                                                </td>
+                                                <td>
+                                                    <button onClick={() => {cancelBooking(room.BookingId)}}>Cancel</button>
                                                 </td>
                                             </tr>
                                             );

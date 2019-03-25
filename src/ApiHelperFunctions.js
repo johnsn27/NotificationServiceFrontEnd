@@ -99,3 +99,13 @@ export const convertDate = (date) => {
     const formattedDate = new Date(date);
     return `${formattedDate.toLocaleDateString()} ${formattedDate.toTimeString()}`.slice(0, 16)
 }
+
+export const cancelBooking = async (bookingId) => {
+  const res = await fetch(`http://127.0.0.1:5000/delete-booking/${bookingId}`, {
+    method: 'DELETE',
+    headers: {
+        Accept: 'application/json',
+    },
+  });
+  console.log(await res.json());
+}
