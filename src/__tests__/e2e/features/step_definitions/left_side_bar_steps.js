@@ -6,22 +6,6 @@ module.exports = function () {
     return helpers.loadPage('http://localhost:3000/home');
   });
 
-  // this.When(/^I select My Account button$/, function () {
-  //   return page.selectMyAccountButton();
-  // });
-
-  // this.Then(/^I see the My Account page$/, function () {
-  //   return page.checkMyAccountPage();
-  // });
-
-  // this.When(/^I select My Bookings button$/, function () {
-  //   return page.selectMyBookingsButton();
-  // });
-
-  // this.Then(/^I see the My Bookings page$/, function () {
-  //   return page.checkMyBookingsPage();
-  // });
-
   this.When(/^I select My Watched Rooms button$/, function () {
     return page.selectMyWatchedRoomsButton();
   });
@@ -29,14 +13,6 @@ module.exports = function () {
   this.Then(/^I see the My Watched Rooms page$/, function () {
     return page.checkMyWatchedRoomsPage();
   });
-
-  // this.When(/^I select Book a Room button$/, function () {
-  //   return page.selectBookARoomButton();
-  // });
-
-  // this.Then(/^I see the Book a Room page$/, function () {
-  //   return page.checkBookARoomPage();
-  // });
 
   this.When(/^I select Search a Room button$/, function () {
     return page.selectSearchARoomButton();
