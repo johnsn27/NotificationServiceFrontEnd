@@ -3,9 +3,7 @@
 exports[`Login matches snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Login
-    DisplayViewRoom={false}
-  />,
+  Symbol(enzyme.__unrendered__): <Login />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -23,8 +21,16 @@ ShallowWrapper {
         <header
           className="App-header"
         />,
+        <label
+          htmlFor="user-id"
+        >
+          Enter user ID: 
+        </label>,
+        <input
+          id="user-id"
+        />,
         <div
-          className="LoginButton"
+          className="login-button"
         >
           <Btn
             className="Button"
@@ -60,6 +66,29 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "Enter user ID: ",
+          "htmlFor": "user-id",
+        },
+        "ref": null,
+        "rendered": "Enter user ID: ",
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "id": "user-id",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": <Btn
             className="Button"
             disabled={false}
@@ -72,7 +101,7 @@ ShallowWrapper {
               Login
             </span>
           </Btn>,
-          "className": "LoginButton",
+          "className": "login-button",
         },
         "ref": null,
         "rendered": Object {
@@ -119,8 +148,16 @@ ShallowWrapper {
           <header
             className="App-header"
           />,
+          <label
+            htmlFor="user-id"
+          >
+            Enter user ID: 
+          </label>,
+          <input
+            id="user-id"
+          />,
           <div
-            className="LoginButton"
+            className="login-button"
           >
             <Btn
               className="Button"
@@ -156,6 +193,29 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "Enter user ID: ",
+            "htmlFor": "user-id",
+          },
+          "ref": null,
+          "rendered": "Enter user ID: ",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "id": "user-id",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": <Btn
               className="Button"
               disabled={false}
@@ -168,7 +228,7 @@ ShallowWrapper {
                 Login
               </span>
             </Btn>,
-            "className": "LoginButton",
+            "className": "login-button",
           },
           "ref": null,
           "rendered": Object {

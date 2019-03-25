@@ -895,6 +895,24 @@
     "@bbc/igm-base" "1.0.0"
     classnames "^2.2.5"
 
+"@bbc/igm-dialog-instance@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@bbc/igm-dialog-instance/-/igm-dialog-instance-2.2.1.tgz#d8a77f83e2989067a0cbfe91ed0a668727a6253a"
+  integrity sha512-vUh84RKGVazXCT4vY4qI61x9E0/sRlwyh/RCH0YMVhtPxLajvRx34C+pIilnZa38s2E+a6kcDgc6H1n2LTTqlg==
+  dependencies:
+    "@bbc/igm-base" "^1.1.0"
+    "@bbc/igm-dialog" "^1.5.0"
+    "@bbc/igm-overlay" "^1.4.0"
+    classnames "^2.2.5"
+
+"@bbc/igm-dialog@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@bbc/igm-dialog/-/igm-dialog-1.5.0.tgz#dc0bba2ff657ce152d4dcaae448217076aae4053"
+  integrity sha512-USaAnwCKHO1cFQKezCxIuUCKfvUAsVNcwUpBLq62dxwuwPhexY/abDNk2zDhlPZcRjAK5G7nEhSt18AzRMf32Q==
+  dependencies:
+    "@bbc/igm-base" "^1.1.0"
+    classnames "^2.2.5"
+
 "@bbc/igm-dropdown-select@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@bbc/igm-dropdown-select/-/igm-dropdown-select-2.0.0.tgz#ff1919f40b10b62a33ab50bd2d4603f6c4cdfb5a"
@@ -903,6 +921,14 @@
     "@bbc/igm-base" "^1.1.0"
     classnames "^2.2.5"
     react-select "^2.1.2"
+
+"@bbc/igm-overlay@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@bbc/igm-overlay/-/igm-overlay-1.4.0.tgz#c9e78e13818ca528e1dab37bc1779e0a8d502948"
+  integrity sha1-yeeOE4GMpSjh2rN7wXeeCo1QKUg=
+  dependencies:
+    "@bbc/igm-base" "1.0.0"
+    classnames "^2.2.5"
 
 "@bbc/igm-sticky-bar@^4.1.0":
   version "4.1.0"

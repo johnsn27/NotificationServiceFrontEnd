@@ -1,52 +1,88 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './WatchedRooms.css';
+import { getWatchedRooms, unwatchRoom, convertDate } from '../ApiHelperFunctions';
+import WatchRoomDialog from '../WatchRoomDialog/WatchRoomDialog';
 
 class WatchedRooms extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          watchedRooms: [],
+          activeRoom : { room: { room: {} }, start: null, end: null },
+          displayDialog: false
+        }
+        this.setDisplayDialog = this.setDisplayDialog.bind(this);
+      }
+    componentDidMount() {
+        getWatchedRooms().then(res => this.setState({watchedRooms: res}));
+    }
+    setDisplayDialog(bool, room={room: {}, start: null, end: null}) {
+        this.setState({displayDialog: bool})
+        this.setState({activeRoom: room})
+    }
     render() {
+        const { watchedRooms, activeRoom, displayDialog } = this.state;
         return (
             <div>
                 <div>
                     <div className="watched-meetings-title">
-                        Watched Meetings (4)
+                        Watched Rooms ({watchedRooms.length})
                     </div>
                     <div className="watched-meetings-contents">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th className="watched-name-title">Name</th>
-                                    <th className="watched-location-title">Location</th>
-                                    <th className="watched-next-available-title">Next Available</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Studio 3</td>
-                                    <td>NBH 06 E M2 Studio</td>
-                                    <td>19/02/2019 at 13:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Kari Blackburn</td>
-                                    <td>NBH 04 Collboration Zone</td>
-                                    <td>26/03/2019 at 09:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Peter Eckersley</td>
-                                    <td>BC4 D5 M2 Picasso</td>
-                                    <td>09/04/2019 at 18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Nice To See You</td>
-                                    <td>NBH 03 C M3 Gerard Manell VC</td>
-                                    <td>17/04/2019 at 11:30</td>
-                                </tr>
-                                <tr>
-                                    <td>Kiev</td>
-                                    <td>NBH 07 B M3 Studio</td>
-                                    <td>23/05/2019 at 14:00</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        {
+                            watchedRooms.length ?
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th id="watched-name-title">Name</th>
+                                        <th id="watched-location-title">Location</th>
+                                        <th id="watched-time-title">Time</th>
+                                        <th id="watched-availability-title">Availability</th>
+                                        <th id="watched-unwatch-title">Unwatch</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                {
+                                    watchedRooms.map(room => {
+                                        return (
+                                        <tr>
+                                            <td>
+                                                {room.RoomName}
+                                            </td>
+                                            <td>
+                                                {room.Location}
+                                            </td>
+                                            <td>
+                                                {convertDate(room.StartTime)} - {convertDate(room.EndTime).slice(11)}
+                                            </td>
+                                            <td>
+                                                {room.Availability} {room.Availability === 'Available'
+                                                    ? <div>- <button onClick={() => {
+                                                        this.setDisplayDialog(true, {room: room, start: room.StartTime, end: room.EndTime})
+                                                    }}>Book</button></div>
+                                                    : null}
+                                            </td>
+                                            <td>
+                                                <button onClick={() => {unwatchRoom(room.WatchedId).then(getWatchedRooms().then(res => this.setState({watchedRooms: res})))}}>Unwatch</button>
+                                            </td>
+                                        </tr>
+                                        );
+                                    }) 
+                                }
+                                </tbody>
+                            </table>
+                            : 'You are not currently watching any rooms'
+                        }
+                        <WatchRoomDialog
+                            dialogHidden={!displayDialog}
+                            room={activeRoom}
+                            close={() => {
+                                this.setDisplayDialog(false);
+                                getWatchedRooms().then(res => this.setState({watchedRooms: res}));
+                            }}
+                            type="Book"
+                        />
                     </div>
                 </div>
             </div>

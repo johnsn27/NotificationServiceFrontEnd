@@ -14,7 +14,7 @@ import MeetingRooms from '../MeetingRooms/MeetingRooms';
 const Content = () => {
   return (
     <Switch>
-      <Route path='/view-room' component={ViewRoom}/>
+      <Route path='/view-room/:id' component={ViewRoom}/>
       <Route path='/search-room' component={SearchRoom}/>
       <Route path='/watched-rooms' component={WatchedRooms}/>
       <Route path='/meeting-rooms' component={MeetingRooms}/>
@@ -38,7 +38,7 @@ class Test extends Component {
   render() {
      const pageTitle = () => {
       switch(this.props.location.pathname){
-        case '/view-room':
+        case `/view-room`:
           return 'View Room';
         case '/search-room':
           return 'Search Room';
