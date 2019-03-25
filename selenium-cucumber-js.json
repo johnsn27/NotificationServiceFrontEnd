@@ -1,0 +1,7 @@
+{
+    "steps": "./src/__tests__/e2e/features/step_definitions",
+    "pageObjects": "./src/__tests__/e2e/features/page_objects",
+    "sharedObjects": "./src/__tests__/e2e/features/shared_objects",
+    "reports": "./src/__tests__/e2e/features/reports",
+    "timeout": 60000
+}

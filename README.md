@@ -23,3 +23,6 @@ PS: The page will automatically refresh as changes to the code are made.
 ## Directory Structure
 
 ## Testing
+
+### Automation Tests
+Run command `yarn test:e2e` to start the selenium-cucumber-js tests.
