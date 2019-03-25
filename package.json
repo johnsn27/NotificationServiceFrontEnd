@@ -64,7 +64,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --coverage",
-    "test:e2e": "node ./node_modules/selenium-cucumber-js/index.js"
+    "test:e2e": "yarn start & node ./node_modules/selenium-cucumber-js/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"

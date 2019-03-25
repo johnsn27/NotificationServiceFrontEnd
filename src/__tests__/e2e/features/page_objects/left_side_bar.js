@@ -10,58 +10,55 @@ module.exports = {
     meetingRoomsButton: by.css(''),
   },
 
-  selectMyAccountButton: function() {
-    return driver.findElement({myAccountButton}).click();
-  },
+  // selectMyAccountButton: function() {
+  //   return driver.findElement({myAccountButton}).click();
+  // },
 
-  checkMyAccountPage: function() {
-    let result = driver.findElement({pageTitle}).getText();
-    return assert.ok(result.includes('My Account'));
-  },
+  // checkMyAccountPage: function() {
+  //   let result = driver.findElement({pageTitle}).getText();
+  //   return assert.ok(result.includes('My Account'));
+  // },
 
-  selectMyBookingsButton: function() {
-    return driver.findElement({myBookingsButton}).click();
-  },
+  // selectMyBookingsButton: function() {
+  //   return driver.findElement({myBookingsButton}).click();
+  // },
 
-  checkMyBookingsPage: function() {
-    let result = driver.findElement({pageTitle}).getText();
-    return assert.ok(result.includes('My Bookings'));
-  },
+  // checkMyBookingsPage: function() {
+  //   let result = driver.findElement({pageTitle}).getText();
+  //   return assert.ok(result.includes('My Bookings'));
+  // },
 
   selectMyWatchedRoomsButton: function() {
-    return driver.findElement({myWatchedRoomsButton}).click();
+    return driver.findElement(By.css('#watchedRooms')).click();
   },
 
   checkMyWatchedRoomsPage: function() {
-    let result = driver.findElement({pageTitle}).getText();
-    return assert.ok(result.includes('My Watched Rooms'));
+    return driver.findElement(By.css('.sticky-bar')).getText().then(result => expect(result).to.equal('My Watched Rooms'));
   },
 
-  selectBookARoomButton: function() {
-    return driver.findElement({bookARoomButton}).click();
-  },
+  // selectBookARoomButton: function() {
+  //   return driver.findElement({bookARoomButton}).click();
+  // },
 
-  checkBookARoomPage: function() {
-    let result = driver.findElement({pageTitle}).getText();
-    return assert.ok(result.includes('Book a Room'));
-  },
+  // checkBookARoomPage: function() {
+  //   let result = driver.findElement({pageTitle}).getText();
+  //   return assert.ok(result.includes('Book a Room'));
+  // },
 
   selectSearchARoomButton: function() {
-    return driver.findElement({searchARoomButton}).click();
+    return driver.findElement(By.css('#searchRoom')).click();
   },
 
   checkSearchARoomPage: function() {
-    let result = driver.findElement({pageTitle}).getText();
-    return assert.ok(result.includes('Search a Room'));
+    return driver.findElement(By.css('.sticky-bar')).getText().then(result => expect(result).to.equal('Search Room'));
   },
 
   selectMeetingRoomsButton: function() {
-    return driver.findElement({meetingRoomsButton}).click();
+    return driver.findElement(By.css('#meetingRooms')).click();
   },
 
   checkMeetingRoomsPage: function() {
-    let result = driver.findElement({pageTitle}).getText();
-    return assert.ok(result.includes('Meeting Rooms'));
+    return driver.findElement(By.css('.sticky-bar')).getText().then(result => expect(result).to.equal('Meeting Rooms'));
   }
 
 };
