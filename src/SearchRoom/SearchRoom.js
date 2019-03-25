@@ -69,15 +69,15 @@ class SearchRoom extends Component {
                                     tab-index="1"
                                     className="Button"
                                     onClick={() => {
-                                        const floor = document.getElementById('floor').value;
-                                        const roomName = document.getElementById('name').value;
-                                        const location = document.getElementById('location').value;
+                                        const floor = document.getElementById('floor-textarea').value;
+                                        const roomName = document.getElementById('room-name-textarea').value;
+                                        const location = document.getElementById('location-textarea').value;
                                         const date = document.getElementById('date').value && (new Date(document.getElementById('date').value).toISOString()).slice(0,10);
                                         const startTime = document.getElementById('start-time').value;
                                         const endTime = document.getElementById('end-time').value;
                                         window.location.href = (
                                                 `/meeting-rooms?capacity=${
-                                                    document.getElementById('capacity').value
+                                                    document.getElementById('capacity-textarea').value
                                                 }${
                                                     roomName  && `&name=${roomName.replace(' ', '%20')}`
                                                 }${

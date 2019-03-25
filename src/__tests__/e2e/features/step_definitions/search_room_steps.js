@@ -15,35 +15,27 @@ module.exports = function () {
   });
 
   this.Then(/^the results should show Luther$/, function () {
-    // Write code here that turns the phrase above into concrete actions
+    return page.checkResultsContainRoom('Luther');
   });
+  
+  this.When(/^I enter a date, start and end times$/, function () {
+    return page.setTimes();
+  })
 
   this.When(/^the unavailable checkbox is not ticked$/, function () {
-    // Write code here that turns the phrase above into concrete actions
+    return page.setUnavailableCheckbox(false);
   });
 
   this.Then(/^the results should not show any unavailable rooms$/, function () {
-    // Write code here that turns the phrase above into concrete actions
+    return page.containsUnavailableRooms(false);
   });
 
   this.When(/^I tick the unavailable checkbox$/, function () {
-    // Write code here that turns the phrase above into concrete actions
+    return page.setUnavailableCheckbox(true);
   });
 
   this.Then(/^the results should include unavailable rooms$/, function () {
-    // Write code here that turns the phrase above into concrete actions
-  });
-
-  this.When(/^I enter a start time$/, function () {
-    // Write code here that turns the phrase above into concrete actions
-  });
-
-  this.When(/^I enter a end time before the start time$/, function () {
-    // Write code here that turns the phrase above into concrete actions
-  });
-
-  this.Then(/^I should recieve an error$/, function () {
-    // Write code here that turns the phrase above into concrete actions
+    return page.containsUnavailableRooms(true);
   });
 
 };
