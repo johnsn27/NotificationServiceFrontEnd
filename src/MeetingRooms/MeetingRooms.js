@@ -14,7 +14,7 @@ const updateRooms = () => {
   const capacity = urlParams.get('capacity') || 0;
   const startTime = urlParams.get('start') || null;
   const endTime = urlParams.get('end') || null;
-  const showUnavailable = urlParams.get('view_unavailable') || false;
+  const showUnavailable = urlParams.get('show_unavailable') || false;
   return getRooms(name, location, floor, capacity, startTime, endTime, showUnavailable);
 }
 
