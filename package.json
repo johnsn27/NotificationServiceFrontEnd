@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "7.1.6",
     "@bbc/igm-btn": "^2.0.0",
+    "@bbc/igm-dialog-instance": "^2.2.1",
     "@bbc/igm-dropdown-select": "^2.0.0",
     "@bbc/igm-sticky-bar": "^4.1.0",
     "@svgr/webpack": "2.4.1",
@@ -49,6 +50,7 @@
     "react-dev-utils": "^7.0.1",
     "react-dom": "^16.7.0",
     "react-test-renderer": "^16.7.0",
+    "react-toolbox": "^2.0.0-beta.13",
     "resolve": "1.8.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
@@ -75,7 +77,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "chai": "^4.2.0",
     "cucumber": "^5.1.0",
+    "mocha": "^6.0.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1"
   },

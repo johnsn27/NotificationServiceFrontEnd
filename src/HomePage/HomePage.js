@@ -1,97 +1,72 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './HomePage.css';
+import { getBookedRooms, getWatchedRooms, convertDate, cancelBooking } from '../ApiHelperFunctions';
+import WatchedRooms from '../WatchedRooms/WatchedRooms';
 
 class HomePage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          bookedRooms: [],
+        }
+      }
+    componentDidMount() {
+        getBookedRooms().then(res => this.setState({bookedRooms: res}));
+        getWatchedRooms().then(res => this.setState({watchedRooms: res}));
+    }
     render() {
+        const { bookedRooms } = this.state;
         return (
             <div>
                 <div>
                     <div className="upcoming-meetings-title">
-                        Upcoming Meetings (4)
+                        Upcoming Meetings ({bookedRooms.length})
                     </div>
                     <div className="upcoming-meetings-contents">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Date</th>
-                                    <th>Time</th>
-                                    <th>Location</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Project</td>
-                                    <td>07/01/2019</td>
-                                    <td>16:00- 17:30</td>
-                                    <td>BC5 D5 M3 Marie Curie</td>
-                                </tr>
-                                <tr>
-                                    <td>Sprint Review</td>
-                                    <td>12/01/2019</td>
-                                    <td>10:00- 12:00</td>
-                                    <td>NBH 06 B M4 Kiev</td>
-                                </tr>
-                                <tr>
-                                    <td>Retrospective</td>
-                                    <td>25/01/2019</td>
-                                    <td>15:00- 17:00</td>
-                                    <td>BC2 D4 M2 Animal Magic</td>
-                                </tr>
-                                <tr>
-                                    <td>Project</td>
-                                    <td>28/01/2019</td>
-                                    <td>16:00- 17:30</td>
-                                    <td>BC5 D5 M3 Marie Curie</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        { bookedRooms.length ?
+                            <table id="upcoming-meetings-table">
+                                <thead>
+                                    <tr>
+                                        <th id="upcoming-name-title">Name</th>
+                                        <th id="upcoming-date-title">Date</th>
+                                        <th id="upcoming-time-title">Time</th>
+                                        <th id="upcoming-location-title">Location</th>
+                                        <th>Cancel</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {
+                                        bookedRooms.map(room => {
+                                            const startTime = convertDate(room.StartTime);
+                                            return (
+                                            <tr>
+                                                <td>
+                                                    {room.MeetingName}
+                                                </td>
+                                                <td>
+                                                    {startTime.slice(0, 10)}
+                                                </td>
+                                                <td>
+                                                    {startTime.slice(11)} - {convertDate(room.EndTime).slice(11)}
+                                                </td>
+                                                <td>
+                                                    {room.Location} {room.RoomName}
+                                                </td>
+                                                <td>
+                                                    <button onClick={() => {cancelBooking(room.BookingId).then(getBookedRooms().then(res => this.setState({bookedRooms: res})))}}>Cancel</button>
+                                                </td>
+                                            </tr>
+                                            );
+                                        }) 
+                                    }
+                                </tbody>
+                            </table>
+                            : 'You do not have any upcoming meetings'
+                        }
                     </div>
                 </div>
-                <div>
-                    <div className="watched-meetings-title">
-                        Watched Meetings (5)
-                    </div>
-                    <div className="watched-meetings-contents">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Location</th>
-                                    <th>Next Available</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Project</td>
-                                    <td>NBH 06 E M2 Studio 1</td>
-                                    <td>19/02/2019 at 13:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Sprint Review</td>
-                                    <td>NBH 04 Collaboration Zone</td>
-                                    <td>26/03/2019 at 09:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Retrospective</td>
-                                    <td>BC4 D5 M2 Picsso</td>
-                                    <td>09/04/2019 at 18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Project</td>
-                                    <td>NBH 06 E M2 Studio 1</td>
-                                    <td>15/04/2019 at 17:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Sprint Review</td>
-                                    <td>NBH 04 Collaboration Zone</td>
-                                    <td>07/05/2019 at 12:00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <WatchedRooms/>
             </div>
         );
     }

@@ -17,6 +17,9 @@ require('../config/env');
 
 
 const jest = require('jest');
+// const chai = require('chai');
+// const mocha = require('mocha');
+
 const execSync = require('child_process').execSync;
 let argv = process.argv.slice(2);
 
@@ -49,5 +52,7 @@ if (
   argv.push(hasSourceControl ? '--watch' : '--watchAll');
 }
 
-
 jest.run(argv);
+// chai.run(argv);
+// mocha.run(argv);
+
