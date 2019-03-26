@@ -1,59 +1,124 @@
-.meeting-rooms-title {
-  display: inline-block;
-  font-size: var(--title-font-size);
-  font-weight: bold;
-  padding-bottom: 8px;
-  padding-top: 8px;
+@media only screen and (min-width: 1000px) {
+
+  .meeting-rooms-title {
+    display: inline-block;
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    width: 100%;
+  }
+
+  .meeting-rooms-contents {
+    border-style: solid;
+    display: flex;
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow-y: scroll;
+  }
+
+  .room-data td {
+    border-bottom: 2px solid black;
+  }
+
+  .meeting-rooms-table th {
+    border: 1px solid black;
+    text-align: left;
+  }
+
+  .meeting-rooms-table .view-meeting-room-link-header {
+    border-left: 0px
+  }
+
+  .meeting-rooms-table .location-header {
+    border-right: 0px;
+  }
+
+  .meeting-rooms-table th, td {
+    width: 50%;
+  }
+
+  .change-location-button {
+    background-color: #404042 !important;
+    color: white !important;
+    float: right;
+  }
+
+  .meeting-rooms-title-container {
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+
+  .view-room-link {
+    text-align: right;
+  }
+
+  .view-room-link a {
+    color: grey;
+  }
 }
 
-.meeting-rooms-contents {
-  border-style: solid;
-  display: flex;
-  float: left;
-  width: 1000px;
-  height: 568px;
-  margin: 0px;
-  overflow-y: scroll;
-}
+@media only screen and (max-width: 1000px) {
 
-.room-data td {
-  border-bottom: 2px solid black;
-}
+  .meeting-rooms-title {
+    display: inline-block;
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    width: 98%;
+  }
 
-.meeting-rooms-table th {
-  border: 1px solid black;
-  text-align: left;
-}
+  .meeting-rooms-contents {
+    border-style: solid;
+    display: flex;
+    float: left;
+    width: 98%;
+    height: 100%;
+    margin: 1%;
+    overflow-y: scroll;
+  }
 
-.meeting-rooms-table .view-meeting-room-link-header {
-  border-left: 0px
-}
+  .room-data td {
+    border-bottom: 2px solid black;
+  }
 
-.meeting-rooms-table .location-header {
-  border-right: 0px;
-}
+  .meeting-rooms-table th {
+    border: 1px solid black;
+    text-align: left;
+  }
 
-.meeting-rooms-table th, td {
-  padding: 8px;
-  width: 50%;
-}
+  .meeting-rooms-table .view-meeting-room-link-header {
+    border-left: 0px
+  }
 
-.change-location-button {
-  background-color: #404042 !important;
-  color: white !important;
-  float: right;
-}
+  .meeting-rooms-table .location-header {
+    border-right: 0px;
+  }
 
-.meeting-rooms-title-container {
-  height: 48px;
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
+  .meeting-rooms-table th, td {
+    width: 50%;
+  }
 
-.view-room-link {
-  text-align: right;
-}
+  .change-location-button {
+    background-color: #404042 !important;
+    color: white !important;
+    float: right;
+  }
 
-.view-room-link a {
-  color: grey;
+  .meeting-rooms-title-container {
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+
+  .view-room-link {
+    text-align: right;
+  }
+
+  .view-room-link a {
+    color: grey;
+  }
+
 }

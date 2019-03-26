@@ -11,6 +11,8 @@
 .back-clear-buttons {
   margin: 0 auto;
   display: flex;
+  width: 50%;
+  height: 52%;
 }
 
 .back-button {
@@ -18,9 +20,9 @@
   border-style: solid;
   display: flex;
   flex-direction: column;
-  height: 48px;
+  height: 100%;
   justify-content: space-between;
-  width: 216px;
+  width: 44%;
 }
 
 .clear-button {
@@ -28,8 +30,8 @@
   border-style: solid;
   display: flex;
   flex-direction: column;
-  height: 48px;
+  height: 100%;
   justify-content: space-between;
-  margin-left: 16px;
-  width: 216px;
+  margin-left: 4%;
+  width: 44%;
 }

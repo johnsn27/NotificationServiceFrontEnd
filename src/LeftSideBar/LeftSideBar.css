@@ -1,72 +1,126 @@
-:root {
-  --Image-size: 200px;
-  --title-font-size: 20px;
-  --text-font-size: 18px;
-}
-.my-section-button {
-  align-items: center;
-  border-radius: 8px;
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-  margin-left: 24px;
-  margin-top: 16px;
-  width: 216px;
+@media only screen and (min-width: 1000px) {
+  .my-section-button {
+    align-items: center;
+    border-radius: 8px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    width: 80%;
+    min-width: 112px;
+  }
+
+  .rooms-button {
+    align-items: center;
+    border-radius: 8px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    width: 80%;
+    min-width: 112px;
+  }
+
+  .rooms {
+    float: left;
+    position: relative;
+    width: 100%;
+  }
+
+  .rooms-title {
+    float: left;
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    margin: 4%;
+  }
+
+  .rooms-buttons {
+    float: left;
+    width: 80%;
+  }
+
+  .my-section {
+    float: left;
+    width: 80%;
+  }
+
+  .my-section-title {
+    float: left;
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    margin: 4%;
+  }
+
+  .my-section-buttons {
+    float: left;
+    width: 100%;
+  }
+
+  .button-border {
+    border-style: solid;
+  }
 }
 
-.rooms-button {
-  align-items: center;
-  border-radius: 8px;
-  border-style: solid;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-  margin-left: 24px;
-  margin-top: 16px;
-  width: 216px;
-}
+@media only screen and (max-width: 1000px) {
+  .my-section-button {
+    align-items: center;
+    border-radius: 8px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    width: 80%;
+    min-width: 112px;
+  }
 
-.rooms {
-  float: left;
-  position: relative;
-  width: 280px;
-}
+  .rooms-button {
+    align-items: center;
+    border-radius: 8px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    width: 80%;
+    min-width: 112px;
+  }
 
-.rooms-title {
-  float: left;
-  font-size: var(--title-font-size);
-  font-weight: bold;
-  margin-bottom: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
+  .rooms {
+    float: right;
+    position: relative;
+    width: 50%;
+  }
 
-.rooms-buttons {
-  float: left;
-  width: 280px;
-}
+  .rooms-title {
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    margin: 4%;
+  }
 
-.my-section {
-  float: left;
-  margin-bottom: 16px;
-  width: 280px;
-}
+  .rooms-buttons {
+    float: left;
+    width: 98%;
+    margin: 1%;
+  }
 
-.my-section-title {
-  float: left;
-  font-size: var(--title-font-size);
-  font-weight: bold;
-  margin-bottom: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
+  .my-section {
+    float: left;
+    width: 50%;
+  }
 
-.my-section-buttons {
-  float: left;
-  width: 280px;
-}
+  .my-section-title {
+    float: left;
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    margin: 4%;
+  }
 
-.button-border {
-  border-style: solid;
+  .my-section-buttons {
+    float: left;
+    width: 98%;
+    margin: 1%;
+  }
+
+  .button-border {
+    border-style: solid;
+  }
 }

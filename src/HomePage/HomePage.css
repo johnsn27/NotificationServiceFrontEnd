@@ -1,23 +1,33 @@
-.upcoming-meetings-title {
-    font-size: var(--title-font-size);
-    font-weight: bold;
-    padding-bottom: 16px;
-    padding-top: 8px;
+@media only screen and (min-width: 1000px) {
+    .watched-meetings-title {
+        font-size: var(--title-font-size);
+        font-weight: bold;
+        padding-top: 20%;
+        padding-bottom: 1%;
+    }
+
+    .watched-meetings-contents {
+        border-style: solid;
+        display: flex;
+        float: left;
+        overflow-y: scroll;
+        width: 100%;
+    }
 }
 
-.watched-meetings-title {
-    font-size: var(--title-font-size);
-    font-weight: bold;
-    padding-bottom: 16px;
-    padding-top: 8px;
-}
+@media only screen and (max-width: 1000px) {
+    .watched-meetings-title {
+        font-size: var(--title-font-size);
+        font-weight: bold;
+        margin: 1%;
+    }
 
-.watched-meetings-contents, .upcoming-meetings-contents {
-    border-style: solid;
-    display: flex;
-    float: left;
-    height: 224px;
-    max-height: 224px;
-    overflow-y: scroll;
-    width: 1000px;
+    .watched-meetings-contents {
+        border-style: solid;
+        display: flex;
+        float: left;
+        overflow-y: scroll;
+        width: 98%;
+        margin: 1%;
+    }
 }
