@@ -1,8 +1,7 @@
+h1 {
+  margin:0;
+}
 @media only screen and (min-width: 1000px) {
-  h1 {
-    margin:0;
-  }
-
   .page-content-below-sticky {
     display: flex;
     flex-direction: column;
@@ -98,37 +97,38 @@
     width: 44%;
   }
 
-  .textbox {
-    display: flex;
-    float: right;
-    text-align: center;
-    width: 100%;
-    height: fit-content;
-  }
+.textbox {
+  display: flex;
+  float: right;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+}
 
-  .label {
-    font-size: var(--text-font-size);
-    width:44%;
-    text-align: left;
-  }
+.label {
+  font-size: var(--text-font-size);
+  width:400px;
+  text-align: left;
+}
 
-  table {
-    border-collapse: collapse;
-    margin: 1;
-    table-layout: fixed;
-    width: 100%;  
-  }
+table {
+  border-collapse: collapse;
+  margin: 16px;
+  padding: 8px;
+  table-layout: fixed;
+  width: 100%;  
+}
 
-  tbody td {
-    border-bottom: 2px solid black;
-  }
+tbody td {
+  border-bottom: 2px solid black;
+}
 
-  table th {
-    border: 1px solid black;
-    text-align: left;
-  }
+table th {
+  border: 1px solid black;
+  text-align: left;
+}
 
-  table th, td {
-    padding: 8px;
-  }
+table th, td {
+  padding: 8px;
+}
 }
