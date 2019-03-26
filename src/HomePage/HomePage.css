@@ -12,6 +12,7 @@
         float: left;
         overflow-y: scroll;
         width: 100%;
+        min-height: 100px;
     }
 }
 
@@ -29,5 +30,6 @@
         overflow-y: scroll;
         width: 98%;
         margin: 1%;
+        min-height: 100px;
     }
 }
