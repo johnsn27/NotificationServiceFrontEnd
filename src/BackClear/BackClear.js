@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import './BackClear.css';
 import Btn from '@bbc/igm-btn';
+import HomePage from '../HomePage/HomePage';
 
 function onClick() {
   var element = document.getElementsByClassName("css-xp4uvy select__single-value")[0].innerHTML;
@@ -17,13 +18,13 @@ class BackClear extends Component {
       <div className="back-clear-buttons-container">
         <div className="back-clear-buttons">
           <div className="back-button">
-            <Btn type="primary" tab-index="1" className="Button" onClick={this.props.history.goBack}>
+            <Btn type="primary" tab-index="1" className="Button" onClick={(this.props.history.goBack)}>
               <span>Back</span>
             </Btn>
           </div>
           <div className="clear-button">
-            <Btn type="primary" tab-index="1" className="Button" onClick={onClick}>
-              <span>Clear</span>
+            <Btn type="primary" tab-index="1" className="Button" onClick={() => window.location.href ='/home'}>
+              <span>Home</span>
             </Btn>
           </div>
         </div>
