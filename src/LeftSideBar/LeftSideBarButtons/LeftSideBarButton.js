@@ -7,7 +7,7 @@ import './LeftSideBarButton.css';
 function LeftSideBarButton({ id, type, tabIndex, className, link, text }) {
   return (
     <Btn
-    id={id}
+      id={id}
       type={type}
       tab-index={tabIndex}
       className={className}
