@@ -65,9 +65,9 @@ export default class MeetingRooms extends Component {
             </thead>
             <tbody>
               {
-                rooms.map(room => {
+                rooms.map((room, key)=> {
                   return (
-                    <tr className="room-data">
+                    <tr className="room-data" key={key}>
                       <td>
                         {room.Name}
                       </td>

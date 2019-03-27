@@ -44,9 +44,9 @@ class WatchedRooms extends Component {
                                 </thead>
                                 <tbody>
                                 {
-                                    watchedRooms.map(room => {
+                                    watchedRooms.map((room, key) => {
                                         return (
-                                        <tr>
+                                        <tr key={key}>
                                             <td>
                                                 {room.RoomName}
                                             </td>

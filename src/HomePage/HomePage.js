@@ -37,10 +37,10 @@ class HomePage extends Component {
                                 </thead>
                                 <tbody>
                                     {
-                                        bookedRooms.map(room => {
+                                        bookedRooms.map((room, key) => {
                                             const startTime = convertDate(room.StartTime);
                                             return (
-                                            <tr>
+                                            <tr key={key}>
                                                 <td>
                                                     {room.MeetingName}
                                                 </td>
