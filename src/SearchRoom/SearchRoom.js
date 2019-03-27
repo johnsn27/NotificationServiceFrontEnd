@@ -22,7 +22,7 @@ class SearchRoom extends Component {
         const endTime = document.getElementById('end-time').value;
         const capacity = document.getElementById('capacity-textarea').value;
         if (date === '' || startTime === '' || endTime === '') {
-            this.showError(true, <>The following required fields are incomplete:
+            this.showError(<>The following required fields are incomplete:
             <ul>{date === '' && <li>Date</li>} {startTime === '' && <li>Start Time</li>} {endTime === '' && <li>End Time</li>}</ul></>);
         } else if (isNaN(floor)) {
             this.showError(`Floor '${floor}' is invalid`);
@@ -35,7 +35,7 @@ class SearchRoom extends Component {
                     return;
                 }
             } catch (e) {
-                this.showError(true, e);
+                this.showError(e);
             }
             window.location.href = (
                 `/meeting-rooms?capacity=${
@@ -65,7 +65,7 @@ class SearchRoom extends Component {
                 </div>
                 <div className="search-room-contents">
                     <div className="search-room-contents-container">
-                        <div role="alert" hidden={!notification.displayed} className="notification"><strong></strong>{notification.message}</div>
+                        <div role="alert" hidden={!notification.displayed} className="notification"><strong>{notification.message}</strong></div>
                         <div className="textbox">
                             <div className="label" id="room-name-label">
                                 <p>Room Name:</p>
